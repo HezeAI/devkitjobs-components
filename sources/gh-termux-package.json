@@ -1,0 +1,16 @@
+{
+  "Package": "gh",
+  "Installed-Size": "42216",
+  "Maintainer": "Krishna kanhaiya @kcubeterm",
+  "Architecture": "aarch64",
+  "Version": "2.103.3",
+  "Recommends": "openssh",
+  "Filename": "pool/main/g/gh/gh_2.103.3_aarch64.deb",
+  "Size": "9948592",
+  "MD5sum": "cf4dc3c37a8679fbb8a4e27348b4cf28",
+  "SHA1": "7beaa562a85877542e0f0ba93a51fa22af3abb4f",
+  "SHA256": "b94190b38c5c6aa4174d0ed252e9096b2b2f243c16491413b83cf3f769c71842",
+  "SHA512": "bba1a157d612365231cb6265b9f6ad393692f721e2d54028d3d8243dd531af3be985c42445254617bcaf2982289acc3adc3732e0009a7cf8e7558ae3d6c52d1e",
+  "Description": "GitHub\u2019s official command line tool",
+  "Homepage": "https://cli.github.com/"
+}

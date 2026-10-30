@@ -1,0 +1,51 @@
+{
+  "archives": [
+    {
+      "id": "gh",
+      "archive": "gh-2.103.3-r1-android-arm64.zip",
+      "bytes": 14016689,
+      "sha256": "625a393e5bfecc9536935dd523029613e7f8d95f2a713b5d0d2ff61bc39adce3",
+      "files": 9,
+      "archiveIntegrity": "passed",
+      "androidDownloadedExecution": "pending"
+    },
+    {
+      "id": "jdk",
+      "archive": "jdk-25.0.5-r1-android-arm64.zip",
+      "bytes": 147091352,
+      "sha256": "5c03cce7e0dfb12f212e40f0d57001a8ebe409c25eccd94720a7aa591bf3178d",
+      "files": 517,
+      "archiveIntegrity": "passed",
+      "androidDownloadedExecution": "pending"
+    },
+    {
+      "id": "gradle",
+      "archive": "gradle-9.5.0-r1-android-arm64.zip",
+      "bytes": 140362158,
+      "sha256": "9c87612a69302c07347113db048a4468f9bc883699f5a1bc8ce98197b3f86f9c",
+      "files": 691,
+      "archiveIntegrity": "passed",
+      "androidDownloadedExecution": "pending"
+    },
+    {
+      "id": "android-sdk",
+      "archive": "android-sdk-35-36.0.0-r1-android-arm64.zip",
+      "bytes": 43449668,
+      "sha256": "73959433a5d64ef1377bbc00924937c9cdddcdf2c27f340c226e8b84802921b4",
+      "files": 69,
+      "archiveIntegrity": "passed",
+      "androidDownloadedExecution": "pending"
+    },
+    {
+      "id": "clang",
+      "archive": "clang-21-r1-android-arm64.zip",
+      "bytes": 65999525,
+      "sha256": "3ceaf226bf224da489468a83b89803a53b2c0e48f4d63ed8cb5f8d775b727b87",
+      "files": 294,
+      "archiveIntegrity": "passed",
+      "androidDownloadedExecution": "pending"
+    }
+  ],
+  "coreBackup": "passed",
+  "functionalDeviceChecks": "pending; archive validation is not native execution"
+}

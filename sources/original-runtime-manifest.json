@@ -1,0 +1,2472 @@
+{
+  "schema": 1,
+  "binaries": {
+    "python3": "libtool_python3.so",
+    "git": "libtool_git.so",
+    "clang": "libtool_clang.so",
+    "node": "libtool_node.so",
+    "bash": "libtool_bash.so",
+    "ssh": "libtool_ssh.so",
+    "ssh-keygen": "libtool_ssh_keygen.so",
+    "rg": "libtool_rg.so",
+    "java": "libtool_java.so",
+    "javac": "libtool_java.so",
+    "jar": "libtool_java.so",
+    "javap": "libtool_java.so",
+    "keytool": "libtool_java.so",
+    "gradle": "libtool_java.so",
+    "apksigner": "libtool_java.so",
+    "d8": "libtool_java.so",
+    "aapt2": "libtool_aapt2.so",
+    "devkit-build-apk": "libtool_buildapk.so",
+    "codex": "libtool_codex.so",
+    "codex-code-mode-host": "libcode-mode-host.so"
+  },
+  "pythonExtensions": {
+    "lib-dynload/_codecs_cn.cpython-314-aarch64-linux-android.so": "libpyext_codecs_cn.so",
+    "lib-dynload/_codecs_hk.cpython-314-aarch64-linux-android.so": "libpyext_codecs_hk.so",
+    "lib-dynload/_codecs_iso2022.cpython-314-aarch64-linux-android.so": "libpyext_codecs_iso2022.so",
+    "lib-dynload/_codecs_kr.cpython-314-aarch64-linux-android.so": "libpyext_codecs_kr.so",
+    "lib-dynload/_codecs_tw.cpython-314-aarch64-linux-android.so": "libpyext_codecs_tw.so",
+    "lib-dynload/_csv.cpython-314-aarch64-linux-android.so": "libpyext_csv.so",
+    "lib-dynload/_ctypes.cpython-314-aarch64-linux-android.so": "libpyext_ctypes.so",
+    "lib-dynload/_ctypes_test.cpython-314-aarch64-linux-android.so": "libpyext_ctypes_test.so",
+    "lib-dynload/_curses.cpython-314-aarch64-linux-android.so": "libpyext_curses.so",
+    "lib-dynload/_curses_panel.cpython-314-aarch64-linux-android.so": "libpyext_curses_panel.so",
+    "lib-dynload/_dbm.cpython-314-aarch64-linux-android.so": "libpyext_dbm.so",
+    "lib-dynload/_decimal.cpython-314-aarch64-linux-android.so": "libpyext_decimal.so",
+    "lib-dynload/_elementtree.cpython-314-aarch64-linux-android.so": "libpyext_elementtree.so",
+    "lib-dynload/_gdbm.cpython-314-aarch64-linux-android.so": "libpyext_gdbm.so",
+    "lib-dynload/_hashlib.cpython-314-aarch64-linux-android.so": "libpyext_hashlib.so",
+    "lib-dynload/_heapq.cpython-314-aarch64-linux-android.so": "libpyext_heapq.so",
+    "lib-dynload/_hmac.cpython-314-aarch64-linux-android.so": "libpyext_hmac.so",
+    "lib-dynload/_interpchannels.cpython-314-aarch64-linux-android.so": "libpyext_interpchannels.so",
+    "lib-dynload/_interpqueues.cpython-314-aarch64-linux-android.so": "libpyext_interpqueues.so",
+    "lib-dynload/_interpreters.cpython-314-aarch64-linux-android.so": "libpyext_interpreters.so",
+    "lib-dynload/_json.cpython-314-aarch64-linux-android.so": "libpyext_json.so",
+    "lib-dynload/_lsprof.cpython-314-aarch64-linux-android.so": "libpyext_lsprof.so",
+    "lib-dynload/_lzma.cpython-314-aarch64-linux-android.so": "libpyext_lzma.so",
+    "lib-dynload/_md5.cpython-314-aarch64-linux-android.so": "libpyext_md5.so",
+    "lib-dynload/_multibytecodec.cpython-314-aarch64-linux-android.so": "libpyext_multibytecodec.so",
+    "lib-dynload/_multiprocessing.cpython-314-aarch64-linux-android.so": "libpyext_multiprocessing.so",
+    "lib-dynload/_pickle.cpython-314-aarch64-linux-android.so": "libpyext_pickle.so",
+    "lib-dynload/_posixshmem.cpython-314-aarch64-linux-android.so": "libpyext_posixshmem.so",
+    "lib-dynload/_posixsubprocess.cpython-314-aarch64-linux-android.so": "libpyext_posixsubprocess.so",
+    "lib-dynload/_queue.cpython-314-aarch64-linux-android.so": "libpyext_queue.so",
+    "lib-dynload/_random.cpython-314-aarch64-linux-android.so": "libpyext_random.so",
+    "lib-dynload/_sha1.cpython-314-aarch64-linux-android.so": "libpyext_sha1.so",
+    "lib-dynload/_remote_debugging.cpython-314-aarch64-linux-android.so": "libpyext_remote_debugging.so",
+    "lib-dynload/_sha2.cpython-314-aarch64-linux-android.so": "libpyext_sha2.so",
+    "lib-dynload/_sha3.cpython-314-aarch64-linux-android.so": "libpyext_sha3.so",
+    "lib-dynload/_socket.cpython-314-aarch64-linux-android.so": "libpyext_socket.so",
+    "lib-dynload/_sqlite3.cpython-314-aarch64-linux-android.so": "libpyext_sqlite3.so",
+    "lib-dynload/_ssl.cpython-314-aarch64-linux-android.so": "libpyext_ssl.so",
+    "lib-dynload/_statistics.cpython-314-aarch64-linux-android.so": "libpyext_statistics.so",
+    "lib-dynload/_struct.cpython-314-aarch64-linux-android.so": "libpyext_struct.so",
+    "lib-dynload/_testbuffer.cpython-314-aarch64-linux-android.so": "libpyext_testbuffer.so",
+    "lib-dynload/_testcapi.cpython-314-aarch64-linux-android.so": "libpyext_testcapi.so",
+    "lib-dynload/_testclinic.cpython-314-aarch64-linux-android.so": "libpyext_testclinic.so",
+    "lib-dynload/_testclinic_limited.cpython-314-aarch64-linux-android.so": "libpyext_testclinic_limited.so",
+    "lib-dynload/_testimportmultiple.cpython-314-aarch64-linux-android.so": "libpyext_testimportmultiple.so",
+    "lib-dynload/_testinternalcapi.cpython-314-aarch64-linux-android.so": "libpyext_testinternalcapi.so",
+    "lib-dynload/_testlimitedcapi.cpython-314-aarch64-linux-android.so": "libpyext_testlimitedcapi.so",
+    "lib-dynload/_testmultiphase.cpython-314-aarch64-linux-android.so": "libpyext_testmultiphase.so",
+    "lib-dynload/_testsinglephase.cpython-314-aarch64-linux-android.so": "libpyext_testsinglephase.so",
+    "lib-dynload/_xxtestfuzz.cpython-314-aarch64-linux-android.so": "libpyext_xxtestfuzz.so",
+    "lib-dynload/_zoneinfo.cpython-314-aarch64-linux-android.so": "libpyext_zoneinfo.so",
+    "lib-dynload/_zstd.cpython-314-aarch64-linux-android.so": "libpyext_zstd.so",
+    "lib-dynload/array.cpython-314-aarch64-linux-android.so": "libpyext_array.so",
+    "lib-dynload/binascii.cpython-314-aarch64-linux-android.so": "libpyext_binascii.so",
+    "lib-dynload/cmath.cpython-314-aarch64-linux-android.so": "libpyext_cmath.so",
+    "lib-dynload/fcntl.cpython-314-aarch64-linux-android.so": "libpyext_fcntl.so",
+    "lib-dynload/grp.cpython-314-aarch64-linux-android.so": "libpyext_grp.so",
+    "lib-dynload/math.cpython-314-aarch64-linux-android.so": "libpyext_math.so",
+    "lib-dynload/mmap.cpython-314-aarch64-linux-android.so": "libpyext_mmap.so",
+    "lib-dynload/pyexpat.cpython-314-aarch64-linux-android.so": "libpyext_pyexpat.so",
+    "lib-dynload/readline.cpython-314-aarch64-linux-android.so": "libpyext_readline.so",
+    "lib-dynload/resource.cpython-314-aarch64-linux-android.so": "libpyext_resource.so",
+    "lib-dynload/select.cpython-314-aarch64-linux-android.so": "libpyext_select.so",
+    "lib-dynload/syslog.cpython-314-aarch64-linux-android.so": "libpyext_syslog.so",
+    "lib-dynload/termios.cpython-314-aarch64-linux-android.so": "libpyext_termios.so",
+    "lib-dynload/_blake2.cpython-314-aarch64-linux-android.so": "libpyext_blake2.so",
+    "lib-dynload/xxsubtype.cpython-314-aarch64-linux-android.so": "libpyext_xxsubtype.so",
+    "lib-dynload/zlib.cpython-314-aarch64-linux-android.so": "libpyext_zlib.so",
+    "lib-dynload/_asyncio.cpython-314-aarch64-linux-android.so": "libpyext_asyncio.so",
+    "lib-dynload/_bisect.cpython-314-aarch64-linux-android.so": "libpyext_bisect.so",
+    "lib-dynload/_bz2.cpython-314-aarch64-linux-android.so": "libpyext_bz2.so",
+    "lib-dynload/_codecs_jp.cpython-314-aarch64-linux-android.so": "libpyext_codecs_jp.so",
+    "lib-dynload/unicodedata.cpython-314-aarch64-linux-android.so": "libpyext_unicodedata.so",
+    "lib-dynload/xxlimited.cpython-314-aarch64-linux-android.so": "libpyext_xxlimited.so",
+    "lib-dynload/xxlimited_35.cpython-314-aarch64-linux-android.so": "libpyext_xxlimited_35.so"
+  },
+  "javaLibraries": {
+    "lib/libattach.so": "libattach.so",
+    "lib/libawt.so": "libawt.so",
+    "lib/libawt_headless.so": "libawt_headless.so",
+    "lib/libdt_socket.so": "libdt_socket.so",
+    "lib/libextnet.so": "libextnet.so",
+    "lib/libinstrument.so": "libinstrument.so",
+    "lib/libj2gss.so": "libj2gss.so",
+    "lib/libj2pcsc.so": "libj2pcsc.so",
+    "lib/libj2pkcs11.so": "libj2pkcs11.so",
+    "lib/libjaas.so": "libjaas.so",
+    "lib/libjava.so": "libjava.so",
+    "lib/libjavajpeg.so": "libjavajpeg.so",
+    "lib/libjdwp.so": "libjdwp.so",
+    "lib/libjimage.so": "libjimage.so",
+    "lib/libjli.so": "libjli.so",
+    "lib/libjsig.so": "libjsig.so",
+    "lib/libjsound.so": "libjsound.so",
+    "lib/liblcms.so": "liblcms.so",
+    "lib/libmanagement.so": "libmanagement.so",
+    "lib/libmanagement_agent.so": "libmanagement_agent.so",
+    "lib/libmanagement_ext.so": "libmanagement_ext.so",
+    "lib/libmlib_image.so": "libmlib_image.so",
+    "lib/libnet.so": "libnet.so",
+    "lib/libnio.so": "libnio.so",
+    "lib/libprefs.so": "libprefs.so",
+    "lib/librmi.so": "librmi.so",
+    "lib/libsctp.so": "libsctp.so",
+    "lib/libsleef.so": "libsleef.so",
+    "lib/libsyslookup.so": "libsyslookup.so",
+    "lib/libverify.so": "libverify.so",
+    "lib/libzip.so": "libzip.so",
+    "lib/server/libjvm.so": "libjvm.so"
+  },
+  "libraries": {
+    "libtool_python3.so": {
+      "sha256": "7d3a1692fea79fb98af6bbeacaf452972f965b9bbdf14f5df91f782cc42755e9",
+      "bytes": 4632,
+      "sourceSha256": "3bb14754d30d7ba58b2ab90d7b39799371cf308c493efd80c0f20a105698e055",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libandroid-support.so": {
+      "sha256": "f167af84b8b395bf62cb34eafc7a5cec1883d3743cb1faed988ff068f4abe5d4",
+      "bytes": 20736,
+      "sourceSha256": "739cf829511d71dafd6c67fdbb70f3f0c6048642ea2e1967790ee961fde14430",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libpython3.14.so": {
+      "sha256": "fee180c02e465362e60fb384f3328b7cfb87d9fc064a0747b0de08aeacdf85c7",
+      "bytes": 5873088,
+      "sourceSha256": "2600087b21b1820d6d5363602011b6795de1c4fd7a6fb1d837dc05e0538016e2",
+      "needed": [
+        "libandroid-support.so",
+        "libm.so",
+        "libdl.so",
+        "liblog.so",
+        "libc.so"
+      ]
+    },
+    "libtool_git.so": {
+      "sha256": "08f60863622d65edc62ea6498ee362f13d8327895067614245f7053db5291343",
+      "bytes": 3613096,
+      "sourceSha256": "49d9593fb2d61edba13ca188b2194c08eb658b1f78bba64f47ec3d68efd9e2e6",
+      "needed": [
+        "libdl.so",
+        "libpcre2-8.so",
+        "libz_1.so",
+        "libiconv.so",
+        "libcrypto_3.so",
+        "libc.so"
+      ]
+    },
+    "libpcre2-8.so": {
+      "sha256": "c8a11573d48272f775f49e5aa1be79879dd729bae9a98d4c4e7956b4503d0f66",
+      "bytes": 479984,
+      "sourceSha256": "52c7ab426f4f274f630d05ef04c852153f4bb7e78ae178ce61cb17e258569bdf",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libz_1.so": {
+      "sha256": "ed8912bdba0c5fc195235b440436634ec9d8b83e788af6f1c6d8885a33e38c75",
+      "bytes": 72880,
+      "sourceSha256": "c47748ed4b6ca6a2ecd664bab04795f3493956ab1f5cddc4ba0efa737ef3b711",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libiconv.so": {
+      "sha256": "c847f487600fae1cba4507197cba57332b1fb059267065bfac730292790abf76",
+      "bytes": 1083304,
+      "sourceSha256": "aa51a75a69449e02f7712635148b280167dcbda9433f1d16de5c931432b05b01",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libcrypto_3.so": {
+      "sha256": "2d5d8b2e557ea5996d24b107974238770647a06b28a323a1ef13263519fdf065",
+      "bytes": 5213680,
+      "sourceSha256": "5dddfd86746aabaca2c13eea108c8968811a4f9dcccf5889e34ebff6be920949",
+      "needed": [
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libtool_clang.so": {
+      "sha256": "f51d84effab2aa0304dd5c10cea9e94be5574aa9269d9067025210c7e6267b8a",
+      "bytes": 121040,
+      "sourceSha256": "3599a121ecc11b433d23bc43545bc0441f9a8ffcc587ea18e312d88188fcf282",
+      "needed": [
+        "libc.so",
+        "libclang-cpp.so",
+        "libLLVM.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libclang-cpp.so": {
+      "sha256": "0dbe4fd909ebc432875369e08ddb4bb65f0fb63650720b9f2410d24cb8f0ff70",
+      "bytes": 62972824,
+      "sourceSha256": "1f2f35ec08f3e24ff23bfa6c0e1a8f2cd2c818fa2c772268b26aff123aacd4d4",
+      "needed": [
+        "libc.so",
+        "libLLVM.so",
+        "libc++_shared.so",
+        "libm.so"
+      ]
+    },
+    "libLLVM.so": {
+      "sha256": "5ef8a226b59b8ff6b11281fd6ee23dbde2cfd7c46a273b8591f46d468c5009ff",
+      "bytes": 133597776,
+      "sourceSha256": "ae20f8a19dcd84740bb3b3c7cc5845ec44f5143cbf7dab44a64160a4b7f21fa0",
+      "needed": [
+        "libffi.so",
+        "libdl.so",
+        "libc.so",
+        "libm.so",
+        "libz_1.so",
+        "libzstd_1.so",
+        "libxml2_16.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libffi.so": {
+      "sha256": "6a1a35066ed298a5d2c53c5e0ebfb169612d1441c361ea527f195dfd4465ce5a",
+      "bytes": 87128,
+      "sourceSha256": "e118d741361c64015c074c5e1f24e42e44292d0d694ca3ba1e109205c10421f9",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libzstd_1.so": {
+      "sha256": "98742d006ad27a0b8867bbfad4b4ba2b2f4ca125a85bcb7c720da79911173fed",
+      "bytes": 820840,
+      "sourceSha256": "1677d5e828c1839f111f0261697c08f99a5e4e80434659ab88e5ff859a1374f7",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libxml2_16.so": {
+      "sha256": "418b750d8eac942f31bf5d0a8999eafd5aaed978ad3e885388e39b512080aef3",
+      "bytes": 1092824,
+      "sourceSha256": "ed8fca535487054960e6a4edb0b4a14c5efe6256710f3b2f0bf66f59343960e6",
+      "needed": [
+        "libm.so",
+        "libz_1.so",
+        "libiconv.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libc++_shared.so": {
+      "sha256": "05bef9d3901910c3ff8ab450b03bc8b28383d363a2290f2f7b9aed7331ea6ff7",
+      "bytes": 1423696,
+      "sourceSha256": "05bef9d3901910c3ff8ab450b03bc8b28383d363a2290f2f7b9aed7331ea6ff7",
+      "needed": [
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    "libtool_node.so": {
+      "sha256": "4b13d52c5541a449d6d004ea48366702d114eeb3111772b29aec1cdc82942662",
+      "bytes": 50993616,
+      "sourceSha256": "e773cbefd2eac2343e97d8eb5cd8a0ee1aa3dc9ffe3ec740b3f1767103c86de7",
+      "needed": [
+        "libz_1.so",
+        "libcares.so",
+        "libsqlite3.so",
+        "libffi.so",
+        "libcrypto_3.so",
+        "libssl_3.so",
+        "libicui18n_78.so",
+        "libicuuc_78.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libcares.so": {
+      "sha256": "1b258ba2be7542a44d1bf9542394da733f3026d6836c091d8d3e303241407762",
+      "bytes": 263248,
+      "sourceSha256": "35a3dc973a830057bb24d37c3ebef04a8b7e807df7f5a24eede3e2b99d3dfd35",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libsqlite3.so": {
+      "sha256": "9049b2ba9c7722e0c11c39342ef95a0d7569d2b83d85337e13c3a4ea8c3e3465",
+      "bytes": 1224400,
+      "sourceSha256": "5d5ffd18d581ebf0598342e233c0adc4e1d8db09590f06467bb300a8d0dec439",
+      "needed": [
+        "libz_1.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libssl_3.so": {
+      "sha256": "290b541275d5d559fa6b63354b344d58fe56d4c5049cad7840743bd89e471adc",
+      "bytes": 880976,
+      "sourceSha256": "595ce9fe0189a24ceae2eaa07721ac428a6df26794f5bfcfe4347013cbd4b9f2",
+      "needed": [
+        "libcrypto_3.so",
+        "libc.so"
+      ]
+    },
+    "libicui18n_78.so": {
+      "sha256": "dcdebcd0f9b9ffe33b6c5396cca05b42a1913c5ded9ce23e5378c30197d4064c",
+      "bytes": 3358568,
+      "sourceSha256": "3140b2b28d16a6486a65663f1c47a94a4bb0d9def51612f8e941414bd50c7a0e",
+      "needed": [
+        "libicuuc_78.so",
+        "libc.so",
+        "libm.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libicuuc_78.so": {
+      "sha256": "4613a5b43337d3890a3da46d2f92316414265627e9bd1ce4889d9b7310045e52",
+      "bytes": 2029568,
+      "sourceSha256": "91bcef1faba58b755d4870aaea95814d1753961fd72365c4701cfd4461e3584c",
+      "needed": [
+        "libicudata_78.so",
+        "libc.so",
+        "libm.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libicudata_78.so": {
+      "sha256": "ad7edd2acbbf26af6a2d6f88b6148c2a9262c9530c231b55431e0bbe75b62a7a",
+      "bytes": 33108832,
+      "sourceSha256": "71a7479056941b610589f82698cdfb220c169dce9bc7c78ef6a6e74d07b1e8fd",
+      "needed": []
+    },
+    "libtool_bash.so": {
+      "sha256": "15ec4a6dbcff615e881f0ce6b3431a2f846638e2221694a9220e14c683ea2af6",
+      "bytes": 880416,
+      "sourceSha256": "0365ac23661e9b31a229d553eddbf7a9b68e6d1f0eef23aa7061b478acbce7df",
+      "needed": [
+        "libandroid-support.so",
+        "libreadline_8.so",
+        "libiconv.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libreadline_8.so": {
+      "sha256": "68454e9aa4c6d63fdeeb9403f45b924d6c5aaa10295bd634d4d76ac1122c7f76",
+      "bytes": 321912,
+      "sourceSha256": "7437d5e30e2a326f3000286295cb9ba30a2e45f9ca5a91feba9ec12d0f1a161d",
+      "needed": [
+        "libandroid-support.so",
+        "libncursesw_6.so",
+        "libc.so"
+      ]
+    },
+    "libncursesw_6.so": {
+      "sha256": "3681bc5d500fa04c8a25af29a276bb7aaaff5de7b175aadae209d4af273cddc6",
+      "bytes": 384496,
+      "sourceSha256": "795f855f5a988d9e89116847b2c9aa03720cedbc02026259ca735be25398c4c5",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libtool_ssh.so": {
+      "sha256": "ceea88503c0b63b023753feb7a19de853a8cc97e445e72a890de6989ca73e9d3",
+      "bytes": 756848,
+      "sourceSha256": "b8354aed379b92696f3ad4a6261489371709df7ffb81fde670d9815992a2c340",
+      "needed": [
+        "libandroid-support.so",
+        "libcrypto_3.so",
+        "libldns.so",
+        "libgssapi_krb5_2.so",
+        "libz_1.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libldns.so": {
+      "sha256": "5a62c28d7abe270ca9734f13d2eb17e25fd97ea816f2e5fa975c15d1be10b5c6",
+      "bytes": 384432,
+      "sourceSha256": "e072c94a97425d4b48138b9c7f97fe5c883e3c8d757c85e406b9311b5d51ce6c",
+      "needed": [
+        "libssl_3.so",
+        "libcrypto_3.so",
+        "libc.so"
+      ]
+    },
+    "libgssapi_krb5_2.so": {
+      "sha256": "22bec6454c40925cf808723874334d5770b1a6b33c92f7b376165d5d9eb953e6",
+      "bytes": 279560,
+      "sourceSha256": "a58f3bc0ffdd43e22d6fd6c32d37a1c424b168e4eeec4885b1878c876bf012f0",
+      "needed": [
+        "libkrb5_3.so",
+        "libk5crypto_3.so",
+        "libcom_err_3.so",
+        "libkrb5support_0.so",
+        "libandroid-glob.so",
+        "libresolv_wrapper.so",
+        "libandroid-support.so",
+        "libc.so"
+      ]
+    },
+    "libkrb5_3.so": {
+      "sha256": "d3d9416f9e08da695de413cb484a9aef479695feae822cd2244d4864531ce39d",
+      "bytes": 772496,
+      "sourceSha256": "b75f43d21512a1f5d62372443a44c63915ff4fff38be23d6f6d809a72be0c43b",
+      "needed": [
+        "libk5crypto_3.so",
+        "libcom_err_3.so",
+        "libkrb5support_0.so",
+        "libandroid-glob.so",
+        "libresolv_wrapper.so",
+        "libandroid-support.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libk5crypto_3.so": {
+      "sha256": "497bdb28ac9e414429d81879c7c7355ab5e3ff8d6e23a6c6ec636f8049f28ea5",
+      "bytes": 153360,
+      "sourceSha256": "3d2bf17840d890ea3846df8f7a20cb3c249b0301261d7fe1029fcd85939d29ea",
+      "needed": [
+        "libkrb5support_0.so",
+        "libandroid-glob.so",
+        "libresolv_wrapper.so",
+        "libandroid-support.so",
+        "libc.so"
+      ]
+    },
+    "libkrb5support_0.so": {
+      "sha256": "535f0a76be481f1a5685ee21d7790244c5297b56199dabccc543650f43a8ab68",
+      "bytes": 42744,
+      "sourceSha256": "aa323c4dd632cf88da3a0b7b380a752965e8989de158a52579c72a87a7e4ce7b",
+      "needed": [
+        "libandroid-glob.so",
+        "libresolv_wrapper.so",
+        "libandroid-support.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libandroid-glob.so": {
+      "sha256": "59700326709088a3cc6f224f2c8f4646287af69ea0ad0b65a4846a97f414db4f",
+      "bytes": 10536,
+      "sourceSha256": "e47405b23e40aea9bd5aad4c3cbf518065cba8ef1c4e24c8aae7fd77e10fe850",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libresolv_wrapper.so": {
+      "sha256": "eeec89ef82d2330176ee54effd4b2c2f48d5506cff7ab8c6b73239ae5c6c71d6",
+      "bytes": 20432,
+      "sourceSha256": "685d6634543cbc7c380bd076d6877c917ef4a55569dbdca6182900ab3ee3f28d",
+      "needed": [
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libcom_err_3.so": {
+      "sha256": "fc5d2ba3363420c7e8077c0e9f7d6358274c43600b066c60c3eee5aaf12228b5",
+      "bytes": 9848,
+      "sourceSha256": "7f3e39dc2594a45e497fa04f4b8183412d5354c093179e135b0a716b08dae9c2",
+      "needed": [
+        "libkrb5support_0.so",
+        "libandroid-glob.so",
+        "libresolv_wrapper.so",
+        "libandroid-support.so",
+        "libc.so"
+      ]
+    },
+    "libtool_ssh_keygen.so": {
+      "sha256": "54584f55ff9ad0a03f2139d6c79b3403783ad6e94bf40ac0c0831936062be1d6",
+      "bytes": 418280,
+      "sourceSha256": "11e12d9fea319f4a464aaa74bcdce280d770a680e8e68591732885f5ca85e5ac",
+      "needed": [
+        "libandroid-support.so",
+        "libcrypto_3.so",
+        "libldns.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libtool_rg.so": {
+      "sha256": "92754a6062e5839b416ee8c303ae1b7f138b27aa974d16101b8440bbb04857b4",
+      "bytes": 4868920,
+      "sourceSha256": "5adfd20e4c350aecd718bbef048a57a3fbabe0402c9c39a25eb40a28f1b19543",
+      "needed": [
+        "libpcre2-8.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libattach.so": {
+      "sha256": "fe743ae969f871f5b9af38a4464534c42b34734f40f0893edd00643e7c192d83",
+      "bytes": 8872,
+      "sourceSha256": "7a6df8380174063ac47d51460ee8d0c79850c64ef1353138362a8236cd85c76a",
+      "needed": [
+        "libjava.so",
+        "libc.so"
+      ]
+    },
+    "libjava.so": {
+      "sha256": "27e60f3bfd43906b001caf043d1a400616752764ac3a6f8bfb03f780f166984a",
+      "bytes": 135688,
+      "sourceSha256": "f191e5376662974da34dca970e4efc486170f8d71a36eaf5498d455438a56674",
+      "needed": [
+        "libandroid-spawn.so",
+        "libjvm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libandroid-spawn.so": {
+      "sha256": "a9c3054e7fca3b0b13e81787410f0b6f1221190d86727e69843822ad6c916040",
+      "bytes": 39792,
+      "sourceSha256": "a119e73710fd6dc3bb85dc58df48a9262fa5cb3318c153b9b75c1c3b23fc0e10",
+      "needed": [
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libjvm.so": {
+      "sha256": "c4a99acadfd1269d4bd2beb5eeffb7fbc66ef57d50f8cba29ffec3675248fc30",
+      "bytes": 22893968,
+      "sourceSha256": "69ad4bd73b6944cdb2cefbbc2bd4bc9736baa44818577bebe764e652450a52fa",
+      "needed": [
+        "libandroid-spawn.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libawt.so": {
+      "sha256": "0ad8d58535669f9a8b92031063ba18b39d911b5fed0e8ecb388fbb7d484d5058",
+      "bytes": 583456,
+      "sourceSha256": "83f028eda9d2cabaebcc901647ddbcaa009a0b06100a282972327347b29da8ec",
+      "needed": [
+        "libjava.so",
+        "libjvm.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libawt_headless.so": {
+      "sha256": "ee788bd445af564271cb98ba455c7f231605d480a649f98d7384bfac9201f28d",
+      "bytes": 25376,
+      "sourceSha256": "8b29928993124777a6abd83b33fbc8eb1069748c45e809e6b598a1cdf5150029",
+      "needed": [
+        "libawt.so",
+        "libjava.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libdt_socket.so": {
+      "sha256": "ab0d1400a4af047cfd5066a77f551ffc5fc64a9ecc91543acf60669bbab04589",
+      "bytes": 23296,
+      "sourceSha256": "239b53807a3cd2cba9c8e5e3cd8550509d34ffca9555b5002090bb096c2824c4",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libextnet.so": {
+      "sha256": "6affabe3dfffef58eb7a0c95a8339968b946c7f9228b21af0bdd078d08473b95",
+      "bytes": 10120,
+      "sourceSha256": "5cc3508c357cbc5ed36cb55b4e223adf4810bc405759b59be011813fad470d91",
+      "needed": [
+        "libjava.so",
+        "libc.so"
+      ]
+    },
+    "libinstrument.so": {
+      "sha256": "828fa82f5e22c535841c37503513ab482f1d77c621ebdf6632caaad8f9c7914e",
+      "bytes": 44296,
+      "sourceSha256": "215aba945bb5d98ed841ba75276a72e3dc4f68ff2e1d35297cbe0b6650d9fb57",
+      "needed": [
+        "libiconv.so",
+        "libjava.so",
+        "libjli.so",
+        "libjvm.so",
+        "libc.so"
+      ]
+    },
+    "libjli.so": {
+      "sha256": "ac41c71cce509471b403fb9b57f891b792524c877dc2fcd516bf178fe5192ac0",
+      "bytes": 58616,
+      "sourceSha256": "0db9ea8d04095edaa8e15ddcd3b8d344ac3913ea0d630115b2a0313da0387230",
+      "needed": [
+        "libz_1.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libj2gss.so": {
+      "sha256": "4b5e972d7229ceb351c13fed9e547f0facd910d17fe4d77ad53449282226a633",
+      "bytes": 42040,
+      "sourceSha256": "42c90fe62dbeed8a1bb760a53c26a216e46ece3299b79a284beb783abf50b056",
+      "needed": [
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libj2pcsc.so": {
+      "sha256": "7e1d18386e21319b115ef4599b368040fd4371b88b226336759044c89cee28b3",
+      "bytes": 14392,
+      "sourceSha256": "14f8e2d93d26200669c9f9b23b453d941c1c785ac4313a2589878b3ffeb1feea",
+      "needed": [
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libj2pkcs11.so": {
+      "sha256": "a53f4c132bdd8b1fd0ebb4dda614423cb4a8f96f506f7913f1aff523c07b352e",
+      "bytes": 85224,
+      "sourceSha256": "37b29c9ad25a0550aa4ebb4af7db53cf96d6aeac867e363d55db9f635983a9e1",
+      "needed": [
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libjaas.so": {
+      "sha256": "1240267904a4d8b080277393915cdde240e3ff30a0114c277d03374bb5807517",
+      "bytes": 6336,
+      "sourceSha256": "4e513ba493f50c14ed04dfbe5077fb35c675b316efed465a9a656cefe976f95a",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libjavajpeg.so": {
+      "sha256": "ec10d0a86035634aec6037f4bcc50c72887b2084d492fe2c9146569dcdac9d50",
+      "bytes": 37584,
+      "sourceSha256": "cd5d5c641bc241be31f3bbee805d8dea5fd7d5108553158b1337627379b4fb3f",
+      "needed": [
+        "libjpeg_8.so",
+        "libjava.so",
+        "libc.so"
+      ]
+    },
+    "libjpeg_8.so": {
+      "sha256": "8027080a0065bf03e974dbef886a294377182a987d0885417f0ef5c5ac9a73e4",
+      "bytes": 641888,
+      "sourceSha256": "5a32ea307f1d086a2b056deba9911d7746e1f4acbb04cdfffaec8bc447934b35",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libjdwp.so": {
+      "sha256": "e85b527538435f7dbc8fbee301eff9e1a9491e9be32893a1310ade0e990d2f71",
+      "bytes": 266184,
+      "sourceSha256": "4dc1820b34a972bfb0a1bcba7cd4e0d42f4268ee204252f033d6d40cf3d65f6e",
+      "needed": [
+        "libiconv.so",
+        "libjvm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libjimage.so": {
+      "sha256": "9a0f5f48f542b86643fd723845a0d41875c8b56b4fffe269b0dd3f816f139a1a",
+      "bytes": 89032,
+      "sourceSha256": "eea3a3782a2b8c0c51b143cf084798fcec8af9859e74b685e9967aaf47bf5313",
+      "needed": [
+        "libjvm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libjsig.so": {
+      "sha256": "65af98e347924509f3022f99703bcf7cec59bd543d445db4d184b3ed8b6d9423",
+      "bytes": 8624,
+      "sourceSha256": "5a7196089c32e68b9a5b24193174c6415b7d4128b71df6bd55f7ff40edbe041b",
+      "needed": [
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libjsound.so": {
+      "sha256": "0562cbcb376029167f2059e84f7968bd8154209ed48ec1562ac0e12b6402b839",
+      "bytes": 81272,
+      "sourceSha256": "da5123bb126b4190d7f6c30d6c4428dcacf05df17572af109814eb44a1201e5e",
+      "needed": [
+        "libasound.so",
+        "libc.so"
+      ]
+    },
+    "libasound.so": {
+      "sha256": "a92576312f17366cff6d1e6a369af5ab337d4c21cea78266073d796d9e0352ea",
+      "bytes": 1095744,
+      "sourceSha256": "d74e0abffcb5599132440aa8365746e669d5826736f76f50f1afad671b17b6d8",
+      "needed": [
+        "libandroid-sysv-semaphore.so",
+        "libandroid-shmem.so",
+        "libm.so",
+        "libc.so",
+        "libdl.so"
+      ]
+    },
+    "libandroid-sysv-semaphore.so": {
+      "sha256": "5b880dae014e8b1bb98969191d4eabb2245d827a21189f4fe20a6f0efb60f2e8",
+      "bytes": 4664,
+      "sourceSha256": "4b200c15306fe96b50de576395bbeb8ff7b374134dcca03cdcff73a081f392e8",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libandroid-shmem.so": {
+      "sha256": "2ec1856bf6430dd5c65e5a6f274dcc1dc6338ab6539fce1154a02ba97c60d646",
+      "bytes": 14432,
+      "sourceSha256": "84475798e07c8174dbbfaec70a827fdb02f19ffa69a589380c13e7507fd0e731",
+      "needed": [
+        "liblog.so",
+        "libc.so"
+      ]
+    },
+    "liblcms.so": {
+      "sha256": "484af5aaee2b620c093457dffb0fd929d0aa4b431e0cdf2cba6cb8bfd5c6a63b",
+      "bytes": 14824,
+      "sourceSha256": "b6bd06b161d83f1c44b43547b68cb1b7c11e12488c99d7d8c0ac9d1198084e93",
+      "needed": [
+        "libawt.so",
+        "libjava.so",
+        "liblcms2.so",
+        "libc.so"
+      ]
+    },
+    "liblcms2.so": {
+      "sha256": "33d32052eee3f04bbe622a81305bc5fdf1574400e0326911ed0d42608c19b66d",
+      "bytes": 351984,
+      "sourceSha256": "400e1bdf195b63e9f65f6bdcd00cdd1c4489c03ddc77af5a7cf956c4d38a9746",
+      "needed": [
+        "libm.so",
+        "libc.so"
+      ]
+    },
+    "libmanagement.so": {
+      "sha256": "123cc5c14ed476b2fb927a824b812cf0f53284ab14bd28b40c1a1e46619f3d6d",
+      "bytes": 17224,
+      "sourceSha256": "ea5e13cf4c21fbab4e5129412dddace51eaf81d32d739c70ed99f4d54c8ab300",
+      "needed": [
+        "libjava.so",
+        "libjvm.so",
+        "libc.so"
+      ]
+    },
+    "libmanagement_agent.so": {
+      "sha256": "f4966e48b7b16c1f1f46eb948bedd8f9d4fbc8b3972d4717024234f43ebeb376",
+      "bytes": 5280,
+      "sourceSha256": "ec0707f5f147049cd1a972517986b150293fe35cbe0c090ed55882a699e11ff1",
+      "needed": [
+        "libjava.so",
+        "libc.so"
+      ]
+    },
+    "libmanagement_ext.so": {
+      "sha256": "14841d2a3fe2cf674feb9ada1d1424a1dddd886e52f3026f1b9360f79071b373",
+      "bytes": 23192,
+      "sourceSha256": "2adb21d7166e27023f5c7e2fcc451bd1fe848a1959ad351bcaaa66a4dd298924",
+      "needed": [
+        "libjava.so",
+        "libjvm.so",
+        "libc.so"
+      ]
+    },
+    "libmlib_image.so": {
+      "sha256": "f6a37369b074b81eb2215a69ffbe608501e18972a323856f18112c5d22cfa592",
+      "bytes": 440480,
+      "sourceSha256": "df1be68f31794fbfc5d6286429cf48a281e3d058e113adfeb650e39148d9eeda",
+      "needed": [
+        "libm.so",
+        "libc.so"
+      ]
+    },
+    "libnet.so": {
+      "sha256": "7dbbb3ae99e62ec4bb83cb8c85dbb20e79a023480af9b3c151a5ce3e20caa21e",
+      "bytes": 48856,
+      "sourceSha256": "3498137c16814dd148a3429cb2005440d6499ce2a7a3ce34dbbf6fe549301cbb",
+      "needed": [
+        "libjava.so",
+        "libjvm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libnio.so": {
+      "sha256": "a668edca107c2d89436c2a40f1835cdce2ce0bd028072c65ffbc805b4c79386d",
+      "bytes": 81800,
+      "sourceSha256": "a939e0e47e5df9b094a7b6dc5cf410e6cac5585ef732c0426bcc66e93820c0a5",
+      "needed": [
+        "libjava.so",
+        "libnet.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libprefs.so": {
+      "sha256": "6b770a57513efb03a8c684054b2ecf1d760b039018f622e7b244aad8fbef9177",
+      "bytes": 6040,
+      "sourceSha256": "5a7d2623c35e29663059617228dac552c0697a940f278cdf2637232a77ff5613",
+      "needed": [
+        "libjava.so",
+        "libc.so"
+      ]
+    },
+    "librmi.so": {
+      "sha256": "64da296eb5a98a2dd847f6bca8dd306d12458adaa1310dfd344bdcac78b24c6a",
+      "bytes": 4392,
+      "sourceSha256": "40980ae8aa47ea1265555726c3de075ed8a4312cd3c0b10c059c48010f11db5c",
+      "needed": [
+        "libjvm.so",
+        "libc.so"
+      ]
+    },
+    "libsctp.so": {
+      "sha256": "a48bcf2d1ce5104eaa648316cf222e0735edc211c252827535b9827c283d591f",
+      "bytes": 22816,
+      "sourceSha256": "aa7f572d7edd0b6fa91029aaae89f438c35a26d104aa86727a172fd45d5e43da",
+      "needed": [
+        "libjava.so",
+        "libnet.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libsleef.so": {
+      "sha256": "728b20089f34ae098f6580e2f55653354ca0477d5df5be0403380b68edfd5fd1",
+      "bytes": 128472,
+      "sourceSha256": "420fd184f3a01bbb590490be854dfdbc34e5080916df07222312c959e17c0c3d",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libsyslookup.so": {
+      "sha256": "24b0320ce1271bf2fd8ed0ecf498e1a53f0f2c209925341cdc4002c8f56885d3",
+      "bytes": 4288,
+      "sourceSha256": "9857e880fb3c10d9a37665143f78e24811e49275be2ddcadf6b8ce9ad6d5ebd2",
+      "needed": [
+        "libdl.so",
+        "libm.so",
+        "libc.so"
+      ]
+    },
+    "libverify.so": {
+      "sha256": "13930d74d0c8d8cbcdce6715762dac50953cb5e9b0cfa34b5fa2c5a70ab04a01",
+      "bytes": 55432,
+      "sourceSha256": "f62edf5694b3f104361e2edc489dcbd2828f6f6067f8948a6e982628b6863e48",
+      "needed": [
+        "libjvm.so",
+        "libc.so"
+      ]
+    },
+    "libzip.so": {
+      "sha256": "d34c2ef3e6c9226c456ef855bca245d0b4a67fc1163f5e096ce569e7c2117497",
+      "bytes": 31128,
+      "sourceSha256": "cc5d0ee7fcd2c6c97504f3e470be7486468b445b6a5652b56682df6dcfd80de4",
+      "needed": [
+        "libjava.so",
+        "libjvm.so",
+        "libz_1.so",
+        "libc.so"
+      ]
+    },
+    "libtool_aapt2.so": {
+      "sha256": "9342875c766b4c2838a8527306f614918fd481ad61895eb69f1d04b6c8faefe1",
+      "bytes": 3595544,
+      "sourceSha256": "6d68696ee55e5f6946e3aab9cf1fc4cdd2e44a841ca78f2189943d542cb638e2",
+      "needed": [
+        "libfmt.so",
+        "libz_1.so",
+        "libpng16.so",
+        "libexpat_1.so",
+        "libprotobuf.so",
+        "libabsl_log_internal_message.so",
+        "libabsl_hash.so",
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libfmt.so": {
+      "sha256": "56951f7d74a602342b93157a842050ddae6e91f60ea8f26ccc93121aac87f213",
+      "bytes": 166608,
+      "sourceSha256": "9b59cf1f5c53e7dcaa890880e1dce473bb1712a4509ba413b228938e070500c4",
+      "needed": [
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libpng16.so": {
+      "sha256": "69a6552d49b3abe79b658242e195c7dda6326d3ceba95b35ab0ce5173ccf68a9",
+      "bytes": 178248,
+      "sourceSha256": "dc8a0ab57a3ff15b8e76248c60d6c1749915987b5803f7b7839d87ed91c9d141",
+      "needed": [
+        "libz_1.so",
+        "libm.so",
+        "libc.so"
+      ]
+    },
+    "libexpat_1.so": {
+      "sha256": "da6894d1589bdf260102d5e15f4d0caff0480d5898d36030bedf8ae69229bc54",
+      "bytes": 146032,
+      "sourceSha256": "61fde151ffc8880c275b59ef7f519f1bd427a24400b1c3446c8eeaf71134b3f7",
+      "needed": [
+        "libm.so",
+        "libc.so"
+      ]
+    },
+    "libprotobuf.so": {
+      "sha256": "28e748a8d83c0e6090d914d00b2a64e2460327ebe1b2c9ba6a3aef02e1205d91",
+      "bytes": 2997784,
+      "sourceSha256": "8d742e537c0c309ca1db089ffbe1d49eeca92c14c1e8af02fb290a59f57d4fa3",
+      "needed": [
+        "libc.so",
+        "libz_1.so",
+        "libabsl_die_if_null.so",
+        "libabsl_statusor.so",
+        "libutf8_validity.so",
+        "libabsl_log_internal_check_op.so",
+        "libabsl_log_internal_conditions.so",
+        "libabsl_log_internal_message.so",
+        "libabsl_log_internal_nullguard.so",
+        "libabsl_raw_hash_set.so",
+        "libabsl_status.so",
+        "libabsl_cord.so",
+        "libabsl_cordz_info.so",
+        "libabsl_cord_internal.so",
+        "libabsl_hash.so",
+        "libabsl_synchronization.so",
+        "libabsl_time.so",
+        "libabsl_time_zone.so",
+        "libabsl_str_format_internal.so",
+        "libabsl_strings.so",
+        "libabsl_int128.so",
+        "libabsl_base.so",
+        "libabsl_spinlock_wait.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_die_if_null.so": {
+      "sha256": "c9a054baac874147d3c47727e3c3b6a62306e059ea294f7a1a24d5ffab5b6413",
+      "bytes": 6192,
+      "sourceSha256": "bc59400f416dfd2fd91562edc695d3314b59093955b771544f12d7559eb149f3",
+      "needed": [
+        "libabsl_log_internal_message.so",
+        "libabsl_strings.so",
+        "libc.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libabsl_log_internal_message.so": {
+      "sha256": "37bd675822c51ad5baa7c4c21452636a9554d4dcf74b542065838e6f5ffdf6b9",
+      "bytes": 78264,
+      "sourceSha256": "63d1d273ac6cfd75bc000db48b750b90b17b402a911dc1276a20891f0709a3ca",
+      "needed": [
+        "libabsl_examine_stack.so",
+        "libabsl_log_internal_format.so",
+        "libabsl_log_internal_nullguard.so",
+        "libabsl_log_internal_structured_proto.so",
+        "libabsl_strerror.so",
+        "libabsl_log_internal_log_sink_set.so",
+        "libabsl_log_internal_globals.so",
+        "libabsl_log_globals.so",
+        "libabsl_log_internal_proto.so",
+        "libabsl_time.so",
+        "libabsl_strings_internal.so",
+        "libabsl_throw_delegate.so",
+        "libabsl_base.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_examine_stack.so": {
+      "sha256": "f82c7bd0d74ab70de994fc97fcc9945d057ff6c6bf69b69ae4930a26ba85cc40",
+      "bytes": 6920,
+      "sourceSha256": "57390d37d02a19649804b5c49294c729d24fad810ad5c974d7984dcf711d2873",
+      "needed": [
+        "libabsl_stacktrace.so",
+        "libabsl_symbolize.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_stacktrace.so": {
+      "sha256": "35eb8ad6d428d8c7be04867f2f44b54b5ae11189387e818aa5a17f87968c8454",
+      "bytes": 6856,
+      "sourceSha256": "457d5a89721401ac17213f4677fdd621df7b1e0f5261b91740e1590acacba493",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libabsl_symbolize.so": {
+      "sha256": "ae3199874e9328dfb73ebd09cf90c45a2c44c8bcfa71a389d9c6d662593dd73a",
+      "bytes": 5080,
+      "sourceSha256": "ef8a9a9dc6c3856e1680de27c91958a4b0588f18b69bd93fa3accc340c228f58",
+      "needed": [
+        "libabsl_malloc_internal.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_malloc_internal.so": {
+      "sha256": "efd6e5223eaaa462b388e2318ddc1c35826c8742b2578ebdd9ad91a4de9d2ebd",
+      "bytes": 46136,
+      "sourceSha256": "d537f5d290a30d0648c3aecf77b7e57ca6d966052ada4fdbea9b20a10284d21d",
+      "needed": [
+        "libabsl_base.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libabsl_spinlock_wait.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_base.so": {
+      "sha256": "846fa0bf53c2712411d1b6529230f85718fa933138f53edc1e8b2d9847f8951a",
+      "bytes": 43320,
+      "sourceSha256": "b5f177a06b2bf17c78435c1605924bd5620e5a79f30459e7a6184bc1cc66124c",
+      "needed": [
+        "libabsl_raw_logging_internal.so",
+        "libabsl_spinlock_wait.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_raw_logging_internal.so": {
+      "sha256": "5c9374d0a3a35cf3aaf97d9b1072deb9f65a1187e7ff1810fb442441d6fb5ed8",
+      "bytes": 36320,
+      "sourceSha256": "3a503c4fdcea77910a5013f503ea4f0af62f5da5ee0623e5b36007c716e3ad77",
+      "needed": [
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_spinlock_wait.so": {
+      "sha256": "e823048560fd3c549f70d9cd69893aa62223331e4f4a5920e2c763a5a826977e",
+      "bytes": 34256,
+      "sourceSha256": "506a085e40238a832db930eb9f1aeb6d898c73cb240211a70df49fed78986e26",
+      "needed": [
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_log_internal_format.so": {
+      "sha256": "bed346fe322cf3adb15e99c9f5b451744d41638a634a56c25694885a68dbd576",
+      "bytes": 9256,
+      "sourceSha256": "d29071f0bd9a6292c73bdacc456f92c82b18aafa5c508de824318f63c735baf1",
+      "needed": [
+        "libabsl_log_internal_globals.so",
+        "libabsl_time.so",
+        "libabsl_str_format_internal.so",
+        "libabsl_strings.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_log_internal_globals.so": {
+      "sha256": "94ac3ab0cf9ca8352aeb44927f1f8cb71b56575ef49271b54138611fccbdeacf",
+      "bytes": 8808,
+      "sourceSha256": "144c3272d5cf332b4bc2449b39451e3a56c0e8c7c1d4f27c74698ee1e47a0ac2",
+      "needed": [
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libabsl_time.so": {
+      "sha256": "60f6fe76ecadc20bbdf1bea9315d28e8ef59abb6bf4bf98aaa96ed62df720724",
+      "bytes": 92680,
+      "sourceSha256": "537861ae4280cd0677377ca017b0ecd90c8c35d15b3d18b02126dba8f4cc00ba",
+      "needed": [
+        "libabsl_strings.so",
+        "libabsl_time_zone.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_strings.so": {
+      "sha256": "6de74beee387260802b4b54b51394ef429badf3a900131ddf00ec39fe5a226e2",
+      "bytes": 162416,
+      "sourceSha256": "9d5bf81075a89a15ee58c0fc9d778c34eb9b8f38ba50746f0760195c180bebc0",
+      "needed": [
+        "libabsl_strings_internal.so",
+        "libabsl_throw_delegate.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_strings_internal.so": {
+      "sha256": "b39e110251392cc0519bcb5c3ccb6f22f45548e118c9a60842fdbdc314224d18",
+      "bytes": 38120,
+      "sourceSha256": "05c308c20afdb9e372a411a91b7279d32ee13b907e9a4c63d5cceb0c03bee0a6",
+      "needed": [
+        "libc.so",
+        "libabsl_raw_logging_internal.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_throw_delegate.so": {
+      "sha256": "25545b88f33ba40ba5e654f44686a6e43ac2e164abeb9a534bae5f94e256bf19",
+      "bytes": 42040,
+      "sourceSha256": "01aac4721151ee412f782b34761c03d06451eb3562adeb863b1b9cb0bb97ba91",
+      "needed": [
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_time_zone.so": {
+      "sha256": "ec3f8dc0c604f335e47c7f41e13990caec1ddcc1298e675baba9e80cda900e6c",
+      "bytes": 138664,
+      "sourceSha256": "e5b127eb8467a5850fba9e4f0d2d3129be4809f5b0fd7e0feed3b90696d039df",
+      "needed": [
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_str_format_internal.so": {
+      "sha256": "1ccf391a192e2fd60a2a220f0b5736bbc429ab7be9453b14f7d2110e62ca06a2",
+      "bytes": 132312,
+      "sourceSha256": "2fa948ec927a9fb8804390d5d0514468a546d76ec105d6bca5e93b0394f975e6",
+      "needed": [
+        "libabsl_strings.so",
+        "libabsl_int128.so",
+        "libabsl_strings_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_int128.so": {
+      "sha256": "11930f5a4e0116617d8dcba63590f7f884a10d22f1400c577b7b1a6ed30a2704",
+      "bytes": 44984,
+      "sourceSha256": "ed0716a64bf2c93a4850e910f95b789fd48d898287d08b7d77c35ef02afbc281",
+      "needed": [
+        "libc.so",
+        "libc++_shared.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_log_internal_nullguard.so": {
+      "sha256": "c83b2ee942a41e18044897df4a7f6551d2b85a4bb5391be5095ed922af2ad270",
+      "bytes": 4312,
+      "sourceSha256": "14a3ecef381306759067ab0634c77531c40d863cdfa8d2ab33d2062955e259cc",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libabsl_log_internal_structured_proto.so": {
+      "sha256": "4dd4647a6a023008c899412061298693346befa943b1b77262b582b3fd934b5e",
+      "bytes": 7272,
+      "sourceSha256": "3a79e9968290895678c545d4d4010d2bb8222b0cdb5479203c6dab19df9a4534",
+      "needed": [
+        "libabsl_log_internal_proto.so",
+        "libc.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libabsl_log_internal_proto.so": {
+      "sha256": "5a745bc33b6966f4a06bb5e14cc165261a906d0bd2e8a3de2d0904a67bfec665",
+      "bytes": 7464,
+      "sourceSha256": "42fd59832986c126d4cb5490e6ea6de6d67827ff816761d63a31886a91ced61f",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libabsl_strerror.so": {
+      "sha256": "278fd5217b3a5329c47f9536244e710f442d27c8135853e9b34d96d0cc4a6a02",
+      "bytes": 34736,
+      "sourceSha256": "60b87bd0695d67ed353ea13a78ed031a8798cb29f23dbf0d27ebe08b040e41c1",
+      "needed": [
+        "libc++_shared.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_log_internal_log_sink_set.so": {
+      "sha256": "36263d53339066d35535728ecbe590a533db58fa47d1f5ce3b7bad1de3cfc968",
+      "bytes": 45336,
+      "sourceSha256": "04edcbb500bd452ed7aa6b63d46afd78ab38035446559b95527111321b1574f1",
+      "needed": [
+        "libabsl_log_internal_globals.so",
+        "libabsl_log_globals.so",
+        "libabsl_log_sink.so",
+        "liblog.so",
+        "libabsl_synchronization.so",
+        "libabsl_base.so",
+        "libabsl_raw_logging_internal.so",
+        "libabsl_spinlock_wait.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_log_globals.so": {
+      "sha256": "f677be18aa22800e0353f2f291e7e98e31bdc4b5ead0fb13f322df3e2c012315",
+      "bytes": 41768,
+      "sourceSha256": "a4c42b09c6586bfc51c3a4067c0261a723c56d020605eef9049edc85dde42cb8",
+      "needed": [
+        "libabsl_hash.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_hash.so": {
+      "sha256": "cbafad452df570bec7b491f7dbde21861d315f3995f43bfdeef5c2b1321bbc4e",
+      "bytes": 6544,
+      "sourceSha256": "878e48d66d4347c2acdf3a07750ad115fc62d051e5fe1ddbb188bb81408dd580",
+      "needed": [
+        "libabsl_city.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_city.so": {
+      "sha256": "eee1889d5260355d2e270ad6b08e3e906913838f3fb06c6b722935217b4a2472",
+      "bytes": 6568,
+      "sourceSha256": "5c3e20e3d2605821241a7f3ef916adbedbb46444fd49edeba1b79b6d5d0f4942",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libabsl_log_sink.so": {
+      "sha256": "b390b2d52206633c9b9581a22801e981ddf960df8bf8debbff71675fbf6c7889",
+      "bytes": 5072,
+      "sourceSha256": "f788a5fd5013b54a9e8135f1b1a7604aef0df80a843159f470aa2c4217b4990c",
+      "needed": [
+        "libc.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libabsl_synchronization.so": {
+      "sha256": "56f0ea2bbba8978098d3a939a501b860b194168f460f46ee3eca14082a8f8086",
+      "bytes": 85552,
+      "sourceSha256": "937208694f704c786dbd5f102843b1ec091ee6a8df694bb71d60d0c4d60307c0",
+      "needed": [
+        "libabsl_kernel_timeout_internal.so",
+        "libabsl_stacktrace.so",
+        "libabsl_time.so",
+        "libabsl_tracing_internal.so",
+        "libabsl_malloc_internal.so",
+        "libabsl_base.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libabsl_spinlock_wait.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_kernel_timeout_internal.so": {
+      "sha256": "a2fdf7166426fd39e3ed406398b09b8fd866ce3b4c8ba6c1d91777188fbbbbaf",
+      "bytes": 9440,
+      "sourceSha256": "434fd519616aff404b0f1e75f520eadd006c044e3dc1db31749fcd9a4de409dd",
+      "needed": [
+        "libabsl_time.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libabsl_tracing_internal.so": {
+      "sha256": "dfa39d40c1d83addc59fd3c64ca38b043a90a60e03cd88f519a761bb299f6cdf",
+      "bytes": 4352,
+      "sourceSha256": "cbe054898ac1e15c7406ba2de85661a6d9250e4aaa51e1c1fba88589ac829583",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libabsl_statusor.so": {
+      "sha256": "e1644e88fba10411a61f0d6a2a64113af3173bc4e0cd1dac0ebcaa3638d1454e",
+      "bytes": 43312,
+      "sourceSha256": "efb4027752f3f2a31b3f1d33799af3d5cb4f44407b2b9367de3f1261e0b5b58c",
+      "needed": [
+        "libabsl_status.so",
+        "libabsl_strings.so",
+        "libabsl_base.so",
+        "libabsl_raw_logging_internal.so",
+        "libabsl_spinlock_wait.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_status.so": {
+      "sha256": "96a0cb933d157e4e4873ef8de05f50957c2e4e6096bc5b90bee36fe2b2e27c22",
+      "bytes": 72312,
+      "sourceSha256": "507ad72b792936a5ae3fd90926d264ccb920ca87e22a2b8e5c395e8de170803e",
+      "needed": [
+        "libabsl_cord.so",
+        "libabsl_leak_check.so",
+        "libabsl_strerror.so",
+        "libabsl_cordz_info.so",
+        "libabsl_cord_internal.so",
+        "libabsl_hash.so",
+        "libabsl_strings.so",
+        "libc.so",
+        "libabsl_throw_delegate.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_cord.so": {
+      "sha256": "cec4ded8ad2bc8af87d2b9f46824ae179f357b9c678b26c41fedd6ad8352edee",
+      "bytes": 113296,
+      "sourceSha256": "714265b88db187e1b1c020f7091b8294893802f85599c4c0a3c6f2ff32a05a07",
+      "needed": [
+        "libabsl_cordz_info.so",
+        "libabsl_cord_internal.so",
+        "libabsl_crc_cord_state.so",
+        "libabsl_cordz_functions.so",
+        "libabsl_strings.so",
+        "libabsl_throw_delegate.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_cordz_info.so": {
+      "sha256": "789072b5d6ce06e84a0283e0cfce5a50f284f2be72785406287c053074f916f2",
+      "bytes": 43944,
+      "sourceSha256": "94080e40464e5e44ed521d41273c98303304bf9ce74b8071156ceffdb8e06520",
+      "needed": [
+        "libabsl_cord_internal.so",
+        "libabsl_cordz_handle.so",
+        "libabsl_synchronization.so",
+        "libabsl_stacktrace.so",
+        "libabsl_time.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_cord_internal.so": {
+      "sha256": "46da04c78d0902bf5a68395d06b62ec4ca4bf229b36584760a450a01643eb6d3",
+      "bytes": 86448,
+      "sourceSha256": "e434557c44ff910f7070c4e7a7042026b12311b8c6ca029982bd57bb5326b4b9",
+      "needed": [
+        "libabsl_crc_cord_state.so",
+        "libabsl_strings.so",
+        "libc.so",
+        "libabsl_raw_logging_internal.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_crc_cord_state.so": {
+      "sha256": "33c86dba1a54bfb0918b2dc8352f26c9b13e41de0d66c843a340db141331b6e7",
+      "bytes": 46984,
+      "sourceSha256": "36e1d8ad79172db673ffcfbe38372312d77bb00c92e4f68242be3ed1e29eeefa",
+      "needed": [
+        "libabsl_crc32c.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_crc32c.so": {
+      "sha256": "c457d15547cc5ea92a09d6049768c7039dba7e9028556ecaf76b6521264a67c8",
+      "bytes": 40080,
+      "sourceSha256": "a702473871f0efb1c7c4e6de9ba0fa0885483c2f731912384d58dbbedaee27aa",
+      "needed": [
+        "libabsl_crc_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_crc_internal.so": {
+      "sha256": "c5c1c2fc69bdbf788105cf5549cad65d32f7787b11fc96f4c3732033d05b2ba1",
+      "bytes": 41936,
+      "sourceSha256": "c7ced5ac5ed9a528d0f519ad97c0f7e9e86222f334c2f065a79917cd3b905fb4",
+      "needed": [
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_cordz_handle.so": {
+      "sha256": "8163eab443fa8a87761f4db5318065000e02ddc7fe224b7eed3b19203e7c8d07",
+      "bytes": 38320,
+      "sourceSha256": "00feb8eddbc355a66c319b7db7403d07550ab61141d0f19fe87b80a965f31189",
+      "needed": [
+        "libabsl_synchronization.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_cordz_functions.so": {
+      "sha256": "f1fd1de0c067ffde7b32c263b849d5a52589f923ae5a82ab46db3dc285ddb12e",
+      "bytes": 6056,
+      "sourceSha256": "099286c7d80bcdb8bc7f026b6aacc9934ee060088df55ea50921ed23bb1bd59f",
+      "needed": [
+        "libabsl_exponential_biased.so",
+        "libc++_shared.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_exponential_biased.so": {
+      "sha256": "16f934ed3161165edae386d1ac3c1c56896ac718dffbfd98783f544f508058df",
+      "bytes": 7344,
+      "sourceSha256": "39524ce079a04ffff81dd3ab9ea049e974fbb59e758cef74f19b844a36fef63c",
+      "needed": [
+        "libm.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_leak_check.so": {
+      "sha256": "c54ca0a5ecd66bb2102551f76f376921ed81cbbcce2cdbad3d66b16f4463abf2",
+      "bytes": 4896,
+      "sourceSha256": "18d3ae199d0b1c14e06bd247b22532a4447c5073ab590a59b47df49afd961aff",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libutf8_validity.so": {
+      "sha256": "b1b285ff2274dbc2ae917eaac72ad57fbf6208d0accbcc93bf22753a4c23236a",
+      "bytes": 7088,
+      "sourceSha256": "bb74924cec6b1326d3a67768208fa41c5db74c45cd72cf353a99f8318ee12c97",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libabsl_log_internal_check_op.so": {
+      "sha256": "1ecfc0acf7c973b03cb2a0c1e71d01eeac6fc428de6d61ca5b9c8dd88faa3277",
+      "bytes": 53624,
+      "sourceSha256": "d7fbac5ed282c3bd4b8cf0755e6b4c9726570298689d3e0404e4e1c1984a9dd7",
+      "needed": [
+        "libabsl_leak_check.so",
+        "libabsl_log_internal_nullguard.so",
+        "libabsl_strings.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libabsl_log_internal_conditions.so": {
+      "sha256": "f4649ec767be0aa4d763411f70afd832eb31358fd505a57eb87903bdc0903dc7",
+      "bytes": 7176,
+      "sourceSha256": "c00052f7da1bafb982ae2dfe5a4c4cc6398be6860cb9b4858dcea0bab36542f7",
+      "needed": [
+        "libabsl_base.so",
+        "libc.so"
+      ]
+    },
+    "libabsl_raw_hash_set.so": {
+      "sha256": "a2f256ce1cc641399071fe17fcb9dc2ef3617b85da42b55f0023e6b2ff9e1f3f",
+      "bytes": 33328,
+      "sourceSha256": "672c04053111b5fe89c3d108769e24fb9cd6a11cf1ce77cb04f9658b847fd3b8",
+      "needed": [
+        "libabsl_hashtablez_sampler.so",
+        "libabsl_hash.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so"
+      ]
+    },
+    "libabsl_hashtablez_sampler.so": {
+      "sha256": "a21afdcf383a232f2203680b3c0eb471be7a37144391fb8a6de9f25e8601f67e",
+      "bytes": 44032,
+      "sourceSha256": "3ed130301c4da4259a44a970049d32839e6bcbf2a037f56083d8a9fdea029f9f",
+      "needed": [
+        "libabsl_synchronization.so",
+        "libabsl_time.so",
+        "libabsl_stacktrace.so",
+        "libabsl_raw_logging_internal.so",
+        "libc.so",
+        "libc++_shared.so",
+        "libdl.so"
+      ]
+    },
+    "libtool_codex.so": {
+      "sha256": "1bacb3faaa57d01c0431278f489a0ae341548af00ec02bf0b325ea58f61f47b6",
+      "bytes": 268045528,
+      "sourceSha256": "8813c8d8a4cea2eeba271b72ab22f49628b184b24ab18dbef06b4ce41e9a8d39",
+      "needed": []
+    },
+    "libpyext_codecs_cn.so": {
+      "sha256": "a2d106eec2c748a94f5a50bd7d2feaf4902794dc29a1b3d74a83847cf8f19e11",
+      "bytes": 147032,
+      "sourceSha256": "04c6fb33ad2990571d7f1b1fa74c803dfe38e4565defc5436c9af471f34f7967",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_codecs_hk.so": {
+      "sha256": "f2ba1bd78ecfe0b0227801f709c47757004a773a1ed48e4675d9c4237db2fa15",
+      "bytes": 155952,
+      "sourceSha256": "5b2e4ab1a2b6d7df0114521b65837588417abae74f4821f892282be384b1d571",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_codecs_iso2022.so": {
+      "sha256": "e704eb080112c45b8d291835b8f790c5660c95f4e22fcf030f6d7718ece2bcbe",
+      "bytes": 22264,
+      "sourceSha256": "3f00b1096cd9d96b06e6ccefecf61aa696766e8373f2bc3eaea171ab4ea1d3ba",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_codecs_kr.so": {
+      "sha256": "6ddd3777148e90eda911eb75e20624b0a9a85e6e1486b09e792bb6d55250e445",
+      "bytes": 134088,
+      "sourceSha256": "749ab0d5c0e14fad67ec8f97a24adcfed8ebc33919925a95f98a9f05f01981d9",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_codecs_tw.so": {
+      "sha256": "324421fbd4c51ea0783d029109230d5e7372171e006a425db69809c28b26a02f",
+      "bytes": 109496,
+      "sourceSha256": "3e0397aea75932b677b17bf77b89ddd722408ee4dc81ba7ee0e01a6b2de4035d",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_csv.so": {
+      "sha256": "4f1adaef9fd92e17c0a1edea57ebf8916110179c181b13489326a9b3351d047e",
+      "bytes": 34728,
+      "sourceSha256": "fd4c3e13b256b78e7284cf57a417e8b8b24a72c06dffa8ddc6ef9c37a3e6680b",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_ctypes.so": {
+      "sha256": "4e435dd894b8479de34bb442dd189dd2bb2e092749ed76f88ca7095ea9a57a41",
+      "bytes": 142568,
+      "sourceSha256": "27626c0d1e62abd1982feebb4080c72b462140224ae0e60df791caea0ff15a14",
+      "needed": [
+        "libandroid-support.so",
+        "libffi.so",
+        "libdl.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_ctypes_test.so": {
+      "sha256": "be39c097c8712ca0672311ee2cce95de4ac2715f4a6f146364f9836ba7e24d5a",
+      "bytes": 88848,
+      "sourceSha256": "690f367d3055aa39cf2b48ea30baf52baba2d6aee72e6b06119e6c6852952613",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_curses.so": {
+      "sha256": "1f929490381eb3e0b6d358c17a2434a7d96ea7383aadef92646d0c2cb02207cc",
+      "bytes": 143928,
+      "sourceSha256": "691ad6af824a630fdabd1afd902fbcdd1d83aec98fa0dd75270e256a8f34e583",
+      "needed": [
+        "libandroid-support.so",
+        "libncursesw_6.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_curses_panel.so": {
+      "sha256": "11b6948de0b3296790beeab1dd364eacb078d9ff6aa1dce4038a1f12ba5e6a90",
+      "bytes": 19648,
+      "sourceSha256": "80be166023690dfe54fbc56acc28b9e6ab34c332d08a46859062c95574fe64e2",
+      "needed": [
+        "libandroid-support.so",
+        "libpanelw_6.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpanelw_6.so": {
+      "sha256": "9160922ac627b6b2bf9b095d1a384dd1aec3336fc07acd29e6a481cba24267fd",
+      "bytes": 11040,
+      "sourceSha256": "61bdf61c435c443eddf2014f5d345685fedccdea71b6a0f91afe08357a23db56",
+      "needed": [
+        "libc.so",
+        "libncursesw_6.so"
+      ]
+    },
+    "libpyext_dbm.so": {
+      "sha256": "5cf20372d0007316e867f7e97bd8d4f15998bd47f9fb8fc91b38d744fc2d554e",
+      "bytes": 16568,
+      "sourceSha256": "11b9c398eb9141cc789a8c8890281b6cb4ca0d2c6c4c90f699cee6e8a1c2f816",
+      "needed": [
+        "libandroid-support.so",
+        "libgdbm_compat.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libgdbm_compat.so": {
+      "sha256": "93fd047a67f8f622c98024fd554b87ce59a70c20d09e0309d6bd7e53fa39c4dd",
+      "bytes": 10056,
+      "sourceSha256": "f6c80e0bb1dcdf470d64a89f114fc21a7e018a520232fd635c261843f0573b18",
+      "needed": [
+        "libgdbm.so",
+        "libc.so"
+      ]
+    },
+    "libgdbm.so": {
+      "sha256": "9e75ccb309ac86301549764f8583fa9b637e89790faa335d4867e02f7b575600",
+      "bytes": 64280,
+      "sourceSha256": "38a4de2bf30accf30a5c304e334cfc8711418fa49237d38664336493e5b3ba67",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libpyext_decimal.so": {
+      "sha256": "da3ab008d41da88e1a3317f285f9ade2e62721089fe9e79bc0b4091ca943ef9e",
+      "bytes": 356944,
+      "sourceSha256": "68a53a322908e75c1699e02943a8cbb9d1612e3fa9b150e0fa844be9f3b1ccd2",
+      "needed": [
+        "libandroid-support.so",
+        "libm.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_elementtree.so": {
+      "sha256": "fe8ee4563eb1c328dc741dc304fd2e1ed7af5e4f1d268067d588f0b339922426",
+      "bytes": 74256,
+      "sourceSha256": "c5eb72f02fc90f318b70c15c61fe33b1650a3bb2afeb54c23442c495a9b12d6b",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_gdbm.so": {
+      "sha256": "8f63bfa6feeaab40c44b13659397ca691c769c82f3219df1ee4b5f138877de92",
+      "bytes": 23008,
+      "sourceSha256": "c0347e9f77b75fcd3337f26b6c424e7c3357627e0544330c454fe216928e9a7f",
+      "needed": [
+        "libandroid-support.so",
+        "libgdbm.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_hashlib.so": {
+      "sha256": "e4fdb1f39c1e5bfd7c84bab1f6930a067a53ed3e2352772035c4529c82f2a586",
+      "bytes": 58272,
+      "sourceSha256": "afbd84086c5d9a27ac5c6af65e4ec4cdd6e48f09ff99e64069eb8e62236a045b",
+      "needed": [
+        "libandroid-support.so",
+        "libcrypto_3.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_heapq.so": {
+      "sha256": "84431a89f4672ecc8315611b8f5cbd412ad32803700325af6cca0f7d71dc1c5f",
+      "bytes": 20392,
+      "sourceSha256": "66bab1f4222f645fd19f0cd606c593b5fd2b422192f10bce00d17176acdf1b1a",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_hmac.so": {
+      "sha256": "ac1ad4881ae71da6ea07b3d4ae8616583db54d7339a8f0fc5b2da9a97918fb43",
+      "bytes": 133024,
+      "sourceSha256": "561e548fb52a3314ff6eb37a715d0660b54cdaa2d455a3a3561c850de6ba3f07",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_interpchannels.so": {
+      "sha256": "148f1b63ddc17f63af051b5c0443db29f4db0c02daffe45b330e15103ccab3d7",
+      "bytes": 43752,
+      "sourceSha256": "9a7b7ff1533e68dc40b432ef26608fb2e652043aa4adf98c74c058591c462d36",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_interpqueues.so": {
+      "sha256": "ebe79d8188890d4dc49d6eaaef86054fb30d04d50311cb68c1a32293b5581cfc",
+      "bytes": 27864,
+      "sourceSha256": "a14a0b28544a28ba7acdc901f4fb2064301489168d009f821cf3acdde7c36f79",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_interpreters.so": {
+      "sha256": "0cc04c2e99faf9fb6d5121526897eed901f9c558af57e535be6b9797a1a40ee2",
+      "bytes": 34576,
+      "sourceSha256": "839b39aa9f0893196e95bbbb57f640313a087af20c71325f7a90a95b46d20e28",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_json.so": {
+      "sha256": "6fd601cdebff05b1e5709ab29d88307878affe338bc00c9223da17daa0c973a4",
+      "bytes": 40000,
+      "sourceSha256": "0ea16c04d49395a86dfc1c7123e0c7ed9d096cd8d38a9c539ffd44f678c93c2b",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_lsprof.so": {
+      "sha256": "e25d3dc82aa4d420bc5707589e4a7995995f3bed02322d89a517745cd99955bc",
+      "bytes": 27528,
+      "sourceSha256": "03e698d08eb1d3a0dba9490f51952b4d791777a8e8e93440a0a205cf2f62b858",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_lzma.so": {
+      "sha256": "98ac770bbcd5999c83af0daa5594be00c8097230ca7d3b27642467da1ef5258b",
+      "bytes": 34320,
+      "sourceSha256": "5bb33581e155d672753c36ad2a2cf48ffe19ac47ffede4c455da78c744899559",
+      "needed": [
+        "libandroid-support.so",
+        "liblzma_5.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "liblzma_5.so": {
+      "sha256": "ded2688d8edd30dc95fec37171a7eacb02e3deb013249e919e636dd62521a04f",
+      "bytes": 159976,
+      "sourceSha256": "ba3a66a34cb61713f004c3c35d808007cb41c21a8f396e0678219fef1ec25e71",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libpyext_md5.so": {
+      "sha256": "037b7794076df678a03f3ba492ccf4d0db39e0465972711f9fbb6eebf1304ad6",
+      "bytes": 21120,
+      "sourceSha256": "7b80e93f134343553cf18c4f054aec15004465f0cee835fc4af6d95d38d14ef5",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_multibytecodec.so": {
+      "sha256": "7c5c336435f431efab99ac40cdac0b970c655e631da93cb73b87b8ed4662036c",
+      "bytes": 40488,
+      "sourceSha256": "88f6cb679a71342d4d2df121c07e2f7374eed3b7cf804722da2e7c8b5087a391",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_multiprocessing.so": {
+      "sha256": "f084a2b1113c6bcb6e3a12912d921421dbc2ee0d67d97d7e0d0a014eecc7f17d",
+      "bytes": 17936,
+      "sourceSha256": "e3e2de7e23d9d651eec12a91ddc4840ce9af75131c15c1767fe7b69eca6606ef",
+      "needed": [
+        "libandroid-support.so",
+        "libandroid-posix-semaphore.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libandroid-posix-semaphore.so": {
+      "sha256": "cc15b4add1a28008cd4033acdb4f4e4d5b2abf63786a592983bf260f8a3c8a71",
+      "bytes": 7016,
+      "sourceSha256": "bee8c749ff4a87c06c4f6316a380f179f607de7d904418a20d879eea74be345e",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libpyext_pickle.so": {
+      "sha256": "8bcff44f232e6fb9508a5ed8a9521fee1604cf038112554407c3c62c0992cd60",
+      "bytes": 120424,
+      "sourceSha256": "6b65b715316c9fce43e4aa00170060a6a760caffbaa6bbe375eea91c73be1fa2",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_posixshmem.so": {
+      "sha256": "49f90d2aca651e0ede50ad81b023adf090bc913ca02da822bfd123d664c4dfcf",
+      "bytes": 9064,
+      "sourceSha256": "b690798315ea26842fdbd44b48f91b3924c85b9e8504d4d2e1089713ff65a3b6",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_posixsubprocess.so": {
+      "sha256": "0acb802b3849288c84b186f8c98c63efebf3c3759523e93e4b0a239b3d2fb0dc",
+      "bytes": 19888,
+      "sourceSha256": "a8bd28c055801d6db1d94f97bb7a12b5b9eb7fe68bff1e67b46911033fc66318",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_queue.so": {
+      "sha256": "66e5a325cab8091a709b2d7ce59647a1061291863dff3fd77f2a890c22eb3d27",
+      "bytes": 15824,
+      "sourceSha256": "6d002c884a3661fd2c9bfc894bdbe02671a6b2166c6478a443b3c058a86c5929",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_random.so": {
+      "sha256": "26249f31fb749e782f2a5cbb2e73f6dd2ad83eec320417e9e174f96d73423393",
+      "bytes": 14376,
+      "sourceSha256": "74894f48920ebda8087dce78ee22cceda0929ecd50ced61159774e5da6d15083",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_sha1.so": {
+      "sha256": "b94ee1c5495cebd2b2f221f43f7b92f19a577ebca68743962c98df8cd5c3d52c",
+      "bytes": 18256,
+      "sourceSha256": "b0bb9e3abf30e9101aafc124845dfc676d96b7e4c99ca29c82abb6ee83731fe4",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_remote_debugging.so": {
+      "sha256": "58e687527fd327b8904d76ad388169775559ae32b770773ae521b6c9711d4788",
+      "bytes": 70120,
+      "sourceSha256": "0da544835b19c79b59a8ce6c5726fd74a8cfe6b51c3aecb66d783f6ec2aaec53",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_sha2.so": {
+      "sha256": "3e05e9aaf7b9544c076718f4e09258b79bec12a40a121c3a7c7c1a017c64df8f",
+      "bytes": 49704,
+      "sourceSha256": "e24f7bb2cbd0b3f2b12539188ca9981bfb433fe1ba147be338ab451ad9080f28",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_sha3.so": {
+      "sha256": "4aa745cb81828d38037b714cffdaf283e1d7025497bd12d6984cdf9b3aa78248",
+      "bytes": 41528,
+      "sourceSha256": "3876c09e35e90b804c98c7dec729b5f386d6e3f60ed87cc218182a39a7484971",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_socket.so": {
+      "sha256": "6593e734fc3ad2d2c8e74aee38fff2248555104a1bd880f5d2ee405ee47733b8",
+      "bytes": 102400,
+      "sourceSha256": "e34ef586b36e29f42819bee51ea7b147029861e7ffaa3eeeb5675f691faf8604",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_sqlite3.so": {
+      "sha256": "1f604f240bca873012332995ca2b58a34447da551534328feb6f726efb9bcf6e",
+      "bytes": 128024,
+      "sourceSha256": "8f8f89571f3c1b0617fb864ab44f01c728f2f18fe2be32d1617328e751ae51d8",
+      "needed": [
+        "libandroid-support.so",
+        "libsqlite3.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_ssl.so": {
+      "sha256": "a44d2017a98f147ae9e3e9a600c2b260d54033cf75e2b426ae6acebf3aad995a",
+      "bytes": 235704,
+      "sourceSha256": "67046a17069238d6a4c90f3a6d141667751784919fe794e3e69c1fc1ef7745ee",
+      "needed": [
+        "libandroid-support.so",
+        "libssl_3.so",
+        "libcrypto_3.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_statistics.so": {
+      "sha256": "3deafb8b64d051bf5aa6d279708b2803945668e6053b3ad573bf7f56d8c09488",
+      "bytes": 7136,
+      "sourceSha256": "c07654389d3765f843c63c81ef30c9529bd377fbeb68fbf469ca8b4ffcb05ac7",
+      "needed": [
+        "libandroid-support.so",
+        "libm.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_struct.so": {
+      "sha256": "d0c81156e8560509a9f64ce3fb0ff168f8301561fb070e4331f401f89f13a16d",
+      "bytes": 52928,
+      "sourceSha256": "a00a9e4d4da69eab2633c22ba9c079dab2a8eea6637488acc9124b84a73d8462",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testbuffer.so": {
+      "sha256": "be479da4c454bae49a7fd1b503eb0510608024df0a3478f75718014502683cb5",
+      "bytes": 41816,
+      "sourceSha256": "88e46269e7e90a46bc33b5c23f97792c9b9f0854e47654988d91e7270b4c1ef7",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testcapi.so": {
+      "sha256": "ff8272d8a2cfb16b16456dc6a81c80beb112c6e3a72f75ad397f4f1e34e38b6c",
+      "bytes": 380616,
+      "sourceSha256": "ee692f6c8e78365b6e61d1622c25e6d6856492b462805b4c842b5f05912d7280",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testclinic.so": {
+      "sha256": "39e755439291a03424f8489a05a2d06bfc5103974a071051d3d9539152fbbffb",
+      "bytes": 116296,
+      "sourceSha256": "66dc7da822feef420cc207c02aadabb92f778b16424e2494836a638c05f0e1d1",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testclinic_limited.so": {
+      "sha256": "39cfd67a7a1fe76fd94b3ea08e4c0beb68500b7afec8cf4778904b0cd9ea1ab3",
+      "bytes": 7752,
+      "sourceSha256": "72a6998eec7cac2f175684731e38769233499b13ff934ec6884b0da815c64328",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testimportmultiple.so": {
+      "sha256": "5d9bb697f76eee44ceb14bb062eefc14a5c123178452178b78c75f09f7a53779",
+      "bytes": 5320,
+      "sourceSha256": "bc21f377056197bfecf0584ee9c87354fe87ba9d8ce7de72543b9597c4a64258",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testinternalcapi.so": {
+      "sha256": "673ad4e3b5ca2bc5dd110cbe760bf5e93e2993689a680d57de256169d323079b",
+      "bytes": 95664,
+      "sourceSha256": "b5a5f63de102d2436707084c0521c1d04dccf90e49ab17cc592ac263a45b6df8",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testlimitedcapi.so": {
+      "sha256": "844c51b6e06da40b826d44610132a7178cc3a709df1be4b9f8a8611f5c69aba6",
+      "bytes": 203984,
+      "sourceSha256": "80dbeb02ee72ef7a403a24d8e316f4fcda5d81a4a3abdb669a4642cc731ee539",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testmultiphase.so": {
+      "sha256": "7feae133736fdb220990d0806be9fb433854f9954642ab3939415fccc0c9b182",
+      "bytes": 26872,
+      "sourceSha256": "ea21ef1fbaef8c2d91352482182307f55794bc2221325ca089d8959d6c86acbb",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_testsinglephase.so": {
+      "sha256": "7c8a1e65d859e7d23a7bf56f36696345f96504b66fda7f727b91deaefa82cfb6",
+      "bytes": 15056,
+      "sourceSha256": "193eb451bb46e7db1a008268aeb2f36b77d25d8e130802c5557e2414a197e512",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_xxtestfuzz.so": {
+      "sha256": "17c1b5f21b0046de094d2a09fb9b3500fbc59c64cdac840c165792affd811bba",
+      "bytes": 14520,
+      "sourceSha256": "b0871ec6927dc234fcea657db95268b34e9b6813340f10210d9081655347b3fb",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_zoneinfo.so": {
+      "sha256": "19a9c5dffdf7d67c4c390d9f99fb0be74f6521e403dcaf7b9752a44222ce27c0",
+      "bytes": 35552,
+      "sourceSha256": "3f94846f36ceb8dde4c8c3423827ea936285a1c8cf3bc1b4907b04bb4323fafa",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_zstd.so": {
+      "sha256": "b186e0e45dec58e1d4e9f30fe2143c36118c0a53bec7df15aa13634733173f7a",
+      "bytes": 52424,
+      "sourceSha256": "65d023f2b219ee6a9ec055d6e525f7e27d2d8630e0363b286f7855bd7f9258d3",
+      "needed": [
+        "libandroid-support.so",
+        "libzstd_1.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_array.so": {
+      "sha256": "d0e2b3813c649095b009630687c1e1f722a614a560f7b5abbac849b76d33f866",
+      "bytes": 60816,
+      "sourceSha256": "720b0b7f940f608eb031cec238ebbdbaf74c1278b17f63d53fd82bbafe663000",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_binascii.so": {
+      "sha256": "798bd5e201fbd767e6fb77f589b653a84e2f000bb25d88e28feeee159b716ad0",
+      "bytes": 24912,
+      "sourceSha256": "b3553f75c4012a9e80dec06b37b64eabaf1b1de8c8e6a2898320a7fb1527a206",
+      "needed": [
+        "libandroid-support.so",
+        "libz_1.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_cmath.so": {
+      "sha256": "57c02dd0b8e9045258e6d25235b88646ac3537f159f4bb7cebdb4563ba7115de",
+      "bytes": 37816,
+      "sourceSha256": "c1a59938f552d54f2e4e53d8c887fd43435834c796811519ddeae9e6aee47aeb",
+      "needed": [
+        "libandroid-support.so",
+        "libm.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_fcntl.so": {
+      "sha256": "b75a6c5d614ca5172e56e58f3626414311d62f170791d1271944c69e6c86af67",
+      "bytes": 18640,
+      "sourceSha256": "2a6679c2aa7a96731772fe153550cfb836fc0aa9650406bd288b8a888627b420",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_grp.so": {
+      "sha256": "0bde0238081e26f4ab2b0d750a10e89c3fe3368f9d8939fdefd1af0e99991a65",
+      "bytes": 14448,
+      "sourceSha256": "2595c9c17fec98e0643626d57b52bd38536c5d5f54eb6c257196e5b8ec4b90a9",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_math.so": {
+      "sha256": "ae39feef5bc6f9c54d459f9d1155acc4d64aef80d5fbb41dbfd4f22156be4f85",
+      "bytes": 63856,
+      "sourceSha256": "b21bd219d70a8e3158d74810358c45b99dc56b92eac4b24a7b326e730b1c5673",
+      "needed": [
+        "libandroid-support.so",
+        "libm.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_mmap.so": {
+      "sha256": "d95e43f49d738c0adefd271ebe90302ebcfd9469182f11905da7097d4d91847a",
+      "bytes": 31288,
+      "sourceSha256": "90bbb991a3544cece5060f092a4932624ffb3b204e0855df62cfd128096c0d73",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_pyexpat.so": {
+      "sha256": "ecabb01a4ef645ca54cac229f0d8b99df1454f2be4a0d3fd170d6f80658bab6b",
+      "bytes": 76064,
+      "sourceSha256": "7c6d0c85183428c4a4bf26cb85129ed66eb4aac6634a3c537bad3dde8e89a03d",
+      "needed": [
+        "libandroid-support.so",
+        "libexpat_1.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_readline.so": {
+      "sha256": "7d0e7c60c34aff1f5580d506d79f59c381a8625ae7b4ce4960efa83f42eee6bc",
+      "bytes": 35240,
+      "sourceSha256": "d28671756dd475ebf369dafe9ff632134cec591447c9f6f01ba8327311906d5b",
+      "needed": [
+        "libandroid-support.so",
+        "libreadline_8.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_resource.so": {
+      "sha256": "508bb5eee9a857530630e33f0334a83f661231a6e38aacf7d0ed3914199afb4c",
+      "bytes": 15960,
+      "sourceSha256": "9c3b664ed3e145d35ef3f450a03bb3668952cd4ec7b550192cfe176a0fbe1c91",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_select.so": {
+      "sha256": "a142717fa9c586362cc192abd0d08ac268433d85c4d43a8f71fe1b77e53f92fd",
+      "bytes": 29496,
+      "sourceSha256": "62a1b3dffe7c4bb143da85e907b46fc2264bfa783cf61cd64407a23a74552abc",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_syslog.so": {
+      "sha256": "0de5e8c05169264076c8f536d0d351eae29cd6a8d3565957ea937a1fb3b998a3",
+      "bytes": 13240,
+      "sourceSha256": "baefd522e576bafffe00a955831a64fad4bed6f2e381b80c4254524e9ee5ce15",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_termios.so": {
+      "sha256": "448a7f9e14629e04987dd76a22244bfb8f77676d9e45bd1f52a376a4ad3182b8",
+      "bytes": 28592,
+      "sourceSha256": "91c95f09efd147c11b4afe7da1aacd1d0ba4a79e329025df69e4452c21ea2c99",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_blake2.so": {
+      "sha256": "656fb35a2633b142141396b600874628ad6d8b2434faa57781e3b49cd09bf475",
+      "bytes": 46256,
+      "sourceSha256": "f29d2db093d323c53b8b0ea2d5ee96b3a9d89904786a3bef077be32e6969e217",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_xxsubtype.so": {
+      "sha256": "5b3fc72498a542f9d803efa91c998ad396a8f8a3c6527fda9fde307b3d5cacda",
+      "bytes": 10296,
+      "sourceSha256": "927b084bfa1acf294d5e85d821d609d630c66c1346dbba13f429362fc4495cab",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_zlib.so": {
+      "sha256": "bcdcbb2396ef4988ae35f660a2516f6145c982286c1cb96be9818f977f856f72",
+      "bytes": 44720,
+      "sourceSha256": "0b04f09ce259f44433c478dbf02934ae9dd10af22b00d8afd56ba19b26be79a2",
+      "needed": [
+        "libandroid-support.so",
+        "libz_1.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_asyncio.so": {
+      "sha256": "b9a94c5f396257599279c4fb3ba29f090f1a6eef2f948ab1f7dcbb83b0975d10",
+      "bytes": 74880,
+      "sourceSha256": "34e9f371e078df2940bcb7031a52bb7c830053627c1b5d0be363b2fe77c0f4c4",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_bisect.so": {
+      "sha256": "120bf83eb99a286e238aa7cc3617f78ac14f808126659db1a277d4d5cc3744eb",
+      "bytes": 16040,
+      "sourceSha256": "b5fbd3319b50d157b6f0281402beb74772b118a3f07966fdd86e750965e15f5e",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_bz2.so": {
+      "sha256": "97e1ff4384295bb1a8d4a4fa2565910231492455f9931d7c7373c45d7b3fd1c9",
+      "bytes": 19872,
+      "sourceSha256": "80789059b436fd0f06500ef909e2b135f5472421196bcbda83d22b6104cb4547",
+      "needed": [
+        "libandroid-support.so",
+        "libbz2_1.0.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libbz2_1.0.so": {
+      "sha256": "0497f6cf0f732d9f508b54d1b6f95a4abf5a97ac57bdd9fd78f85a2919221628",
+      "bytes": 50328,
+      "sourceSha256": "667055cac259f6a9404a24a6e927f410e2f41141709d27d5cce0071cbf525407",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libpyext_codecs_jp.so": {
+      "sha256": "725c8d143891c6fd48ad02587e2d5ae98585deea4eb5635ee6d9644cd553d129",
+      "bytes": 262272,
+      "sourceSha256": "780aae7577d1b8461f1d6ea847a668e46927a9fdf06e1d290da2b01424a65da3",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_unicodedata.so": {
+      "sha256": "aeace510c0c50de367d0dd3554e49f60eb7f0f7e65e91b02d5302a93de28f020",
+      "bytes": 744768,
+      "sourceSha256": "fb209854d154f771bad1faad249862db844e073918ed443c175e631c3ef0749b",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_xxlimited.so": {
+      "sha256": "fac7d91f798a19e33174ad72ae8a127334d0a75cacb5d688e26dd7b653d7e4f4",
+      "bytes": 11464,
+      "sourceSha256": "70719c4dcb285e3183c1886f1899cf04b13cc4ff058409bedef33df6fd7a9450",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libpyext_xxlimited_35.so": {
+      "sha256": "1abfe0c67cebb67aa6ed886fa485e47d639fea607c22d491492ac1dc41e931dd",
+      "bytes": 10472,
+      "sourceSha256": "3a65f3c53e6a4bef03bf44ab6f2ea114e9aa012678815a25e5b132f5f885b117",
+      "needed": [
+        "libandroid-support.so",
+        "libpython3.14.so",
+        "libc.so"
+      ]
+    },
+    "libcode-mode-host.so": {
+      "sha256": "7d28b996b825b13ea058af67655b619a26a125d61d4fb2985694a9c4e77d2e21",
+      "bytes": 70117728,
+      "sourceSha256": "7d28b996b825b13ea058af67655b619a26a125d61d4fb2985694a9c4e77d2e21",
+      "needed": []
+    }
+  },
+  "tools": {
+    "python3": {
+      "version": "3.14.8",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "git": {
+      "version": "2.56.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "clang": {
+      "version": "21",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "node": {
+      "version": "26.12.1",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "bash": {
+      "version": "installed build",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "ssh": {
+      "version": "10.6p1",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "ssh-keygen": {
+      "version": "10.6p1",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "rg": {
+      "version": "15.2.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "java": {
+      "version": "25.0.5",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "javac": {
+      "version": "25.0.5",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "jar": {
+      "version": "25.0.5",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "javap": {
+      "version": "25.0.5",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "keytool": {
+      "version": "25.0.5",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "gradle": {
+      "version": "9.5.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "apksigner": {
+      "version": "36.0.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "d8": {
+      "version": "36.0.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "aapt2": {
+      "version": "16.0.0.4-4",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "devkit-build-apk": {
+      "version": "0.1.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "codex": {
+      "version": "0.164.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "codex-code-mode-host": {
+      "version": "0.164.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    }
+  },
+  "sources": [
+    {
+      "name": "Codex",
+      "url": "https://github.com/openai/codex",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "Termux package builds",
+      "url": "https://github.com/termux/termux-packages",
+      "note": "Public tool binaries, adapted RPATH/SONAME; upstream licenses apply"
+    }
+  ],
+  "notes": [
+    "App-owned HotSpot dladdr filename query adapted for read-only nativeLibraryDir and writable Java runtime data.",
+    "Codex 0.164.0 helper basename adapted in-place to libcode-mode-host.so; native helper remains installed read-only and pipe-owned by Codex."
+  ]
+}
