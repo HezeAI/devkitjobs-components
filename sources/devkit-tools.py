@@ -4,7 +4,7 @@ Public CLI: devkit-tools list|catalog|install ID|check ID|updates|run COMMAND ..
 Install/import never activates a version whose functional tests fail.
 """
 from pathlib import Path,PurePosixPath
-import argparse,contextlib,fcntl,hashlib,json,os,platform,re,shutil,stat,struct,subprocess,sys,tempfile,time,urllib.request,urllib.parse,uuid,zipfile
+import argparse,contextlib,fcntl,hashlib,json,os,platform,re,shutil,signal,stat,struct,subprocess,sys,tempfile,time,urllib.request,urllib.parse,uuid,zipfile
 
 DEFAULT_CATALOG='https://github.com/HezeAI/devkitjobs-components/releases/latest/download/tools.json'
 ID=re.compile(r'^[a-z0-9][a-z0-9.+_-]{0,79}$')
@@ -198,13 +198,18 @@ class Manager:
   with tempfile.TemporaryDirectory(prefix='probe-',dir=self.root/'.staging')as temp:
    for name,command in info['commands'].items():
     # Probe output must not contain account state or secrets.
-    isolated=env.copy();isolated['GH_CONFIG_DIR']=temp;isolated.pop('GH_TOKEN',None);isolated.pop('GITHUB_TOKEN',None)
+    isolated=env.copy();isolated['HOME']=temp;isolated['CODEX_HOME']=temp;isolated['GH_CONFIG_DIR']=temp;isolated['GIT_CONFIG_GLOBAL']='/dev/null';isolated['GIT_CONFIG_NOSYSTEM']='1'
+    for variable in ['GH_TOKEN','GITHUB_TOKEN','SSH_AUTH_SOCK','BASH_ENV']:isolated.pop(variable,None)
     argv=self.argv(name,info,directory,command['probe'])
     try:
      with tempfile.TemporaryFile()as log:
-      p=subprocess.Popen(argv,env=isolated,cwd=temp,stdout=log,stderr=subprocess.STDOUT)
+      p=subprocess.Popen(argv,env=isolated,cwd=temp,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
       try:code=p.wait(timeout=90)
-      except BaseException:p.kill();p.wait();raise
+      finally:
+       # This process group was created exclusively for this functional test.
+       try:os.killpg(p.pid,signal.SIGKILL)
+       except ProcessLookupError:pass
+       p.wait()
       log.seek(0);output=log.read(65537)
      text=output[:65536].decode(errors='replace')
      if code or len(output)>65536 or command.get('expect','')not in text:raise ToolError('Functional test failed: '+name+' (exit '+str(code)+')')

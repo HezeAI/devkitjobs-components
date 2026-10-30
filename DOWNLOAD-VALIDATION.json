@@ -1,0 +1,19 @@
+{
+  "githubServerSha256": {
+    "status": "passed",
+    "assets": 9
+  },
+  "publicCatalog": "passed",
+  "publicGhDownloadAndIntegrity": "passed",
+  "publicJdkDirectRecheck": {
+    "name": "jdk",
+    "bytes": 147091352,
+    "expectedBytes": 147091352,
+    "sha256": "5c03cce7e0dfb12f212e40f0d57001a8ebe409c25eccd94720a7aa591bf3178d",
+    "expectedSha256": "5c03cce7e0dfb12f212e40f0d57001a8ebe409c25eccd94720a7aa591bf3178d",
+    "passed": true,
+    "route": "direct",
+    "cacheBypassed": true
+  },
+  "downloadedExecutionInTarget28App": "pending"
+}
