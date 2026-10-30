@@ -33,6 +33,8 @@ def prepare():
  native={p.name:p for p in (O/'app/src/main/jniLibs/arm64-v8a').glob('*.so')}
  native.update({p.name:p for p in (R/'native-tools/arm64-v8a').glob('*.so')})
  original=json.loads((O/'app/src/main/assets/runtime-manifest.json').read_text())
+ additions=json.loads((R/'native-runtime-additions.json').read_text())
+ for section in ['binaries','libraries','tools']:original[section].update(additions[section])
  extra=json.loads((R/'source/app/src/main/assets/devkit-native-tools.json').read_text())
  needed={n:elf_needed(p) for n,p in native.items()}
  def closure(names):
@@ -91,7 +93,7 @@ def prepare():
    catalog['components'][id]=info
    for cmd in info['commands']:catalog['tools'][cmd]={'component':id,'version':version}
    print(id,archive.stat().st_size,info['archive']['sha256'],flush=True)
-  backup=OUT/'core-backup-0.2.8-android-arm64.zip'
+  backup=OUT/'core-backup-0.2.9-android-arm64.zip'
   if not backup.is_file():
    with zipfile.ZipFile(backup,'w',zipfile.ZIP_DEFLATED,compresslevel=6)as z:
     for name in sorted(core):

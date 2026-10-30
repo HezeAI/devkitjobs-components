@@ -1,0 +1,140 @@
+{
+  "binaries": {
+    "git-remote-http": "libtool_git_remote_http.so",
+    "git-remote-https": "libtool_git_remote_http.so"
+  },
+  "libraries": {
+    "libtool_git_remote_http.so": {
+      "sha256": "6d5e54abc190880dda47fe57177a1f32bcbaf6aaa6cf450d2fd26d2c64930513",
+      "bytes": 2109120,
+      "sourceSha256": "841c2c3a23a808e3ffa3d1af99cad55a973d1e26b206345fd063eb3d9f5a30d6",
+      "needed": [
+        "libcurl.so",
+        "libdl.so",
+        "libpcre2-8.so",
+        "libz_1.so",
+        "libiconv.so",
+        "libcrypto_3.so",
+        "libc.so"
+      ]
+    },
+    "libcurl.so": {
+      "sha256": "1344424b3ad8fa989953bbed328c897bf565c1dcffcc6c8446a82acbccc4768b",
+      "bytes": 988536,
+      "sourceSha256": "2cf3fbda24c995fee757cacc41b708edb905a19562e40de808549629671faca9",
+      "needed": [
+        "libnghttp3.so",
+        "libngtcp2_crypto_ossl.so",
+        "libngtcp2.so",
+        "libnghttp2.so",
+        "libssh2.so",
+        "libssl_3.so",
+        "libcrypto_3.so",
+        "libz_1.so",
+        "libc.so"
+      ]
+    },
+    "libnghttp3.so": {
+      "sha256": "7ba63ffe481b646bc928cd7edbd61f7cbf43631c863f48d2f385df644225fed0",
+      "bytes": 155544,
+      "sourceSha256": "e8db2a6c16b1ef4ba0138f05d61a9e591a380728298697f511c522020051b020",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libngtcp2_crypto_ossl.so": {
+      "sha256": "02dd05b6ae990434509dec77e0f347bae85d47c72feb3f756bb1dd78f2000617",
+      "bytes": 44264,
+      "sourceSha256": "844ce91538696526c08128b680bba2b94db8b7ecdb0cf69ffce1512d2676ea01",
+      "needed": [
+        "libngtcp2.so",
+        "libssl_3.so",
+        "libcrypto_3.so",
+        "libc.so"
+      ]
+    },
+    "libngtcp2.so": {
+      "sha256": "6308152ee73e30a53bca5ae40daaf76a82b9cd4ce9627ae77bad7c823568402d",
+      "bytes": 341944,
+      "sourceSha256": "c21394371208f6d76ea645f9f319b6cf9e5e27c575364278594f9bb2c3ac86be",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libnghttp2.so": {
+      "sha256": "90432e80bee57b97c8264356264c616a0d2699782890bd6d7089b8cdae07bc3b",
+      "bytes": 160600,
+      "sourceSha256": "54cb84a8d8a48829b5c9051d95feae7598a82f524b14dc6b7e3f4ecab0c5c7a5",
+      "needed": [
+        "libc.so"
+      ]
+    },
+    "libssh2.so": {
+      "sha256": "675677b2efb7d002aa6e9a38a07f61ba3050e882ec93d5976b59efbe0f3019e3",
+      "bytes": 248232,
+      "sourceSha256": "82e42fa48c77efd4b4296d3b09e44e68f192b220714da81ef60b1edc36211bea",
+      "needed": [
+        "libssl_3.so",
+        "libcrypto_3.so",
+        "libz_1.so",
+        "libc.so"
+      ]
+    }
+  },
+  "tools": {
+    "git-remote-http": {
+      "version": "2.56.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "git-remote-https": {
+      "version": "2.56.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    }
+  },
+  "inputs": [
+    {
+      "Package": "git",
+      "Version": "2.56.0",
+      "Filename": "pool/main/g/git/git_2.56.0_aarch64.deb",
+      "SHA256": "dcdd22c5fdf7bdb5b825a03a17441d43858ed8515fea57fbb37eb42e733ca82f",
+      "Size": "4541040"
+    },
+    {
+      "Package": "libcurl",
+      "Version": "8.23.0",
+      "Filename": "pool/main/libc/libcurl/libcurl_8.23.0_aarch64.deb",
+      "SHA256": "2011bb9709261bb3d5ecaa6672faa333be14cf48ad4af37031e3e365309557ac",
+      "Size": "1043340"
+    },
+    {
+      "Package": "libnghttp2",
+      "Version": "1.70.0",
+      "Filename": "pool/main/libn/libnghttp2/libnghttp2_1.70.0_aarch64.deb",
+      "SHA256": "ab2e0a3408fe4934ffdf774bd5049a265db2e6db62dcb651baecbecfb81e3f0b",
+      "Size": "95924"
+    },
+    {
+      "Package": "libnghttp3",
+      "Version": "1.18.0",
+      "Filename": "pool/main/libn/libnghttp3/libnghttp3_1.18.0_aarch64.deb",
+      "SHA256": "0be2ee96def3608afaf24eb0b4b55f3484a37c95ea21bb1d6d85c7d543467603",
+      "Size": "69668"
+    },
+    {
+      "Package": "libngtcp2",
+      "Version": "1.25.0",
+      "Filename": "pool/main/libn/libngtcp2/libngtcp2_1.25.0_aarch64.deb",
+      "SHA256": "f471bad7f4329b6b0b4aedf124e0a23a35f6ac99bfbae73304136f8bfd570fc3",
+      "Size": "174068"
+    },
+    {
+      "Package": "libssh2",
+      "Version": "1.11.1-2",
+      "Filename": "pool/main/libs/libssh2/libssh2_1.11.1-2_aarch64.deb",
+      "SHA256": "1add4e0a926b848814e7e2f1817ea28b123c54cabd5bbc4e5cfd65291cbad84e",
+      "Size": "219220"
+    }
+  ]
+}

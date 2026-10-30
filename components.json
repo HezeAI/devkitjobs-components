@@ -8189,9 +8189,9 @@
     }
   },
   "bootstrapBackup": {
-    "url": "https://github.com/HezeAI/devkitjobs-components/releases/download/native-2026-10-30-r1/core-backup-0.2.8-android-arm64.zip",
-    "bytes": 184611312,
-    "sha256": "6231af67594cf9e48dec65c530bc659bb7e5941a2828d5e48167b61267071894",
+    "url": "https://github.com/HezeAI/devkitjobs-components/releases/download/native-2026-10-30-r1/core-backup-0.2.9-android-arm64.zip",
+    "bytes": 186541314,
+    "sha256": "c7b12f6f8816339a238931bc33c97478d52590756a116e1a29b9a32f0a567305",
     "activation": "APK only; archive is a backup, not an automatically installable component"
   }
 }

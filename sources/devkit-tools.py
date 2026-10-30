@@ -323,7 +323,7 @@ class Manager:
    executable=self.base/'bin'/command;receipt=self.root/'checks'/('builtin-'+command)
    if not executable.is_file():row.update(status='broken',reason='Встроенный файл отсутствует')
    elif name==command:
-    if command in ['codex-code-mode-host','ssh-keygen']:
+    if command in ['codex-code-mode-host','ssh-keygen','git-remote-http','git-remote-https']:
      row.update(status='downloaded',reason='Требуется проверка через Codex или генерацию тестового ключа')
     else:
      expected=manifest.get('libraries',{}).get(manifest['binaries'][command],{}).get('sha256')

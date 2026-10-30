@@ -47,6 +47,8 @@ These archives redistribute the public, already adapted tool payloads from DevKi
 
 The bootstrap backup preserves the APK core payload for recovery and source correspondence; it is not offered as an automatic core replacement. No account files, private keys, signing credentials, user chats or projects are included.
 
+The APK core also includes the Git HTTP/HTTPS remote helper and its Android libcurl/nghttp2/nghttp3/ngtcp2/libssh2 dependency closure. Exact public package checksums are in `sources/git-http-package-inputs.json`; the adaptation is in `sources/prepare_git_http.py`. Device execution of this added helper is pending. Upstream projects: https://curl.se/ , https://nghttp2.org/ , https://github.com/ngtcp2/ngtcp2 , https://www.libssh2.org/ .
+
 ## Validation
 
 Archive hashes, complete entry manifests, ZIP integrity, ARM64 ELF headers and safe extraction are checked separately from functional execution. Unit tests cover corrupted downloads, traversal, protected command replacement, failed activation and registry persistence. Mocked registry tests are not evidence that downloaded native binaries execute on Android. Per-component functional activation must pass on the targetSdk 28 app before a component is marked ready.
