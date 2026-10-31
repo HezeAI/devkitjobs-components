@@ -1,7 +1,10 @@
 {
   "binaries": {
     "git-remote-http": "libtool_git_remote_http.so",
-    "git-remote-https": "libtool_git_remote_http.so"
+    "git-remote-https": "libtool_git_remote_http.so",
+    "git-receive-pack": "libtool_git.so",
+    "git-upload-pack": "libtool_git.so",
+    "git-upload-archive": "libtool_git.so"
   },
   "libraries": {
     "libtool_git_remote_http.so": {
@@ -79,6 +82,42 @@
         "libz_1.so",
         "libc.so"
       ]
+    },
+    "libtool_git.so": {
+      "sha256": "c618f6a5171ca95c82904c389bd0d3b495df37301ba02d7e4b0fe43dd1373bb7",
+      "bytes": 3613096,
+      "sourceSha256": "08f60863622d65edc62ea6498ee362f13d8327895067614245f7053db5291343",
+      "needed": [
+        "libdl.so",
+        "libpcre2-8.so",
+        "libz_1.so",
+        "libiconv.so",
+        "libcrypto_3.so",
+        "libc.so"
+      ],
+      "patches": 1,
+      "adaptation": "Android system shell; fixed-length patch; build-support/adapt_core_shells.py"
+    },
+    "libtool_node.so": {
+      "sha256": "efaf2aca3625282cb0d5d38fc48f5b5a4f8edf4ee4f4cdba704213af9c3fdeba",
+      "bytes": 50993616,
+      "sourceSha256": "4b13d52c5541a449d6d004ea48366702d114eeb3111772b29aec1cdc82942662",
+      "needed": [
+        "libz_1.so",
+        "libcares.so",
+        "libsqlite3.so",
+        "libffi.so",
+        "libcrypto_3.so",
+        "libssl_3.so",
+        "libicui18n_78.so",
+        "libicuuc_78.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so",
+        "libc++_shared.so"
+      ],
+      "patches": 1,
+      "adaptation": "Android system shell; fixed-length patch; build-support/adapt_core_shells.py"
     }
   },
   "tools": {
@@ -88,6 +127,21 @@
       "abi": "arm64-v8a"
     },
     "git-remote-https": {
+      "version": "2.56.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "git-receive-pack": {
+      "version": "2.56.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "git-upload-pack": {
+      "version": "2.56.0",
+      "state": "bundled",
+      "abi": "arm64-v8a"
+    },
+    "git-upload-archive": {
       "version": "2.56.0",
       "state": "bundled",
       "abi": "arm64-v8a"

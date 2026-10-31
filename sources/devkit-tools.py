@@ -191,6 +191,9 @@ class Manager:
   return env
  def argv(self,command,info,directory,args):
   # This tiny ELF launcher invokes Python at DEVKIT_BIN; use the component's own builder script instead.
+  if command=='clang'and info.get('functionalProfile')=='android-c-link-v1':
+   p=Path(directory)
+   return [str(child(directory,info['commands'][command]['path'])),'--target=aarch64-linux-android29','--sysroot='+str(p/'runtime/sysroot'),'-resource-dir='+str(p/'runtime/clang'),'-isystem',str(p/'runtime/sysroot/usr/include'),'-B'+str(p/'bin'),'-fuse-ld='+str(p/'bin/ld.lld'),'-L'+str(p/'runtime/sysroot/usr/lib'),'-L/system/lib64',*args]
   if command=='devkit-build-apk':return [self.python,'-B',str(Path(directory)/'runtime/build-apk.py'),*args]
   return [str(child(directory,info['commands'][command]['path'])),*args]
  def probe(self,info,directory):
@@ -200,7 +203,9 @@ class Manager:
     # Probe output must not contain account state or secrets.
     isolated=env.copy();isolated['HOME']=temp;isolated['CODEX_HOME']=temp;isolated['GH_CONFIG_DIR']=temp;isolated['GIT_CONFIG_GLOBAL']='/dev/null';isolated['GIT_CONFIG_NOSYSTEM']='1'
     for variable in ['GH_TOKEN','GITHUB_TOKEN','SSH_AUTH_SOCK','BASH_ENV']:isolated.pop(variable,None)
-    argv=self.argv(name,info,directory,command['probe'])
+    # javap accepts -version; older catalogs incorrectly used --version.
+    probe=['-version']if name=='javap'and command['probe']==['--version']else command['probe']
+    argv=self.argv(name,info,directory,probe)
     try:
      with tempfile.TemporaryFile()as log:
       p=subprocess.Popen(argv,env=isolated,cwd=temp,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
@@ -214,18 +219,22 @@ class Manager:
      text=output[:65536].decode(errors='replace')
      if code or len(output)>65536 or command.get('expect','')not in text:raise ToolError('Functional test failed: '+name+' (exit '+str(code)+')')
     except OSError as e:raise ToolError('Cannot execute '+name+': '+str(e.errno))from e
-    checks.append({'command':name,'exit':code,'probe':command['probe'],'output':text[:1000]})
+    checks.append({'command':name,'exit':code,'probe':probe,'output':text[:1000]})
    if info['id']=='jdk':
-    p=Path(temp);(p/'Hello.java').write_text('class Hello { public static void main(String[] a) { System.out.print("DEVKIT_JAVA_OK"); } }')
-    subprocess.run(self.argv('javac',info,directory,[str(p/'Hello.java')]),env=env,cwd=temp,check=True,capture_output=True,timeout=90)
-    result=subprocess.run(self.argv('java',info,directory,['-cp',temp,'Hello']),env=env,cwd=temp,check=True,capture_output=True,timeout=90)
+    p=Path(temp);(p/'Hello.java').write_text('public class Hello { public static void main(String[] a) { System.out.print("DEVKIT_JAVA_OK"); } }')
+    subprocess.run(self.argv('javac',info,directory,[str(p/'Hello.java')]),env=isolated,cwd=temp,check=True,capture_output=True,timeout=90)
+    result=subprocess.run(self.argv('java',info,directory,['-cp',temp,'Hello']),env=isolated,cwd=temp,check=True,capture_output=True,timeout=90)
     if result.stdout!=b'DEVKIT_JAVA_OK':raise ToolError('Java compile/run test failed')
     checks.append({'functional':'compile-and-run-java','status':'passed'})
    if info['id']=='clang':
-    p=Path(temp);(p/'probe.c').write_text('int devkit_probe(void) { return 42; }')
-    subprocess.run(self.argv('clang',info,directory,['-c',str(p/'probe.c'),'-o',str(p/'probe.o')]),env=env,cwd=temp,check=True,capture_output=True,timeout=90)
-    if not(p/'probe.o').is_file():raise ToolError('Clang compile test failed')
-    checks.append({'functional':'compile-c-object','status':'passed'})
+    if info.get('functionalProfile')!='android-c-link-v1':raise ToolError('Incomplete Android C runtime; update clang to a complete toolchain')
+    p=Path(temp);(p/'probe.c').write_text('#include <stdio.h>\nint main(void) { puts("DEVKIT_C_OK"); return 0; }\n')
+    compiled=subprocess.run(self.argv('clang',info,directory,[str(p/'probe.c'),'-o',str(p/'probe')]),env=isolated,cwd=temp,capture_output=True,timeout=90)
+    if compiled.returncode:raise ToolError('Clang C compile/link failed: '+compiled.stderr.decode(errors='replace')[-2000:])
+    result=subprocess.run([str(p/'probe')],env=isolated,cwd=temp,capture_output=True,timeout=30)
+    if result.returncode or result.stdout!=b'DEVKIT_C_OK\n':raise ToolError('Clang linked Android program failed')
+    checks.append({'functional':'compile-link-run-android-c-with-stdio','status':'passed'})
+
   return {'status':'ready','checkedAt':int(time.time()),'checks':checks,'platform':platform.machine(),'androidApi':os.environ.get('DEVKIT_ANDROID_API'),'targetSdk':os.environ.get('DEVKIT_TARGET_SDK')}
  def wrappers(self,info):
   for name in info['commands']:
