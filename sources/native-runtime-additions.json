@@ -8,7 +8,7 @@
   },
   "libraries": {
     "libtool_git_remote_http.so": {
-      "sha256": "6d5e54abc190880dda47fe57177a1f32bcbaf6aaa6cf450d2fd26d2c64930513",
+      "sha256": "d0b8940f351cfaef628fdd8c96a62ccb599574bb5309bb0816e6195ae7059d08",
       "bytes": 2109120,
       "sourceSha256": "841c2c3a23a808e3ffa3d1af99cad55a973d1e26b206345fd063eb3d9f5a30d6",
       "needed": [
@@ -19,7 +19,9 @@
         "libiconv.so",
         "libcrypto_3.so",
         "libc.so"
-      ]
+      ],
+      "shellPatchInputSha256": "6d5e54abc190880dda47fe57177a1f32bcbaf6aaa6cf450d2fd26d2c64930513",
+      "adaptation": "System shell for Git HTTP credential subprocesses"
     },
     "libcurl.so": {
       "sha256": "1344424b3ad8fa989953bbed328c897bf565c1dcffcc6c8446a82acbccc4768b",

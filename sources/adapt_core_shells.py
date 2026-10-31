@@ -31,6 +31,13 @@ def main():
  node=patch('libtool_node.so',old,new+b' '*(len(old)-len(new)))
  for name,info in [('libtool_git.so',git),('libtool_node.so',node)]:
   value['libraries'][name]={**original['libraries'][name],**info,'adaptation':'Android system shell; fixed-length patch; build-support/adapt_core_shells.py'}
+ helper=R/'native-tools/arm64-v8a/libtool_git_remote_http.so';data=helper.read_bytes();baseline='6d5e54abc190880dda47fe57177a1f32bcbaf6aaa6cf450d2fd26d2c64930513'
+ current=hashlib.sha256(data).hexdigest();info=value['libraries'][helper.name]
+ if current==baseline:
+  if data.count(OLD+b'\0')!=1:raise ValueError('Git HTTP shell source changed')
+  data=data.replace(OLD+b'\0',NEW+b'\0'*(len(OLD)-len(NEW)+1));helper.write_bytes(data)
+ elif current!=info.get('sha256')or info.get('shellPatchInputSha256')!=baseline:raise ValueError('Unknown Git HTTP adaptation input')
+ info.update(sha256=hashlib.sha256(data).hexdigest(),shellPatchInputSha256=baseline,adaptation='System shell for Git HTTP credential subprocesses')
  manifest.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'git':git,'node':node},indent=2))
 if __name__=='__main__':main()

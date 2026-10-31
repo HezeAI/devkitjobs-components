@@ -48,7 +48,7 @@ These archives redistribute the public, already adapted tool payloads from DevKi
 
 The bootstrap backup preserves the APK core payload for recovery and source correspondence; it is not offered as an automatic core replacement. No account files, private keys, signing credentials, user chats or projects are included.
 
-The APK core also includes the Git HTTP/HTTPS remote helper and its Android libcurl/nghttp2/nghttp3/ngtcp2/libssh2 dependency closure. Exact public package checksums are in `sources/git-http-package-inputs.json`; the adaptation is in `sources/prepare_git_http.py`. Ordinary Git HTTPS ls-remote and fetch now pass under the DevKit UID after correcting its compiled shell default. Local commit/hook/push/clone and a fake credential-helper scenario also pass; no GitHub API workaround is required. Upstream projects: https://curl.se/ , https://nghttp2.org/ , https://github.com/ngtcp2/ngtcp2 , https://www.libssh2.org/ .
+The APK core also includes the Git HTTP/HTTPS remote helper and its Android libcurl/nghttp2/nghttp3/ngtcp2/libssh2 dependency closure. Exact public package checksums are in `sources/git-http-package-inputs.json`; the adaptation is in `sources/prepare_git_http.py`. Ordinary Git HTTPS ls-remote, fetch and authenticated push now pass under the DevKit UID after correcting the compiled shell defaults in both Git and its HTTP helper. Local commit/hook/push/clone and a fake credential-helper scenario also pass; no GitHub API workaround is required. Upstream projects: https://curl.se/ , https://nghttp2.org/ , https://github.com/ngtcp2/ngtcp2 , https://www.libssh2.org/ .
 
 ## Validation
 
