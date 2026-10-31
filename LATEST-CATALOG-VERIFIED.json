@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "url": "https://github.com/HezeAI/devkitjobs-components/releases/latest/download/tools.json",
+  "sha256": "e93d64d44cece1f236dd98e9c370b13dc013b564b1a7d005e155ce1ad8c54a60",
+  "clang": "21-r2",
+  "openscad": "2026.10.29-wasm-node-r3",
+  "latestReleaseTag": "native-2026-10-31-r2",
+  "publishedAssetDigest": "passed"
+}

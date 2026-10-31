@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "deletedObsoleteReleaseAsset": "clang-21-r1-android-arm64.zip",
+  "release": "native-2026-10-30-r1",
+  "afterCleanInstallAndUpgrade": true,
+  "stillReferencedAssetsRetained": [
+    "SHA256SUMS",
+    "android-sdk-35-36.0.0-r1-android-arm64.zip",
+    "components.json",
+    "core-backup-0.2.9-android-arm64.zip",
+    "gh-2.103.3-r1-android-arm64.zip",
+    "gradle-9.5.0-r1-android-arm64.zip",
+    "jdk-25.0.5-r1-android-arm64.zip",
+    "tools.json"
+  ]
+}
