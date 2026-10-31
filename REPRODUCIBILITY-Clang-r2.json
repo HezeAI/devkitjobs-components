@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "publishedSha256": "368bfc822fb6be9e622e3b9b9213ca313804c7c3f5c98502ef2c484b741f38cd",
+  "reproducedBaseSha256": "3ceaf226bf224da489468a83b89803a53b2c0e48f4d63ed8cb5f8d775b727b87",
+  "bytes": 73483071,
+  "packageReproductionOnly": true,
+  "upstreamLlvmRebuild": false
+}

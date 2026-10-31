@@ -337,7 +337,7 @@ class Manager:
    executable=self.base/'bin'/command;receipt=self.root/'checks'/('builtin-'+command)
    if not executable.is_file():row.update(status='broken',reason='Встроенный файл отсутствует')
    elif name==command:
-    if command in ['codex-code-mode-host','ssh-keygen','git-remote-http','git-remote-https']:
+    if command in ['codex-code-mode-host','ssh-keygen','git-remote-http','git-remote-https','git-receive-pack','git-upload-pack','git-upload-archive']:
      row.update(status='downloaded',reason='Требуется проверка через Codex или генерацию тестового ключа')
     else:
      expected=manifest.get('libraries',{}).get(manifest['binaries'][command],{}).get('sha256')
@@ -346,12 +346,13 @@ class Manager:
      try:
       result=subprocess.run(argv,capture_output=True,timeout=15)
       if result.returncode:raise ToolError('Built-in functional check failed')
-      row.update(status='ready',checkedAt=int(time.time()))
+      row.update(status='ready',checkedAt=int(time.time()),binarySha256=expected,binaryPath=str(executable.resolve()))
      except Exception:row.update(status='broken',reason='Функциональный тест не пройден')
      atomic(receipt,row)
    elif receipt.is_file():
     checked=read_json(receipt)
-    if checked.get('version')==row['version']:row.update(checked)
+    expected=manifest.get('libraries',{}).get(manifest['binaries'][command],{}).get('sha256')
+    if expected and checked.get('version')==row['version'] and checked.get('binarySha256')==expected and checked.get('binaryPath')==str(executable.resolve()):row.update(checked)
    rows.append(row)
   return rows
  def run(self,command,args):

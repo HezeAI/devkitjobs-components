@@ -1,0 +1,1498 @@
+{
+  "version": "21-r1",
+  "title": "Clang / LLVM",
+  "commands": {
+    "clang": {
+      "path": "bin/clang",
+      "probe": [
+        "--version"
+      ],
+      "expect": "clang version 21"
+    }
+  },
+  "dependencies": {},
+  "source": "https://github.com/termux/termux-packages/tree/master/packages/clang",
+  "license": "Apache-2.0-with-LLVM-exception",
+  "id": "clang",
+  "platform": "android",
+  "abi": "arm64-v8a",
+  "minAndroidApi": 29,
+  "archive": {
+    "url": "https://github.com/HezeAI/devkitjobs-components/releases/download/native-2026-10-30-r1/clang-21-r1-android-arm64.zip",
+    "sha256": "3ceaf226bf224da489468a83b89803a53b2c0e48f4d63ed8cb5f8d775b727b87",
+    "bytes": 65999525
+  },
+  "files": {
+    "lib/libLLVM.so": {
+      "sha256": "5ef8a226b59b8ff6b11281fd6ee23dbde2cfd7c46a273b8591f46d468c5009ff",
+      "bytes": 133597776,
+      "executable": true
+    },
+    "lib/libc++_shared.so": {
+      "sha256": "05bef9d3901910c3ff8ab450b03bc8b28383d363a2290f2f7b9aed7331ea6ff7",
+      "bytes": 1423696,
+      "executable": true
+    },
+    "lib/libclang-cpp.so": {
+      "sha256": "0dbe4fd909ebc432875369e08ddb4bb65f0fb63650720b9f2410d24cb8f0ff70",
+      "bytes": 62972824,
+      "executable": true
+    },
+    "lib/libffi.so": {
+      "sha256": "6a1a35066ed298a5d2c53c5e0ebfb169612d1441c361ea527f195dfd4465ce5a",
+      "bytes": 87128,
+      "executable": true
+    },
+    "lib/libiconv.so": {
+      "sha256": "c847f487600fae1cba4507197cba57332b1fb059267065bfac730292790abf76",
+      "bytes": 1083304,
+      "executable": true
+    },
+    "lib/libxml2_16.so": {
+      "sha256": "418b750d8eac942f31bf5d0a8999eafd5aaed978ad3e885388e39b512080aef3",
+      "bytes": 1092824,
+      "executable": true
+    },
+    "lib/libz_1.so": {
+      "sha256": "ed8912bdba0c5fc195235b440436634ec9d8b83e788af6f1c6d8885a33e38c75",
+      "bytes": 72880,
+      "executable": true
+    },
+    "lib/libzstd_1.so": {
+      "sha256": "98742d006ad27a0b8867bbfad4b4ba2b2f4ca125a85bcb7c720da79911173fed",
+      "bytes": 820840,
+      "executable": true
+    },
+    "bin/clang": {
+      "sha256": "f51d84effab2aa0304dd5c10cea9e94be5574aa9269d9067025210c7e6267b8a",
+      "bytes": 121040,
+      "executable": true
+    },
+    "runtime/clang/include/__clang_cuda_builtin_vars.h": {
+      "sha256": "32d445ec643c5802efbd54d41e4e8bff952436586d992fc0f91258238cb6e115",
+      "bytes": 4892,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_cmath.h": {
+      "sha256": "e44c1e33315864e0906e901d76257ed1c17c4ffc25cb944e4223248e59adb815",
+      "bytes": 18493,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_complex_builtins.h": {
+      "sha256": "2030f2976a00a8894b1434d72c2108210a60b6726550c97e8f78c09445bccce9",
+      "bytes": 9581,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_device_functions.h": {
+      "sha256": "e51d7dc42d8d35ebe73e12ae12aa353de5129680218a9290ce4460669575d46e",
+      "bytes": 58740,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_intrinsics.h": {
+      "sha256": "c77e320d0488d7a318b65716dc83aa5de927cf20db70f7fe1777d34007d87aad",
+      "bytes": 46120,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_libdevice_declares.h": {
+      "sha256": "ee16f6dab972b4c742e78676e1aa30c4292ef6e099099d9591ce6baf13b7f7c4",
+      "bytes": 22414,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_math.h": {
+      "sha256": "debe73cf7191627b94fea9e1bfe13a4318b1616fed38b2e94f5eefe2a8637c72",
+      "bytes": 16602,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_math_forward_declares.h": {
+      "sha256": "e8a11354786957de82d0887958cec963ee614d953dcbd1cfcee2376cda9fef64",
+      "bytes": 8469,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_runtime_wrapper.h": {
+      "sha256": "5f193632982ce41698ebdea77061e08880045727eb5e779e4306a1c3b787a658",
+      "bytes": 18067,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_cuda_texture_intrinsics.h": {
+      "sha256": "e604b253b318f47af11948a80b4dccda365fc159556cd90efc4db933c6e00b1c",
+      "bytes": 56680,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_hip_cmath.h": {
+      "sha256": "4440ee301c9f961ae884099a1757ecbdf22aa0508fb1f01b5a9d4bc43f822609",
+      "bytes": 27196,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_hip_libdevice_declares.h": {
+      "sha256": "9c57be31880d81de4ac89a9ffad8a682f480eaf7399fcb521caeb6c014c15c47",
+      "bytes": 19875,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_hip_math.h": {
+      "sha256": "79e66285d5af211cb79639f00cf2bab111604c87a15d96a7566127abc4ef18eb",
+      "bytes": 36683,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_hip_runtime_wrapper.h": {
+      "sha256": "d49162c552a20cb7868d9e09590a2bc0cc20031218aafbe6f7aa1cdf8169bb52",
+      "bytes": 5156,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_hip_stdlib.h": {
+      "sha256": "d9a92fd8cb4712d4bf51082cf094cd6ea83d00974ecb7471dc421574693e0398",
+      "bytes": 1223,
+      "executable": false
+    },
+    "runtime/clang/include/__clang_spirv_builtins.h": {
+      "sha256": "d6c200b358bf76c647e486b59c92339e833e3046b8eee829c0fe883aa96957a2",
+      "bytes": 9090,
+      "executable": false
+    },
+    "runtime/clang/include/__stdarg___gnuc_va_list.h": {
+      "sha256": "feca975bfdfb254d17458a8e3d51f8ad6d9bdc9fd6287727f0f8b2fb81fcb0b0",
+      "bytes": 467,
+      "executable": false
+    },
+    "runtime/clang/include/__stdarg___va_copy.h": {
+      "sha256": "f0a8d3c963338173f2d57b2cbc209dde38c90536107b15eb0cf78166d4caee1f",
+      "bytes": 445,
+      "executable": false
+    },
+    "runtime/clang/include/__stdarg_header_macro.h": {
+      "sha256": "7b3fbcc442af2508f36bb2dc98d9ad2b8a1f5c0f5333394fb2159c8bd5ecd5b8",
+      "bytes": 417,
+      "executable": false
+    },
+    "runtime/clang/include/__stdarg_va_arg.h": {
+      "sha256": "274c75a1db86f649439aa3bcc1dead4170725e6f803925c3fc38a2e93307afdc",
+      "bytes": 771,
+      "executable": false
+    },
+    "runtime/clang/include/__stdarg_va_copy.h": {
+      "sha256": "bb195f56cb08d4cee6a60bd9f62f34466e8ac4f89f6fed043b044cb2f7ead010",
+      "bytes": 451,
+      "executable": false
+    },
+    "runtime/clang/include/__stdarg_va_list.h": {
+      "sha256": "81c3055f7033e26e7f53705653bc9d69b5202f25c2692e03b3a4f77ff44a7d76",
+      "bytes": 448,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_header_macro.h": {
+      "sha256": "4cf46e8fbb809df048eecbbd63686fa741da27afa8db4245bd1f61c1fb1611dc",
+      "bytes": 417,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_max_align_t.h": {
+      "sha256": "3c1e4de47f4f06b35e2c5890d670052e84f716760505ff51b022fc8b21a9400f",
+      "bytes": 857,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_null.h": {
+      "sha256": "b1d71b08563ab3d2c22a1e4f8ddf4d9a1111c89e9404b859a45c307e8ebc6c69",
+      "bytes": 875,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_nullptr_t.h": {
+      "sha256": "898b4465c5d3040d27e760e82983a751b1b0cae23ba280b18a1b81451841f9eb",
+      "bytes": 958,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_offsetof.h": {
+      "sha256": "e5f0f4ff8ff5fc6a1cc8b535f5065f1728eadd2bf1e1401f021f803ec7b4222f",
+      "bytes": 708,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_ptrdiff_t.h": {
+      "sha256": "b4178a57f3711b7013cba747a72a2f178c29fa9364e77d75b2159754072ced43",
+      "bytes": 717,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_rsize_t.h": {
+      "sha256": "132339d4f07e852bf2d879bc91c4ccdfcf08c581c7c97f6f3794510e0bdda7bd",
+      "bytes": 710,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_size_t.h": {
+      "sha256": "d86ddc0238da09b385846ebef814ffc50a44e40cf85d4e3793f485952b7e73ad",
+      "bytes": 708,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_unreachable.h": {
+      "sha256": "bba07c327f8168f37b266a19aed625e0fa633a25cabef4f54f21faf3df5522b8",
+      "bytes": 735,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_wchar_t.h": {
+      "sha256": "1900d4998aef3698b06399ed686db0c21e26509b08638a25734fb97ae89b1001",
+      "bytes": 853,
+      "executable": false
+    },
+    "runtime/clang/include/__stddef_wint_t.h": {
+      "sha256": "f2ededa38c5454397242aceaefa65b42b292a1b3cc258e7ca6e216f146e51f0d",
+      "bytes": 443,
+      "executable": false
+    },
+    "runtime/clang/include/__wmmintrin_aes.h": {
+      "sha256": "c72344a1e5874d3af7049ecdccae91304cc5c2b619776947434e49904f5f03a1",
+      "bytes": 5269,
+      "executable": false
+    },
+    "runtime/clang/include/__wmmintrin_pclmul.h": {
+      "sha256": "0492aed7e0731e9d5d83bca76ef338223d3ae9c89d38f7600b7294465b6ebfdc",
+      "bytes": 2036,
+      "executable": false
+    },
+    "runtime/clang/include/adcintrin.h": {
+      "sha256": "7a0a9ab238134ffeb5b05fe55dfd34daf00e372fc091761dbcaa07c4db044330",
+      "bytes": 5565,
+      "executable": false
+    },
+    "runtime/clang/include/adxintrin.h": {
+      "sha256": "760d3d2d4fe278dd7e044a21bb60fdce73d7f1de2f896446c258bda0d78639b6",
+      "bytes": 3447,
+      "executable": false
+    },
+    "runtime/clang/include/altivec.h": {
+      "sha256": "197dc8e3fccb508d4b9dfbd14ba8a7403e77fc5454fb649c00baa9bd90dfd3ff",
+      "bytes": 715031,
+      "executable": false
+    },
+    "runtime/clang/include/amdgpuintrin.h": {
+      "sha256": "489ff6bea426cd08250bc89620f88539d6c1d0677951fc6e377ecdd40dbc09e4",
+      "bytes": 7483,
+      "executable": false
+    },
+    "runtime/clang/include/ammintrin.h": {
+      "sha256": "4d5751058e2630a390ce53cbc8d360d794ca71acbf49eb85f177313c884dc2a6",
+      "bytes": 7739,
+      "executable": false
+    },
+    "runtime/clang/include/amxavx512intrin.h": {
+      "sha256": "e22cf8babe148e272e996ec0dd135c0ebba02e52ae7af047f70a12e757fe47cd",
+      "bytes": 12986,
+      "executable": false
+    },
+    "runtime/clang/include/amxbf16transposeintrin.h": {
+      "sha256": "69c054259271212da8449b64aefb5cb1cd9294c24ffd91fbb24d52889f8ba411",
+      "bytes": 3525,
+      "executable": false
+    },
+    "runtime/clang/include/amxcomplexintrin.h": {
+      "sha256": "854a29cd9aedf345c308f171a0680d039f386763ea9558e3723d31cf6a63ea78",
+      "bytes": 6933,
+      "executable": false
+    },
+    "runtime/clang/include/amxcomplextransposeintrin.h": {
+      "sha256": "ae6a6482c414fa5d0c94fde61288a1064018f05adbe4e051baad557913b44982",
+      "bytes": 12061,
+      "executable": false
+    },
+    "runtime/clang/include/amxfp16intrin.h": {
+      "sha256": "018df703a69c14621c56bf3af142a607fcd30fd25e295bd71ace5e9728cbe0c9",
+      "bytes": 3327,
+      "executable": false
+    },
+    "runtime/clang/include/amxfp16transposeintrin.h": {
+      "sha256": "d5210f303ea2582159e6712a02029efd7c93ec061148850b560f3be17773931c",
+      "bytes": 3525,
+      "executable": false
+    },
+    "runtime/clang/include/amxfp8intrin.h": {
+      "sha256": "7d4f7e3fd5bcf9f131fca2ef14935f894bdc9fa25dc042608f1cb1c3e3e03c46",
+      "bytes": 8839,
+      "executable": false
+    },
+    "runtime/clang/include/amxintrin.h": {
+      "sha256": "d9e9ced848f8a1f22b53f0aa5a1339bc5dc70c9280a98466c527195abba63e37",
+      "bytes": 20304,
+      "executable": false
+    },
+    "runtime/clang/include/amxmovrsintrin.h": {
+      "sha256": "ffa67cf3cacdcbcbb35864a8bfac382ae7e107b5f2fbc489ffd2899e761bf23a",
+      "bytes": 2290,
+      "executable": false
+    },
+    "runtime/clang/include/amxmovrstransposeintrin.h": {
+      "sha256": "48e108ead6fa08bde2daa77e4356635179f345b9ee0ce8fc7299bec132353b05",
+      "bytes": 9402,
+      "executable": false
+    },
+    "runtime/clang/include/amxtf32intrin.h": {
+      "sha256": "2f849389dc399c714cc1ff591f4d40c25533361bb0b06a0b98209789f15c95b2",
+      "bytes": 3562,
+      "executable": false
+    },
+    "runtime/clang/include/amxtf32transposeintrin.h": {
+      "sha256": "464fe21a103285ccf990ed04147d46e8399ea5fe25c8d403066c7ac7cc26315b",
+      "bytes": 3643,
+      "executable": false
+    },
+    "runtime/clang/include/amxtransposeintrin.h": {
+      "sha256": "2bbc2acdc418cfe284bcefcf6bce69829d6adabf4eb833e53a15d4668e3c3015",
+      "bytes": 10853,
+      "executable": false
+    },
+    "runtime/clang/include/andes_vector.h": {
+      "sha256": "88bf955d581629f0292b576c4194decfa6b9053b11f5b8a12197f12defad3a6a",
+      "bytes": 518,
+      "executable": false
+    },
+    "runtime/clang/include/arm64intr.h": {
+      "sha256": "183845bfa6f0bae53748d5706568fe3d8830c5c720823152eacb107e7c234046",
+      "bytes": 993,
+      "executable": false
+    },
+    "runtime/clang/include/arm_acle.h": {
+      "sha256": "ba8ba12c9ac4b6af9c9e50db4ac5e1b3fca60ed388871a55568a58340091d8ae",
+      "bytes": 29940,
+      "executable": false
+    },
+    "runtime/clang/include/arm_bf16.h": {
+      "sha256": "87f7bc1cb7aa53a85347bd4e1855cccd45599408bb106e66515519c1033a6a3d",
+      "bytes": 548,
+      "executable": false
+    },
+    "runtime/clang/include/arm_cde.h": {
+      "sha256": "486e75376c1cd42b4579d342fe776591520a50b1a8ae4b9ed005d7a895fdf490",
+      "bytes": 33450,
+      "executable": false
+    },
+    "runtime/clang/include/arm_cmse.h": {
+      "sha256": "75b8a5a66726f8c4e8fc329b7b98b21977e2033ce2c95f362d624d0cc6d8a773",
+      "bytes": 6357,
+      "executable": false
+    },
+    "runtime/clang/include/arm_fp16.h": {
+      "sha256": "83ff2433cb9301bbd9ed1e72272ac1931d51df21da67babdefb3b61f287640b8",
+      "bytes": 19040,
+      "executable": false
+    },
+    "runtime/clang/include/arm_mve.h": {
+      "sha256": "8e6fa1bb91c0e5403e6f6152380b4ff318833028b0d4e9c91911e4dd107bd762",
+      "bytes": 1554929,
+      "executable": false
+    },
+    "runtime/clang/include/arm_neon.h": {
+      "sha256": "313df8f7c6eb48551871d403158cb57c85ab5761fa3c433a041e5901b816cfcb",
+      "bytes": 3188137,
+      "executable": false
+    },
+    "runtime/clang/include/arm_neon_sve_bridge.h": {
+      "sha256": "9a0e636549d26df39bec2dfcb9eb1110744972ede03bab2a52187e1b7d87bfee",
+      "bytes": 9708,
+      "executable": false
+    },
+    "runtime/clang/include/arm_sme.h": {
+      "sha256": "47f2f45580ba3cc347c0989e8318438a4c1d07a12285198b0a9930e1d467698f",
+      "bytes": 281408,
+      "executable": false
+    },
+    "runtime/clang/include/arm_sve.h": {
+      "sha256": "83c07e7d956f868bcd72b673750994264978005f173b09df1e85b09f68d498ce",
+      "bytes": 2148970,
+      "executable": false
+    },
+    "runtime/clang/include/arm_vector_types.h": {
+      "sha256": "6fe5730cbf5b4760620d643e5b44c9abbb13969b168dd7733252158503003034",
+      "bytes": 10098,
+      "executable": false
+    },
+    "runtime/clang/include/armintr.h": {
+      "sha256": "6bc077ccfe4c9f230f37a1b7803ca1706850d288a18d505323a520eebab57311",
+      "bytes": 843,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2_512bf16intrin.h": {
+      "sha256": "e3538e65363c410ca098b9b638bbbfdf7e0cfd124be11d81dea0a877698875a9",
+      "bytes": 23410,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2_512convertintrin.h": {
+      "sha256": "d312da0faf9169f8616f0f68e7dc828d484afdb64165324c52dcad0f1a628f6d",
+      "bytes": 13192,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2_512minmaxintrin.h": {
+      "sha256": "ea0a028278b5e4dd92904163f308949efa38683d07d851d8f6a7ac27506d3674",
+      "bytes": 7526,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2_512niintrin.h": {
+      "sha256": "0a34b57ad22fb1dc9f6b1ad5e102cb8e540c578f25e227077417b2cc566ebc96",
+      "bytes": 14039,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2_512satcvtdsintrin.h": {
+      "sha256": "4a2fc69b9c1fbdd6865efbf1e0bd2aaa9970e79d056b180d34c7fa7075f94ed5",
+      "bytes": 13799,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2_512satcvtintrin.h": {
+      "sha256": "48da2c9ecc5da4b6e45b477eb0bc5610a0e83dbaf898645930b6cdf7d8019fd8",
+      "bytes": 16999,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2bf16intrin.h": {
+      "sha256": "f56253bbcb4b2a9a813a455626fb78c723f17c3fd658ecf1906fcbbba018b31a",
+      "bytes": 44706,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2convertintrin.h": {
+      "sha256": "d1cff0dc26eb99c37f90d252aba492eb4fc668e36b8d371f6c698be1c040ff7c",
+      "bytes": 108821,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2copyintrin.h": {
+      "sha256": "273d16291b62626c7c4c863bb548ad0c29b19fdcff9a91685c474a41a373bb38",
+      "bytes": 2410,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2minmaxintrin.h": {
+      "sha256": "8dd2ed560b396551209a54f156403e68aa32715f23e81966b584ce140653fef1",
+      "bytes": 13680,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2niintrin.h": {
+      "sha256": "44b6bbcb3cb11944c0eaf797f24a649a987b31acd8c30e84366730ce684df7cb",
+      "bytes": 17003,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2satcvtdsintrin.h": {
+      "sha256": "528f9a1125a57b0b62451a79621f6ca8386b895a281efee7f7604186c97dbe6c",
+      "bytes": 15253,
+      "executable": false
+    },
+    "runtime/clang/include/avx10_2satcvtintrin.h": {
+      "sha256": "2c5fd665f81bae335372b5a968b7dcd2ca2ef66af778a1a40e42242e943c9374",
+      "bytes": 18140,
+      "executable": false
+    },
+    "runtime/clang/include/avx2intrin.h": {
+      "sha256": "eb2a35ae03975e937db2be1c6f162c7172bf8e782cfe66296129585e7e619853",
+      "bytes": 192637,
+      "executable": false
+    },
+    "runtime/clang/include/avx512bf16intrin.h": {
+      "sha256": "ea3ee83a8c95a6feba588d3d5de78f6dc24adbebd043f593efb974e93778b4e3",
+      "bytes": 10832,
+      "executable": false
+    },
+    "runtime/clang/include/avx512bitalgintrin.h": {
+      "sha256": "92aa9707f67eafa6e0facf22e59d5d961ccafc60676e5594b1aede4a2ef87154",
+      "bytes": 2626,
+      "executable": false
+    },
+    "runtime/clang/include/avx512bwintrin.h": {
+      "sha256": "394ee7f037ea129f9c363a88d73a091a15bca1d3b07476ceca0e562f8ab20c9b",
+      "bytes": 77845,
+      "executable": false
+    },
+    "runtime/clang/include/avx512cdintrin.h": {
+      "sha256": "6f7d017bc978245c089c8caaa994156723fa5c49375ada07a221814cab6eb80f",
+      "bytes": 4327,
+      "executable": false
+    },
+    "runtime/clang/include/avx512dqintrin.h": {
+      "sha256": "1d8d0ebf7276a50deee5bbb608cf7bbe4f0051902c07b907f0057eaff433cf2e",
+      "bytes": 60287,
+      "executable": false
+    },
+    "runtime/clang/include/avx512fintrin.h": {
+      "sha256": "ae3f2f75e4f73a7527b0082669068e922551f36998a1c2b18a37d13cae5248f8",
+      "bytes": 392651,
+      "executable": false
+    },
+    "runtime/clang/include/avx512fp16intrin.h": {
+      "sha256": "0ab3366d42cc75cd14e89d28de4597277aa770be741ba61c228b6c1d2b54b30d",
+      "bytes": 160735,
+      "executable": false
+    },
+    "runtime/clang/include/avx512ifmaintrin.h": {
+      "sha256": "afa219631345315ee3f6c4c4d19858a971200e78723f190fc0f35756c6a46a0b",
+      "bytes": 2660,
+      "executable": false
+    },
+    "runtime/clang/include/avx512ifmavlintrin.h": {
+      "sha256": "75d50b90a2d43190201007d92b30c504e76d944c7ba4fa36737e1704e9463076",
+      "bytes": 4712,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vbmi2intrin.h": {
+      "sha256": "290796e7ac715b503ff5b0457fb706a74b1bd1d0375c8547a8b01a61f21fd400",
+      "bytes": 13493,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vbmiintrin.h": {
+      "sha256": "2d38897f86b5a8d070641773e0d0df1aba8c4923e6432d0425ad170b1f86df35",
+      "bytes": 3920,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vbmivlintrin.h": {
+      "sha256": "2a5b68a5b7816bbaaa0a6e21e753846825b048f7bef925939e3e441b68776bc5",
+      "bytes": 7402,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlbf16intrin.h": {
+      "sha256": "bef8b890d4ff7ad5ef4ef6124b62be83eb3f5da0a653cfff33568162924d7162",
+      "bytes": 19922,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlbitalgintrin.h": {
+      "sha256": "511bd6e58a25dbfed783d2a52d84f993890e6dff77225f9819761b969a6ddd6e",
+      "bytes": 4629,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlbwintrin.h": {
+      "sha256": "3ab5091ec9f6ed3d39dc617373678165e47d71c1288752a24980292c7c659543",
+      "bytes": 124474,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlcdintrin.h": {
+      "sha256": "cd14d673844dc0c1ff75df14029352dc7dc350b137f90156822ad53befe8e3c4",
+      "bytes": 8141,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vldqintrin.h": {
+      "sha256": "30dedffcf21153addb581959e6f2ddf5f2a2e360719a8971bd48382dc1aa67d9",
+      "bytes": 47827,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlfp16intrin.h": {
+      "sha256": "f41282042043395f23c51bc9b13930ba2780b18fcd9c744d58aa2e847f3c65b9",
+      "bytes": 87561,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlintrin.h": {
+      "sha256": "43f8d7215141c5c27a9c82fce3d5c00285e6f4477924f8d18654ddf21b157b45",
+      "bytes": 330339,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlvbmi2intrin.h": {
+      "sha256": "7921fef1c74c75b1362aeb1c4c53374740585e98adabd4091a9de681d574cac2",
+      "bytes": 26633,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlvnniintrin.h": {
+      "sha256": "342a1b4843d42c8c92970ecb13c3e0ec585cc1c7799d13c8d96546fc25d9f12d",
+      "bytes": 13736,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vlvp2intersectintrin.h": {
+      "sha256": "779724d5315664120b50eb627ccd75a061815474118903c260abe5e9996482c2",
+      "bytes": 4782,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vnniintrin.h": {
+      "sha256": "21d10483bc80d4c6acc1fe1946d295e6244ef5bcee47ae7803dce2c0961e3ad5",
+      "bytes": 4428,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vp2intersectintrin.h": {
+      "sha256": "840da01f3aa586b28b0f45359a4fbba3760c2e7c25ce0f96b493d425f1a829d8",
+      "bytes": 3102,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vpopcntdqintrin.h": {
+      "sha256": "e940382006937a474c55c3e798d3d9eb010d81d6c580ee4b5acf8833c13e6d53",
+      "bytes": 2357,
+      "executable": false
+    },
+    "runtime/clang/include/avx512vpopcntdqvlintrin.h": {
+      "sha256": "d833bc993eb724c9b0ebbf3758a20839f65e2e898ca223234155ab6250b1f12c",
+      "bytes": 3957,
+      "executable": false
+    },
+    "runtime/clang/include/avxifmaintrin.h": {
+      "sha256": "67de2a399146be4d56423b1a1aa15792314db2fab075186c2dcb90d5d11719b6",
+      "bytes": 5886,
+      "executable": false
+    },
+    "runtime/clang/include/avxintrin.h": {
+      "sha256": "368a9905c25ccf46014444fc88c54a15f9a5de3be31cef8e159ed9b58f7efbc6",
+      "bytes": 201849,
+      "executable": false
+    },
+    "runtime/clang/include/avxneconvertintrin.h": {
+      "sha256": "05482a9fb775e9595b1bdcc0b822cde959296b6cdaf57d116d716df6a118c91a",
+      "bytes": 14432,
+      "executable": false
+    },
+    "runtime/clang/include/avxvnniint16intrin.h": {
+      "sha256": "4f15eeaecb28ed881354939d0c571e0d3d22eb5cc9a73df60212fbb0e97ee646",
+      "bytes": 16222,
+      "executable": false
+    },
+    "runtime/clang/include/avxvnniint8intrin.h": {
+      "sha256": "989d9bd736fd53166140d871dfe0d459e1799b6438c3955cf7189406f7e317fe",
+      "bytes": 17431,
+      "executable": false
+    },
+    "runtime/clang/include/avxvnniintrin.h": {
+      "sha256": "0e8b2996074f83b42d62c49ab8333754d1d492dcae48908ab9fd7b4a0a05bc9d",
+      "bytes": 10690,
+      "executable": false
+    },
+    "runtime/clang/include/bmi2intrin.h": {
+      "sha256": "fffd85faacca202b9539176a120cd5ca5ec9bafe91ebd234ad42eec4eb1dbcea",
+      "bytes": 7546,
+      "executable": false
+    },
+    "runtime/clang/include/bmiintrin.h": {
+      "sha256": "ece0810feecd8eb0aa9a778db13d50c3d14b60d3320768ff87695ff51e3094f8",
+      "bytes": 20350,
+      "executable": false
+    },
+    "runtime/clang/include/builtins.h": {
+      "sha256": "a7d1f052d48c4e27d0ae1023b1cb2419e443c686193a3ab392adc776595ee23f",
+      "bytes": 846,
+      "executable": false
+    },
+    "runtime/clang/include/cet.h": {
+      "sha256": "23568727f480e5701af3f7371d38680952e33264d9f184843353b87f583a2a9a",
+      "bytes": 1527,
+      "executable": false
+    },
+    "runtime/clang/include/cetintrin.h": {
+      "sha256": "ec1203e06e12b4a21944443330eab3a968b1048d429470c4ee0236b7ddfa39e7",
+      "bytes": 3351,
+      "executable": false
+    },
+    "runtime/clang/include/cldemoteintrin.h": {
+      "sha256": "bc5d9530ed13a5fc22ddc26f72f695d225053462bf06783a95a3532e0fcebe0c",
+      "bytes": 1207,
+      "executable": false
+    },
+    "runtime/clang/include/clflushoptintrin.h": {
+      "sha256": "930b1feb5f02450e0f75228cdaaf380f18557fee8ea64d7d8dd7268edfb50656",
+      "bytes": 1193,
+      "executable": false
+    },
+    "runtime/clang/include/clwbintrin.h": {
+      "sha256": "c014c43c1fc700e529fa5f0df8504af8c03bf21609ded625526ada7a1833ca08",
+      "bytes": 1229,
+      "executable": false
+    },
+    "runtime/clang/include/clzerointrin.h": {
+      "sha256": "3ae5138554f982a100b937124ec5bb914620e1a4dfd9e57fc89689428d5bb100",
+      "bytes": 1220,
+      "executable": false
+    },
+    "runtime/clang/include/cmpccxaddintrin.h": {
+      "sha256": "223b48bdd9e567ed17b377040b81663d3baf7fa077676d49cf3f598fc7ebf825",
+      "bytes": 2383,
+      "executable": false
+    },
+    "runtime/clang/include/cpuid.h": {
+      "sha256": "af95bc7da3f66d3a62a5c75462f347f6330da5af6d173a5572042c8f68316b4d",
+      "bytes": 12681,
+      "executable": false
+    },
+    "runtime/clang/include/crc32intrin.h": {
+      "sha256": "0f73e381b39e4718f70159158faa3da510769bb16120ec23f35bdcff14d34cb1",
+      "bytes": 3347,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/algorithm": {
+      "sha256": "52a1dba93372b31091687c7559098b1417612b783f0c23006456636a0506f7ab",
+      "bytes": 4612,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/bits/basic_string.h": {
+      "sha256": "f9aacc58217e4d682054c9bc79a855f66484c7c4941049442823c4e2fc5911ff",
+      "bytes": 352,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/bits/basic_string.tcc": {
+      "sha256": "109eae76b6c4bd234c104ecc0966881ecb82a8da20505d6802ccf2aa2f5a78de",
+      "bytes": 354,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/bits/c++config.h": {
+      "sha256": "8ba4e626c2a803601fd83a5e292951826e721ab23d0670bd7af8588a7a030447",
+      "bytes": 1739,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/bits/shared_ptr_base.h": {
+      "sha256": "51984393c2035f289bf533c0539b40bb616833a4315380e9a7ca338282b272da",
+      "bytes": 355,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/cmath": {
+      "sha256": "6a03bbe7845c93c9c70f4f68805662f5fb8cf6396af18fc5e894812aa0568a20",
+      "bytes": 2045,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/complex": {
+      "sha256": "fd4be2fd14eb31ba883593b450f7587af2914c0faf76073fa8c8d4a507822a7c",
+      "bytes": 3618,
+      "executable": false
+    },
+    "runtime/clang/include/cuda_wrappers/new": {
+      "sha256": "5f77bd6bb7eebfce9e4c6575bf598a76349e18edefc6ce95fe4a921dd861d13b",
+      "bytes": 3739,
+      "executable": false
+    },
+    "runtime/clang/include/emmintrin.h": {
+      "sha256": "48ec3b11cc4a7c5f7af2f23229b1402440b2d89d53cf4ee023211fe957d466d4",
+      "bytes": 201616,
+      "executable": false
+    },
+    "runtime/clang/include/enqcmdintrin.h": {
+      "sha256": "024a79176d11b3646aa6d3648c61cead39086228178ed1138990bd861c0818f5",
+      "bytes": 2167,
+      "executable": false
+    },
+    "runtime/clang/include/f16cintrin.h": {
+      "sha256": "835f822dd6d88ad7f2b14b5c82255c1f124dc850e305df53f6edabe894280357",
+      "bytes": 5524,
+      "executable": false
+    },
+    "runtime/clang/include/float.h": {
+      "sha256": "c3e534e33cffd9ba9f02eaa548dce411d26570cac04019df21b7295c6bd2bdaf",
+      "bytes": 6268,
+      "executable": false
+    },
+    "runtime/clang/include/fma4intrin.h": {
+      "sha256": "c605b5d80947d945b925ca0ed79adc98c190ddc2b4e82fcee284caffe5288361",
+      "bytes": 6986,
+      "executable": false
+    },
+    "runtime/clang/include/fmaintrin.h": {
+      "sha256": "648c377bcf8ca86b717eb695536c76e2206561751eacbfe285c9218767161664",
+      "bytes": 29337,
+      "executable": false
+    },
+    "runtime/clang/include/fxsrintrin.h": {
+      "sha256": "892f1f63664e34c69497333eae7495f217db9ad0b4975d13c4967faec481ce04",
+      "bytes": 2890,
+      "executable": false
+    },
+    "runtime/clang/include/gfniintrin.h": {
+      "sha256": "4f75e4256b395c02fffab1d6462d95c78fff66da4f3869cedf1ecdef85c8cb77",
+      "bytes": 9822,
+      "executable": false
+    },
+    "runtime/clang/include/gpuintrin.h": {
+      "sha256": "8eb9558b57e1e743c625b9664f9d709652dfc94b9d29816a31df8f680b1205eb",
+      "bytes": 13232,
+      "executable": false
+    },
+    "runtime/clang/include/hexagon_circ_brev_intrinsics.h": {
+      "sha256": "a1e5a7d54a47697707d54edf31b6c3eef0c3593cff2a15bb9319238b08d54be7",
+      "bytes": 15966,
+      "executable": false
+    },
+    "runtime/clang/include/hexagon_protos.h": {
+      "sha256": "0b130e0b52feb7074551b2389648a0fdc790784bb875e4f21fe47c9b0899fc8b",
+      "bytes": 383410,
+      "executable": false
+    },
+    "runtime/clang/include/hexagon_types.h": {
+      "sha256": "2ba756d62277f009ec853486a3f11fa63733a256a7bb1c6600aa9775d5970f31",
+      "bytes": 133505,
+      "executable": false
+    },
+    "runtime/clang/include/hresetintrin.h": {
+      "sha256": "ea5012c0fe5e8818863fb65104783772f21dd278f5b4880e98451bb5d70f550a",
+      "bytes": 1395,
+      "executable": false
+    },
+    "runtime/clang/include/htmintrin.h": {
+      "sha256": "8f422a3313386d8767bfb89955928e32687e5dbd0698c8451f52969b21ca4e2f",
+      "bytes": 6283,
+      "executable": false
+    },
+    "runtime/clang/include/htmxlintrin.h": {
+      "sha256": "d42ffa98cdceb028ed7497e5245711d5667540b70f865697ffa5a1d42155807a",
+      "bytes": 9225,
+      "executable": false
+    },
+    "runtime/clang/include/hvx_hexagon_protos.h": {
+      "sha256": "003ec9964fd0b572d85978c400338b19a3bdbe55fd0ec01a09bace5de1608517",
+      "bytes": 281785,
+      "executable": false
+    },
+    "runtime/clang/include/ia32intrin.h": {
+      "sha256": "ab2cf5dda79d4fc65346ec85c5d776153440f7bc538386d419e0e0be230ac9e4",
+      "bytes": 25986,
+      "executable": false
+    },
+    "runtime/clang/include/immintrin.h": {
+      "sha256": "54a5735494e445e5057dfc3bd1a3ec648a12347d20abe9ce12a79d89dcf11fdf",
+      "bytes": 16632,
+      "executable": false
+    },
+    "runtime/clang/include/intrin.h": {
+      "sha256": "d317b06ca10b7a931fd95172be43e6c26eb990c72f4bb10a87f09b051eb7e677",
+      "bytes": 19754,
+      "executable": false
+    },
+    "runtime/clang/include/intrin0.h": {
+      "sha256": "085c456a603387cb0a7c19fbeba0d0f26237988c2346085b5916bee874830b3e",
+      "bytes": 14093,
+      "executable": false
+    },
+    "runtime/clang/include/inttypes.h": {
+      "sha256": "eb8a7b2e17d57e9321043282bf0267fedd2ca58aadb11b04929ddbf8100fc3bc",
+      "bytes": 2427,
+      "executable": false
+    },
+    "runtime/clang/include/invpcidintrin.h": {
+      "sha256": "70f32ed90521d7135aa2b96e6fef366e9793ad99caf6fb5e0ec188be1fa6b7ed",
+      "bytes": 764,
+      "executable": false
+    },
+    "runtime/clang/include/iso646.h": {
+      "sha256": "3a190443022054d1fd72ec44316dce619b8f130bd10eacf906edf9486e8c270c",
+      "bytes": 763,
+      "executable": false
+    },
+    "runtime/clang/include/keylockerintrin.h": {
+      "sha256": "e0696fb307ea0944dd7cef129ccc83c230edf38d60bed826b8a1a8cecf82fb3c",
+      "bytes": 17973,
+      "executable": false
+    },
+    "runtime/clang/include/larchintrin.h": {
+      "sha256": "e769cbd2b3bcdefd2cf996a499ba81b40e18cb6390658d56caff19ddf721dfaf",
+      "bytes": 8703,
+      "executable": false
+    },
+    "runtime/clang/include/lasxintrin.h": {
+      "sha256": "e155828e0a8c7673599275233fa7ccd1b9bef42eb6b636f3ef44595808562db6",
+      "bytes": 145551,
+      "executable": false
+    },
+    "runtime/clang/include/limits.h": {
+      "sha256": "6b59cc1b6f86c901bf41ce942b8434530e852eb16e79e6e9287f89441f71efca",
+      "bytes": 3794,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/assert.h": {
+      "sha256": "9451a01129c66dc1b6ddb8f56aed139e0fdf3f9bf6da426292880d6ecea374b3",
+      "bytes": 942,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/ctype.h": {
+      "sha256": "370792f0d59714c9984865ce2f814679696f72407e4f0488ee80c6c7f6d77296",
+      "bytes": 3840,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/inttypes.h": {
+      "sha256": "11cee61d1b4155f3ebc9a084dab327c6522a73fe6ebad86e819d4691e1a94724",
+      "bytes": 954,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/stdio.h": {
+      "sha256": "0267196669be2fccebe276b8b3f9c5eb7dfd2ce4a471675bdf63a95dde60b874",
+      "bytes": 2931,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/stdlib.h": {
+      "sha256": "728ad33a681df7b84976bb563121d32f87400d3355a58d74f41070534bbd5b8e",
+      "bytes": 1706,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/string.h": {
+      "sha256": "3073516355e10451c97f06552aab2c2d582892cd948209f1f8c00df67d677cb8",
+      "bytes": 4028,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_libc_wrappers/time.h": {
+      "sha256": "f9d4a45668e04014800613361d7f2f235a10ef6e4ca4b5fb772b8c0b2f87b55f",
+      "bytes": 976,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_offload_wrappers/__llvm_offload.h": {
+      "sha256": "e07f4bb61698a2e55d7fd2e8a7a39dd91c08f1a275363b045c3d4929153cec42",
+      "bytes": 1063,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_offload_wrappers/__llvm_offload_device.h": {
+      "sha256": "5b246a387424b8ff24fbfc00091b148feb90514367fbc79713fbc95ee2759702",
+      "bytes": 400,
+      "executable": false
+    },
+    "runtime/clang/include/llvm_offload_wrappers/__llvm_offload_host.h": {
+      "sha256": "cc9e08884bbc2a41b77161776a7ca8e40900c7f98d13e2b6e69eb88352f5ccfd",
+      "bytes": 569,
+      "executable": false
+    },
+    "runtime/clang/include/lsxintrin.h": {
+      "sha256": "22b225744f28d416d29ad488bb4002efba9728400bea655b644b838d85e794cb",
+      "bytes": 137936,
+      "executable": false
+    },
+    "runtime/clang/include/lwpintrin.h": {
+      "sha256": "485b84552e9163bd7362e6353d5b2a5a3bce9c45d385d0c3224ad1ec543e790c",
+      "bytes": 5115,
+      "executable": false
+    },
+    "runtime/clang/include/lzcntintrin.h": {
+      "sha256": "1f539282621ac8edc624dff2b698e4375a535178e1f26c64a29d9f2522caaa16",
+      "bytes": 3659,
+      "executable": false
+    },
+    "runtime/clang/include/mm3dnow.h": {
+      "sha256": "9779205196471f01374264a25acdf50c6705c29db47bb180bfa4f549b33c5a51",
+      "bytes": 729,
+      "executable": false
+    },
+    "runtime/clang/include/mm_malloc.h": {
+      "sha256": "5cd8a3d288d469c9e5a2fc8a8ee624f50889dbcd06dea1262ef7aaf510a204af",
+      "bytes": 1929,
+      "executable": false
+    },
+    "runtime/clang/include/mmintrin.h": {
+      "sha256": "b3a59c5b4bd653d0ea3b96b82fadc4a7adb97ae9dc7bb2abd8872e9348238a3b",
+      "bytes": 60004,
+      "executable": false
+    },
+    "runtime/clang/include/module.modulemap": {
+      "sha256": "617f60087e2427c49f5d54dbf06f5c4b6d5450cad051f71bb748cb3ecb074dd0",
+      "bytes": 6808,
+      "executable": false
+    },
+    "runtime/clang/include/movdirintrin.h": {
+      "sha256": "ae4691076535aefa2a2c465e13e3873d29e1dcf7a6d12faf5f631a54ae7c77f8",
+      "bytes": 1612,
+      "executable": false
+    },
+    "runtime/clang/include/movrs_avx10_2_512intrin.h": {
+      "sha256": "28c9c2debd1adca64d953834571c8b5571ed47ee0fb2d25f6aca0e7a37dd3a16",
+      "bytes": 3973,
+      "executable": false
+    },
+    "runtime/clang/include/movrs_avx10_2intrin.h": {
+      "sha256": "3b68f1e37ae9ac3ab84e0503a04d64f235a6f556ad97202318e007dd7ecefeac",
+      "bytes": 7036,
+      "executable": false
+    },
+    "runtime/clang/include/movrsintrin.h": {
+      "sha256": "f8a52dbef1e07264523a12bea5f4295f2a028b246b97c0c4a1ca91ac58b72125",
+      "bytes": 2025,
+      "executable": false
+    },
+    "runtime/clang/include/msa.h": {
+      "sha256": "1283e2b1437a068ce0d0d287b541df50badb5ea1781d79c173db7a672c0e0d80",
+      "bytes": 25615,
+      "executable": false
+    },
+    "runtime/clang/include/mwaitxintrin.h": {
+      "sha256": "e7dc6d77422aa1fcd6f26126dd98f6a88b2ff506ed75fd1538cc4b2aaf33ef8d",
+      "bytes": 2244,
+      "executable": false
+    },
+    "runtime/clang/include/nmmintrin.h": {
+      "sha256": "cd7b51a1c33c7e7d710f070315e7bc034757ea6be9e6804864cf159c79f48d54",
+      "bytes": 709,
+      "executable": false
+    },
+    "runtime/clang/include/nvptxintrin.h": {
+      "sha256": "2cf2588450c2d14b25efad55dba2a6190722347150ce485ded0c224117d3c856",
+      "bytes": 7911,
+      "executable": false
+    },
+    "runtime/clang/include/omp-tools.h": {
+      "sha256": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be",
+      "bytes": 52077,
+      "executable": false
+    },
+    "runtime/clang/include/omp.h": {
+      "sha256": "3f9f6217b1edfdfd7487e84b2f62ee7742793e56cf447b54ee20bb5930b35ed3",
+      "bytes": 25839,
+      "executable": false
+    },
+    "runtime/clang/include/ompt-multiplex.h": {
+      "sha256": "d77b2b554756bc1b117b10492a0d9134c8b0d4e0a242f83415e7400e77fb2729",
+      "bytes": 52358,
+      "executable": false
+    },
+    "runtime/clang/include/ompt.h": {
+      "sha256": "4876d0addcf2783953a6d0aeed8efc495ff0476b6a5784ca6e43bdd1c62df5be",
+      "bytes": 52077,
+      "executable": false
+    },
+    "runtime/clang/include/ompx.h": {
+      "sha256": "a84d0460771cec5695ce16fc8698bddf3276a1908a372087b3f6aa60782acf88",
+      "bytes": 7720,
+      "executable": false
+    },
+    "runtime/clang/include/opencl-c-base.h": {
+      "sha256": "e0b5b97e38951211312bfe946c956927a78da52a9e31bc66ec426e17fa5c23c5",
+      "bytes": 32184,
+      "executable": false
+    },
+    "runtime/clang/include/opencl-c.h": {
+      "sha256": "aedaac009c73aa9ce4fad770ebdddbf11bbce42effc4c40cb54330f31af49c50",
+      "bytes": 913161,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/__clang_openmp_device_functions.h": {
+      "sha256": "7e4ae115f8fe22dec814d39d4ba1e2ff20763fedc308e8955a8b706f767fc39b",
+      "bytes": 2603,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/cmath": {
+      "sha256": "bb75069b6aacb79ba85236f69c98410ea0ae84dd02e5d04da50b884d723e2d49",
+      "bytes": 5251,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/complex": {
+      "sha256": "c1448d113395586b11c357506f9a8dc207acf5e464b446995ba3dae5ae16e8d8",
+      "bytes": 1802,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/complex.h": {
+      "sha256": "5e0c4bd3e1165deaf1c557fa7fb9959772d476204507a42205099febd2232152",
+      "bytes": 898,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/complex_cmath.h": {
+      "sha256": "b904380d5094d97a7ae5daa6477773f172f8817457189c4b7d49cab4e3f88454",
+      "bytes": 12559,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/math.h": {
+      "sha256": "74e192fa76f1648fc3081232fb4ebd6700ef92cde3a76ca4da30205ceea75277",
+      "bytes": 2054,
+      "executable": false
+    },
+    "runtime/clang/include/openmp_wrappers/new": {
+      "sha256": "b5d050cf4ac693abcfaeef786c656d55900256efe274fdcbbc73d9b383e94bc2",
+      "bytes": 1409,
+      "executable": false
+    },
+    "runtime/clang/include/pconfigintrin.h": {
+      "sha256": "c8090603fa18cca9af372a25de032695bc782e6480520a9da880907dc7f31679",
+      "bytes": 1216,
+      "executable": false
+    },
+    "runtime/clang/include/pkuintrin.h": {
+      "sha256": "d103441f018b003a07117ad8ae662294cb59c9b457196d85d8ac4287f1c0d01b",
+      "bytes": 934,
+      "executable": false
+    },
+    "runtime/clang/include/pmmintrin.h": {
+      "sha256": "d339fc33b62cad78adcdf359c662c293e2e6c562d56104b1a9d5806dda9b85ca",
+      "bytes": 11390,
+      "executable": false
+    },
+    "runtime/clang/include/popcntintrin.h": {
+      "sha256": "c10c93f79d0d2b61e9fa2340560c6bd331c7d977f9543d431e3756861e1ef8de",
+      "bytes": 1948,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/bmi2intrin.h": {
+      "sha256": "0f0da0d31166135263adc3034475314536296ac0aa2ac45dac3ecfd75eac16b5",
+      "bytes": 4671,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/bmiintrin.h": {
+      "sha256": "f5d485c66e0de5d881c7051432ec0e9b56e650d4a1c679877a62de3f287579cc",
+      "bytes": 5002,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/emmintrin.h": {
+      "sha256": "3125e83d7fcdebda705ef1864aa1f765ba59ee2c3fb81b4dbdfb26dfdf258e8e",
+      "bytes": 71273,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/immintrin.h": {
+      "sha256": "fd91e22fac3443525b0863eebe7db74381b8286e5dd6631ddcd12e40022839ca",
+      "bytes": 611,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/mm_malloc.h": {
+      "sha256": "6ff2b87659f5184f0655b6e83f59a230051e8f0ec2238fee07195dd5f3183417",
+      "bytes": 1337,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/mmintrin.h": {
+      "sha256": "4211ef43a49c3f06ed33c9624adcb434cbb644078fb3e0f70bb766327efff2cd",
+      "bytes": 45763,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/nmmintrin.h": {
+      "sha256": "93a42888efebb8de76b8fb963d688cc82e690893a36913f73f4b39eebc2123b4",
+      "bytes": 977,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/pmmintrin.h": {
+      "sha256": "37eca55a0d5db5a2aa0463fe4a31ccaac6441e15b38b08ca8bd8776acd57e39a",
+      "bytes": 5898,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/smmintrin.h": {
+      "sha256": "4d38f5fe3dd49a3f125c147f4a3fec5d03f60bd97cc6168027be455efb8e16c0",
+      "bytes": 23559,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/tmmintrin.h": {
+      "sha256": "1b58acbfe5f1d20dbc3f47909c2d73982ccafc9a0930b5127702e6c40d3e690f",
+      "bytes": 16341,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/x86gprintrin.h": {
+      "sha256": "9d18b4b2272918636a78e865d2087387dbb0d2a25b588b036071ffbbb76586d5",
+      "bytes": 499,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/x86intrin.h": {
+      "sha256": "df147bbd99a860a79bae6ab7e8ae958b4a2634f2ae9fbc89e417252960c9fa9f",
+      "bytes": 1067,
+      "executable": false
+    },
+    "runtime/clang/include/ppc_wrappers/xmmintrin.h": {
+      "sha256": "064a446bfbb110ff61ac79faad162ff52fbef02a1943aefb45007cdcb601975e",
+      "bytes": 64333,
+      "executable": false
+    },
+    "runtime/clang/include/prfchiintrin.h": {
+      "sha256": "8dec1f9509fd459fc4d51bf5183e2672a7a3497681b322a36e78379c7e371af0",
+      "bytes": 2073,
+      "executable": false
+    },
+    "runtime/clang/include/prfchwintrin.h": {
+      "sha256": "687f28454b833d9924b08a38b09710dc0c21e0b6ebab62ac3f7709159815c203",
+      "bytes": 1842,
+      "executable": false
+    },
+    "runtime/clang/include/ptrauth.h": {
+      "sha256": "b8d2662e9168e84b7f01b9e69b47af08fcf4f175a65f3d44c67e9898b28055e2",
+      "bytes": 18574,
+      "executable": false
+    },
+    "runtime/clang/include/ptwriteintrin.h": {
+      "sha256": "549e44eef926d5bb1333c87d32d977270649a8fd7c7161093db600e472d23039",
+      "bytes": 1076,
+      "executable": false
+    },
+    "runtime/clang/include/raointintrin.h": {
+      "sha256": "fcc60ade967bf5152675de42f9f48fe5b17b40ff432ab993159119ba2038c5e5",
+      "bytes": 6748,
+      "executable": false
+    },
+    "runtime/clang/include/rdpruintrin.h": {
+      "sha256": "6d0b9af132bfbbc72f6a3821b9eedbbb7457fc43cd94ad73c08d1de72ed8b7f3",
+      "bytes": 1624,
+      "executable": false
+    },
+    "runtime/clang/include/rdseedintrin.h": {
+      "sha256": "d936c47a6fd689a47acb819dd28ba4ad779e667116ae5002c1e06149c0804b14",
+      "bytes": 2919,
+      "executable": false
+    },
+    "runtime/clang/include/riscv_bitmanip.h": {
+      "sha256": "736cee6955e7ed4e0ff4e17a5edb42591e1e28f083ca9f9c109085c7ac57f8aa",
+      "bytes": 5725,
+      "executable": false
+    },
+    "runtime/clang/include/riscv_corev_alu.h": {
+      "sha256": "8a2273e07bc28f74ee4bdfa661f0c683fcd792b40ad3fe7968b8bfcdf2dc0270",
+      "bytes": 4033,
+      "executable": false
+    },
+    "runtime/clang/include/riscv_crypto.h": {
+      "sha256": "215fc9a87e37fe2d2c389e78895cccf2dca67f31964408da2b050c75c7e3b139",
+      "bytes": 5211,
+      "executable": false
+    },
+    "runtime/clang/include/riscv_ntlh.h": {
+      "sha256": "a0a75c40f11a4910506c44a6c1bb44e568f0c90c34aeb715836380c9ae7f54e5",
+      "bytes": 744,
+      "executable": false
+    },
+    "runtime/clang/include/riscv_vector.h": {
+      "sha256": "01ffe43443562a0c2fa90e0d9475441d43fc8751c36ac61f8eea2a1656bbe921",
+      "bytes": 17461,
+      "executable": false
+    },
+    "runtime/clang/include/rtmintrin.h": {
+      "sha256": "18fe263a76ad5970e47d2e8b9b5c99a4370f1a4f7258e2e197c4c8fab0cb2123",
+      "bytes": 1280,
+      "executable": false
+    },
+    "runtime/clang/include/s390intrin.h": {
+      "sha256": "2c8bfec677cd371893070d06f06e2ed9a6657c8e7d1dbafb2d8e3054dd8fe7c5",
+      "bytes": 604,
+      "executable": false
+    },
+    "runtime/clang/include/serializeintrin.h": {
+      "sha256": "dd29ae159d83161dd61d6bfcd6a7a37aa3f5930f814e8d12bf15ae131a0c6ac6",
+      "bytes": 881,
+      "executable": false
+    },
+    "runtime/clang/include/sgxintrin.h": {
+      "sha256": "0e8dc78c7311b9dda1499587ac5eaa3e1c485b9c7df0fc54225b8425db5ae964",
+      "bytes": 1816,
+      "executable": false
+    },
+    "runtime/clang/include/sha512intrin.h": {
+      "sha256": "094f1882a68f1511fec3d1145aef332ce75086cf194101dd5049e143ff771de0",
+      "bytes": 6088,
+      "executable": false
+    },
+    "runtime/clang/include/shaintrin.h": {
+      "sha256": "1a87fd31fd1247db417a8fc08929791b26fd45347871d8c3333f38a883ea4378",
+      "bytes": 7660,
+      "executable": false
+    },
+    "runtime/clang/include/sifive_vector.h": {
+      "sha256": "9057e9337dd16700b9a24890628f62f9f372bebfc0d5d903e138f9cf3e2d1f15",
+      "bytes": 7041,
+      "executable": false
+    },
+    "runtime/clang/include/sm3intrin.h": {
+      "sha256": "66680c0998f322f5ae97157dd422a735bcf32363fe382076d43cd669b3361d0c",
+      "bytes": 7470,
+      "executable": false
+    },
+    "runtime/clang/include/sm4evexintrin.h": {
+      "sha256": "5cc2ed1df229d567a80937ec3321a2a27dacc90da8430bf0b9cda6e1301147ed",
+      "bytes": 1195,
+      "executable": false
+    },
+    "runtime/clang/include/sm4intrin.h": {
+      "sha256": "1a56d69f3c2fdadbf81c67b6cf7b36efc3892777d7c64d55bacdfb31b21aa5e6",
+      "bytes": 8401,
+      "executable": false
+    },
+    "runtime/clang/include/smmintrin.h": {
+      "sha256": "b471a91b7d3990d9bcbc82262510681b5b6d250e646bd8aa07894598d0cc951f",
+      "bytes": 101720,
+      "executable": false
+    },
+    "runtime/clang/include/stdalign.h": {
+      "sha256": "0375392ce44c0bce9d2dda696b0b2e7129e2e58233e002f532d010c9ac02d27b",
+      "bytes": 756,
+      "executable": false
+    },
+    "runtime/clang/include/stdarg.h": {
+      "sha256": "ce6e43d79dc89b50208ecf259b1ffd519f5a78cd3a2c7fcaac6386f376b89fef",
+      "bytes": 2497,
+      "executable": false
+    },
+    "runtime/clang/include/stdatomic.h": {
+      "sha256": "728b690f127fc85faa32b9031e3a0019da92f77db92ca91b749571e45617a9ea",
+      "bytes": 8662,
+      "executable": false
+    },
+    "runtime/clang/include/stdbool.h": {
+      "sha256": "48655faf4ebd4ca0af26a1ee8e3e16f8dc68385c9cd550ffb3629320681305b3",
+      "bytes": 1172,
+      "executable": false
+    },
+    "runtime/clang/include/stdckdint.h": {
+      "sha256": "808854b229028d66012bef0eb5f7cccb2d9a228edcdc5eb2bc710bc7cea4b25a",
+      "bytes": 1666,
+      "executable": false
+    },
+    "runtime/clang/include/stdcountof.h": {
+      "sha256": "f042faf9ae255233e0dbaa5db23e42eaea2d213bd5d19b8d4af642bbfb0bf689",
+      "bytes": 473,
+      "executable": false
+    },
+    "runtime/clang/include/stddef.h": {
+      "sha256": "b3e62a046ddf28d09eedebe6eb9461cb7060e47cad2c69964b222c4eea10347e",
+      "bytes": 5053,
+      "executable": false
+    },
+    "runtime/clang/include/stdint.h": {
+      "sha256": "f43783466c93f77a6464274ebf18f9e4cc46f0d90770ddee2993c6cf39f7514f",
+      "bytes": 27519,
+      "executable": false
+    },
+    "runtime/clang/include/stdnoreturn.h": {
+      "sha256": "53912b2e9a149a73fe58d88d6c41e69f49020eab7884c81ebf0b4f3607e96847",
+      "bytes": 1316,
+      "executable": false
+    },
+    "runtime/clang/include/tbmintrin.h": {
+      "sha256": "5dbc7e08c1eb24436182fb9b2bf9bb157f944a20c3b88f4d975af12b7c02fb11",
+      "bytes": 3507,
+      "executable": false
+    },
+    "runtime/clang/include/tgmath.h": {
+      "sha256": "7aa69dc82ec404a51295498cc4cb07d0441e5dcd891819247c14ccb3f9745e3b",
+      "bytes": 30389,
+      "executable": false
+    },
+    "runtime/clang/include/tmmintrin.h": {
+      "sha256": "6fb2fa4dd65f56573b3c2f404b21095d7ecde88675cf08a6495f49b51bd56ec0",
+      "bytes": 31927,
+      "executable": false
+    },
+    "runtime/clang/include/tsxldtrkintrin.h": {
+      "sha256": "c833bd7383b431a0b1bf65c864deef445a25fb7db2c924b4b83272957f2ceb51",
+      "bytes": 2015,
+      "executable": false
+    },
+    "runtime/clang/include/uintrintrin.h": {
+      "sha256": "d34ec074087d3b827cdff359c4ce646f3563a94f335fab6ece28970e448d4bdb",
+      "bytes": 5079,
+      "executable": false
+    },
+    "runtime/clang/include/unwind.h": {
+      "sha256": "fb7175e889f60907dbd0fd02fdc1571fcf33d867f3d0bbffb21356d2bd9b69ea",
+      "bytes": 11477,
+      "executable": false
+    },
+    "runtime/clang/include/usermsrintrin.h": {
+      "sha256": "03c169539a584284e2eabb5230f98bdf7e85772a41f7d6e93fef11485499da32",
+      "bytes": 1572,
+      "executable": false
+    },
+    "runtime/clang/include/vadefs.h": {
+      "sha256": "e338a8bbdbc40a9662d76a0a395313cf17a9541a0fadf3cf8bfa6ee6fa3db4ec",
+      "bytes": 1420,
+      "executable": false
+    },
+    "runtime/clang/include/vaesintrin.h": {
+      "sha256": "2f2bb9eeb9bb63e519c6d5a9486a1e1a03b799254f1ad372dd7f60e3e0ec0dd2",
+      "bytes": 2671,
+      "executable": false
+    },
+    "runtime/clang/include/varargs.h": {
+      "sha256": "41bf9afa7c9cf7e5eb5e4a42aab8eee3f5a97977a6d33094b2c8f6b3ef1943bb",
+      "bytes": 584,
+      "executable": false
+    },
+    "runtime/clang/include/vecintrin.h": {
+      "sha256": "00f64ef019d6724615b8dd7e40aa6fdcfcb237b6f14ce1d7733a06ff2a91e9b5",
+      "bytes": 429293,
+      "executable": false
+    },
+    "runtime/clang/include/velintrin.h": {
+      "sha256": "7c2e001d36310ceaea4045d9cea1f227f491d0cdebf749959c852b44b217978f",
+      "bytes": 2153,
+      "executable": false
+    },
+    "runtime/clang/include/velintrin_approx.h": {
+      "sha256": "6655c27881e5d1bb8d68f9aa3fee49576e22287f02e2cf422ed9dd3259727b57",
+      "bytes": 3623,
+      "executable": false
+    },
+    "runtime/clang/include/velintrin_gen.h": {
+      "sha256": "d39909a5d140e00148cda92e485afccd02288db702b1dbb4b2eb38b2c61a7754",
+      "bytes": 70721,
+      "executable": false
+    },
+    "runtime/clang/include/vpclmulqdqintrin.h": {
+      "sha256": "db240ad56ccfc14a7e29862b50c1214b1be5666cccecde1401d28afe075a606f",
+      "bytes": 1086,
+      "executable": false
+    },
+    "runtime/clang/include/waitpkgintrin.h": {
+      "sha256": "8b036e6a2c20dca74fbc38b898dc32a36dc46bdb4c0a5a71d691096ca04f6ca3",
+      "bytes": 1357,
+      "executable": false
+    },
+    "runtime/clang/include/wasm_simd128.h": {
+      "sha256": "93a4905ac462809f5a5d970286e0ef7cca11b27726c2e8461304e7bc701f9db7",
+      "bytes": 83675,
+      "executable": false
+    },
+    "runtime/clang/include/wbnoinvdintrin.h": {
+      "sha256": "e22b8221209e1aeed8de50e81c6bfe84b378a8b92bdf018aea601bf1d3c4ac22",
+      "bytes": 749,
+      "executable": false
+    },
+    "runtime/clang/include/wmmintrin.h": {
+      "sha256": "eb4f03593063aa1c27cc306474814e3c3caeb6644379415e1104d299288a3231",
+      "bytes": 659,
+      "executable": false
+    },
+    "runtime/clang/include/x86gprintrin.h": {
+      "sha256": "52d2524cb4e360b80125e224e1393e87e15ed1cbb5b304ccabbfb17fdadfcc93",
+      "bytes": 1727,
+      "executable": false
+    },
+    "runtime/clang/include/x86intrin.h": {
+      "sha256": "bb90a00978252c2c0777bf29cfa313bd6d915d6d62740beba327e42b5a93ad79",
+      "bytes": 721,
+      "executable": false
+    },
+    "runtime/clang/include/xmmintrin.h": {
+      "sha256": "ec3c096ef84470e34198986ea4fc90ad328b197e2f43693f654656c69051fa8f",
+      "bytes": 120340,
+      "executable": false
+    },
+    "runtime/clang/include/xopintrin.h": {
+      "sha256": "dea8859bff1b74ad2ec860136168e907907dcbf793aab0bb8c0e6e8984db10ac",
+      "bytes": 20434,
+      "executable": false
+    },
+    "runtime/clang/include/xsavecintrin.h": {
+      "sha256": "b3d0b240cd59068ba5dd40f79a921e727815f0722d07051ec01aae09b91c4ac8",
+      "bytes": 2574,
+      "executable": false
+    },
+    "runtime/clang/include/xsaveintrin.h": {
+      "sha256": "bb5b08b5b929d0a34b88230c7f5633071a05d17f0680332a30c4e1b607c3c164",
+      "bytes": 1678,
+      "executable": false
+    },
+    "runtime/clang/include/xsaveoptintrin.h": {
+      "sha256": "3dee1885dff4d101804c273d87f98cdf37a5e0975d936a3683ffbe1d10ffda7e",
+      "bytes": 1026,
+      "executable": false
+    },
+    "runtime/clang/include/xsavesintrin.h": {
+      "sha256": "cf3692a69c4c96e0b4c0d291c6aa09cba851dff1d82f8b266d08fee7bdeaa5ea",
+      "bytes": 1268,
+      "executable": false
+    },
+    "runtime/clang/include/xtestintrin.h": {
+      "sha256": "05e7c974641109d1214f9016c3939787e2912e6990fd20bf5886fcca4c40e699",
+      "bytes": 873,
+      "executable": false
+    },
+    "runtime/clang/include/yvals_core.h": {
+      "sha256": "8f1033d2fc8cb786d7a6d3ff174aa819495c1c7d8948b5a94a9daca24d5ee3c2",
+      "bytes": 687,
+      "executable": false
+    },
+    "runtime/clang/include/zos_wrappers/builtins.h": {
+      "sha256": "fca65b1462b08910b24dbd2016425aa6f4b7b32f1ed2eaa8014c10f79f88fbd4",
+      "bytes": 608,
+      "executable": false
+    },
+    "licenses/Apache-2.0.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "executable": false
+    },
+    "licenses/GPL-2.txt": {
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+      "bytes": 17984,
+      "executable": false
+    },
+    "licenses/GPL-3.txt": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "executable": false
+    },
+    "licenses/LGPL-2.1.txt": {
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+      "bytes": 26419,
+      "executable": false
+    },
+    "licenses/commonmark-0.13.0-LICENSE.txt": {
+      "sha256": "4c1ea7a8104cd00a7e62b794cc317aedca2e68c647048b5f546fc7388dddd306",
+      "bytes": 1305,
+      "executable": false
+    },
+    "licenses/commonmark-ext-gfm-strikethrough-0.13.0-LICENSE.txt": {
+      "sha256": "4c1ea7a8104cd00a7e62b794cc317aedca2e68c647048b5f546fc7388dddd306",
+      "bytes": 1305,
+      "executable": false
+    },
+    "THIRD_PARTY_NOTICES.txt": {
+      "sha256": "24db7f01a0b9f259ee08718d4b3c11a8efb4d48accb70916db66e7dfa759e1fb",
+      "bytes": 2111,
+      "executable": false
+    }
+  },
+  "links": {}
+}
