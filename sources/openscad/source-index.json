@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "correspondingSourceAccess": "Public version control and source archives; no charge or account required",
+  "components": {
+    "openscad": {
+      "version": "2026.10.29",
+      "revision": "fe482c342ea48bbe749563315741d0e58cdfd57f",
+      "source": "https://github.com/openscad/openscad/tree/fe482c342ea48bbe749563315741d0e58cdfd57f",
+      "license": "GPL-2.0-or-later"
+    },
+    "openscad-wasm-build": {
+      "revision": "501694addd7a7c9bd307b38d8591a4faad5381e8",
+      "source": "https://github.com/openscad/openscad-wasm/tree/501694addd7a7c9bd307b38d8591a4faad5381e8",
+      "note": "Emscripten 4.0.10 base recipes, including patches and dependency source locations; upstream development refs were not all pinned"
+    },
+    "manifold": {
+      "version": "3.5.4",
+      "revision": "ce50d78021d64507f89e8c9fc2c2e51018117857",
+      "source": "https://github.com/elalish/manifold/tree/ce50d78021d64507f89e8c9fc2c2e51018117857",
+      "license": "Apache-2.0"
+    },
+    "clipper2": {
+      "version": "2.0.1",
+      "revision": "c7f820f6a03fa91f189b866d27bf40dfe47abaa6",
+      "source": "https://github.com/AngusJohnson/Clipper2/tree/c7f820f6a03fa91f189b866d27bf40dfe47abaa6",
+      "license": "BSL-1.0"
+    },
+    "MCAD": {
+      "revision": "1ea402208c3127ffb443931e9bb1681c191dacca",
+      "source": "https://github.com/openscad/MCAD/tree/1ea402208c3127ffb443931e9bb1681c191dacca",
+      "license": "LGPL-2.1-or-later"
+    },
+    "CGAL": {
+      "version": "6.0.1",
+      "source": "https://github.com/CGAL/cgal/tree/v6.0.1",
+      "archive": "https://github.com/CGAL/cgal/releases/download/v6.0.1/CGAL-6.0.1-library.tar.xz",
+      "license": "GPL-3.0-or-later AND LGPL-3.0-or-later"
+    },
+    "Eigen": {
+      "version": "3.4.90",
+      "revision": "d228bcdf8f35d0625e6dd69ae2f949c38ac21257",
+      "source": "https://github.com/eigen-mirror/eigen/tree/d228bcdf8f35d0625e6dd69ae2f949c38ac21257",
+      "license": "MPL-2.0",
+      "evidence": "All 597 installed Eigen headers in the upstream base image match this source commit byte for byte"
+    },
+    "GLib": {
+      "version": "2.83.2",
+      "revision": "17a1183996f85be8814f4cccc2400c93a2e53cbf",
+      "source": "https://github.com/kleisauke/glib/tree/17a1183996f85be8814f4cccc2400c93a2e53cbf",
+      "license": "LGPL-2.1-or-later",
+      "note": "wasm-vips-2.83.2 fork used by upstream base recipe; includes Emscripten adaptations"
+    },
+    "GMP": {
+      "version": "6.3.0",
+      "source": "https://gmplib.org/",
+      "archive": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+      "license": "LGPL-3.0-or-later OR GPL-2.0-or-later"
+    },
+    "MPFR": {
+      "version": "4.2.1",
+      "source": "https://www.mpfr.org/mpfr-4.2.1/",
+      "archive": "https://www.mpfr.org/mpfr-4.2.1/mpfr-4.2.1.tar.xz",
+      "license": "LGPL-3.0-or-later"
+    },
+    "Boost": {
+      "version": "1.87.0",
+      "source": "https://github.com/boostorg/boost/tree/boost-1.87.0",
+      "license": "BSL-1.0"
+    },
+    "fontconfig": {
+      "version": "2.16.2",
+      "source": "https://github.com/fontconfig/fontconfig/tree/2.16.2",
+      "license": "MIT",
+      "note": "Version reported by engine; upstream wasm build recipe also supplies fontconfig.patch"
+    },
+    "freetype": {
+      "version": "2.13.3",
+      "source": "https://github.com/freetype/freetype/tree/VER-2-13-3",
+      "license": "FTL OR GPL-2.0-or-later"
+    },
+    "harfbuzz": {
+      "version": "11.2.1",
+      "source": "https://github.com/harfbuzz/harfbuzz/tree/11.2.1",
+      "license": "MIT"
+    },
+    "libzip": {
+      "version": "1.11.4",
+      "source": "https://github.com/nih-at/libzip/tree/v1.11.4",
+      "license": "BSD-3-Clause"
+    },
+    "lib3mf": {
+      "version": "2.3.2",
+      "source": "https://github.com/3MFConsortium/lib3mf/tree/v2.3.2",
+      "license": "BSD-2-Clause",
+      "note": "See lib3mf.patch in upstream wasm build project"
+    },
+    "lodepng": {
+      "version": "20260102",
+      "source": "https://github.com/openscad/openscad/tree/fe482c342ea48bbe749563315741d0e58cdfd57f/src/ext",
+      "license": "Zlib"
+    }
+  },
+  "upstreamBaseImageConfig": "sha256:c150e52895809b6df1cfbdad8fa0035bd789708081a43c9e775cbc5a186a1f78",
+  "cppEngineRebuild": "not performed; no claim of bit-identical C++/Emscripten reproduction"
+}

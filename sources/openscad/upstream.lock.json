@@ -1,0 +1,14 @@
+{
+  "version": "2026.10.29-wasm-node-r3",
+  "releaseTag": "native-2026-10-31-r1",
+  "upstream": {
+    "url": "https://files.openscad.org/snapshots/OpenSCAD-2026.10.29-WebAssembly-node.zip",
+    "sha256": "a299a42cb4a6735ccc8876d40b54b09ab1ae0d0fcdf518cfc3fe81a810abbea1",
+    "bytes": 4713361,
+    "jsSha256": "e75f45d9f8109b29d0b9a99362168d6c02551ff65bfff7888bde7adc6d90cfe4"
+  },
+  "sourceCommit": "fe482c342ea48bbe749563315741d0e58cdfd57f",
+  "runtime": "builtin Node 26.12.1 on Android ARM64",
+  "distributionLicense": "GPL-3.0-or-later",
+  "upstreamLicense": "GPL-2.0-or-later"
+}

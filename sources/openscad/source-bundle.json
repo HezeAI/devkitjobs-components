@@ -1,0 +1,56 @@
+{
+  "file": "openscad-2026.10.29-source-access.zip",
+  "scope": "Supplementary verified dependency sources; remaining corresponding source available through source-index.json public VCS links",
+  "archives": [
+    {
+      "name": "CGAL-6.0.1-library.tar.xz",
+      "bytes": 5077192,
+      "sha256": "c752737f91d1af71fa96038f0e37945ce82a5f1fffb6200172cfcdd77755a356"
+    },
+    {
+      "name": "eigen-d228bcdf.tar.gz",
+      "bytes": 2912906,
+      "sha256": "8cb0862847ae5d216c7e72b18daeb17b7e6af4a9c64349db6f4282ac68b2af3f"
+    },
+    {
+      "name": "clipper2-c7f820f6.tar.gz",
+      "bytes": 716242,
+      "sha256": "399e712bd653a85e1507fbb02de8032d264e235a8e62e7028cee91f0490418b6"
+    },
+    {
+      "name": "MCAD-1ea40220.tar.gz",
+      "bytes": 56943,
+      "sha256": "3d04077d369814638c3f018fecc39439011a47f545026f43c1a465bce1773f57"
+    },
+    {
+      "name": "gmp-6.3.0.tar.xz",
+      "bytes": 2094196,
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898"
+    },
+    {
+      "name": "mpfr-4.2.1.tar.xz",
+      "bytes": 1493608,
+      "sha256": "277807353a6726978996945af13e52829e3abd7a9a5b7fb2793894e18f1fcbb2"
+    },
+    {
+      "name": "glib-2.83.2.tar.gz",
+      "bytes": 9814109,
+      "sha256": "36b9206446db85ee63c29c231bcb2382f521e22a41bf46a1889bff66e89a05c5"
+    },
+    {
+      "name": "fontconfig-2.16.2.tar.gz",
+      "bytes": 592820,
+      "sha256": "8b9368ae99d9faf2fe26491645fbeebf0272d911cacc5d3e9cf954c2157c151e"
+    },
+    {
+      "name": "freetype-2.13.3.tar.xz",
+      "bytes": 2617564,
+      "sha256": "0550350666d427c74daeb85d5ac7bb353acba5f76956395995311a9c6f063289"
+    },
+    {
+      "name": "openscad-wasm-501694ad.tar.gz",
+      "bytes": 22026,
+      "sha256": "de15ea60d9caa05c76be3d5e8557ce823b75fcc905e06006811c0483526da088"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "set": "native-2026-10-30-r1",
+  "set": "native-2026-10-31-r1",
   "platform": "android",
   "abi": "arm64-v8a",
   "minAndroidApi": 29,
@@ -8136,6 +8136,184 @@
         }
       },
       "links": {}
+    },
+    "openscad": {
+      "id": "openscad",
+      "version": "2026.10.29-wasm-node-r3",
+      "title": "OpenSCAD CLI (official WASM, native ARM64 Node)",
+      "platform": "android",
+      "abi": "arm64-v8a",
+      "minAndroidApi": 29,
+      "source": "https://openscad.org/downloads.html",
+      "license": "GPL-3.0-or-later",
+      "commands": {
+        "openscad": {
+          "path": "bin/openscad",
+          "probe": [
+            "--devkit-self-test"
+          ],
+          "expect": "OpenSCAD functional checks passed"
+        }
+      },
+      "dependencies": {},
+      "runtimeRequirements": {
+        "builtinNode": "26.12.1",
+        "architecture": "arm64",
+        "environment": [
+          "DEVKIT_BIN"
+        ]
+      },
+      "archive": {
+        "url": "https://github.com/HezeAI/devkitjobs-components/releases/download/native-2026-10-31-r1/openscad-2026.10.29-wasm-node-r3-android-arm64.zip",
+        "bytes": 4824609,
+        "sha256": "678e48e2b3f47091cad8f9542a0c8adb233fb0de508daab93fbb9cdd61968f13"
+      },
+      "files": {
+        "PROVENANCE.json": {
+          "sha256": "412edda5c9cadfd46418ab07baf377e52cc9bbe1702514111955680b58c58cfb",
+          "bytes": 875,
+          "executable": false
+        },
+        "bin/openscad": {
+          "sha256": "858ace6757150a446e7f2ddfca748a0ab343637ebe95f992cfddeea61213749c",
+          "bytes": 4287,
+          "executable": true
+        },
+        "licenses/Eigen-COPYING.APACHE.txt": {
+          "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7",
+          "bytes": 11362,
+          "executable": false
+        },
+        "licenses/Eigen-COPYING.BSD.txt": {
+          "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb",
+          "bytes": 1517,
+          "executable": false
+        },
+        "licenses/Eigen-COPYING.MINPACK.txt": {
+          "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0",
+          "bytes": 2193,
+          "executable": false
+        },
+        "licenses/Eigen-COPYING.MPL2.txt": {
+          "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172",
+          "bytes": 16727,
+          "executable": false
+        },
+        "licenses/Eigen-COPYING.README.txt": {
+          "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644",
+          "bytes": 264,
+          "executable": false
+        },
+        "licenses/GPL-2.0.txt": {
+          "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+          "bytes": 17984,
+          "executable": false
+        },
+        "licenses/GPL-3.0.txt": {
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149,
+          "executable": false
+        },
+        "licenses/LGPL-2.1.txt": {
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+          "bytes": 26419,
+          "executable": false
+        },
+        "licenses/LGPL-3.0.txt": {
+          "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+          "bytes": 7639,
+          "executable": false
+        },
+        "licenses/OpenSCAD-COPYING.txt": {
+          "sha256": "1805a29c3bccbc0428ce0048a1dfdeb9b1867677410e99c89c3c30932ae8c7d5",
+          "bytes": 18382,
+          "executable": false
+        },
+        "licenses/UPSTREAM-WASM-NOTICES.md": {
+          "sha256": "041f5f4d63047fc4eb875f53069c264f39fa675752ddedbe46192fa2f98ea0c5",
+          "bytes": 170405,
+          "executable": false
+        },
+        "runtime/openscad.js": {
+          "sha256": "e75f45d9f8109b29d0b9a99362168d6c02551ff65bfff7888bde7adc6d90cfe4",
+          "bytes": 14773632,
+          "executable": false
+        },
+        "runtime/run.cjs": {
+          "sha256": "45fe4ad1657fb04df6d06bd163965e680cc616e64e282b2859c5bf962e98faca",
+          "bytes": 3632,
+          "executable": false
+        },
+        "sources/EIGEN-SOURCE-VALIDATION.json": {
+          "sha256": "eb9eb5bf9820802d9d7fc434cd416632cd31d054d7f9363a9b3de6e8424d9a55",
+          "bytes": 204,
+          "executable": false
+        },
+        "sources/README.md": {
+          "sha256": "fe7d8b775a6f9f412c5b35d7997dd9afe834ebd4bd202b9cf864ef3e9b234652",
+          "bytes": 3816,
+          "executable": false
+        },
+        "sources/SOURCE-OFFER.md": {
+          "sha256": "07b712b0cc4e400d4c06406381f0ffd3370b1fa971f1a69ed00ea2d26fe80e30",
+          "bytes": 2344,
+          "executable": false
+        },
+        "sources/build.py": {
+          "sha256": "30c222c2448386bc44a9b814e8bc7aced576d49922173656938ceabc568a48dc",
+          "bytes": 4567,
+          "executable": false
+        },
+        "sources/launcher.S": {
+          "sha256": "0f205c03729b0ae5be9632a9c83a10627968ec440563b101edd1efbf793fff00",
+          "bytes": 473,
+          "executable": false
+        },
+        "sources/run.cjs": {
+          "sha256": "45fe4ad1657fb04df6d06bd163965e680cc616e64e282b2859c5bf962e98faca",
+          "bytes": 3632,
+          "executable": false
+        },
+        "sources/source-bundle.json": {
+          "sha256": "20ce025b563f0b4cbfbd7468f25e0ca08053b3c88cc21d3cf9ef82764566ba90",
+          "bytes": 1805,
+          "executable": false
+        },
+        "sources/source-index.json": {
+          "sha256": "69cc49f271d673971f8af3c7166d4fd8a69886b0cf5b075527a7a3c77f194a48",
+          "bytes": 4305,
+          "executable": false
+        },
+        "sources/test.py": {
+          "sha256": "35dd99bad123d690655ea69e73872a6dc160a54010a066628d19fbcc03ae0a7b",
+          "bytes": 4696,
+          "executable": false
+        },
+        "sources/upstream.lock.json": {
+          "sha256": "1a145361157b16fd960aa56126a0cc5422d1c5f49fbdbe9f535d8767b970b4ea",
+          "bytes": 585,
+          "executable": false
+        }
+      },
+      "links": {},
+      "provenance": {
+        "version": "2026.10.29-wasm-node-r3",
+        "releaseTag": "native-2026-10-31-r1",
+        "upstream": {
+          "url": "https://files.openscad.org/snapshots/OpenSCAD-2026.10.29-WebAssembly-node.zip",
+          "sha256": "a299a42cb4a6735ccc8876d40b54b09ab1ae0d0fcdf518cfc3fe81a810abbea1",
+          "bytes": 4713361,
+          "jsSha256": "e75f45d9f8109b29d0b9a99362168d6c02551ff65bfff7888bde7adc6d90cfe4"
+        },
+        "sourceCommit": "fe482c342ea48bbe749563315741d0e58cdfd57f",
+        "runtime": "builtin Node 26.12.1 on Android ARM64",
+        "distributionLicense": "GPL-3.0-or-later",
+        "upstreamLicense": "GPL-2.0-or-later",
+        "engine": "Official unmodified OpenSCAD JS/WASM included in package",
+        "launcher": "Portable static Android ARM64 syscall launcher \u2192 system sh \u2192 builtin Node",
+        "gui": false,
+        "reproducibleScope": "DevKit package and launcher; upstream WASM SHA-pinned, not rebuilt locally"
+      }
     }
   },
   "tools": {

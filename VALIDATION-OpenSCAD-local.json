@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "version": "2026.10.29-wasm-node-r3",
+  "archiveSha256": "678e48e2b3f47091cad8f9542a0c8adb233fb0de508daab93fbb9cdd61968f13",
+  "archiveBytes": 4824609,
+  "platform": "Android ARM64 native Node + official WASM",
+  "reproduciblePackage": true,
+  "archiveAndFileIntegrity": true,
+  "coldNetworkInstall": false,
+  "archiveIncludesEngine": true,
+  "runtimeNetworkRequired": false,
+  "geometryWithUnreachableProxies": true,
+  "managerActivation": {
+    "id": "openscad",
+    "version": "2026.10.29-wasm-node-r3",
+    "status": "ready"
+  },
+  "functionalProbe": {
+    "status": "ready",
+    "checkedAt": 1793417246,
+    "checks": [
+      {
+        "command": "openscad",
+        "exit": 0,
+        "probe": [
+          "--devkit-self-test"
+        ],
+        "output": "OpenSCAD version 2026.10.29\nUpstream version-query exit: 7\nRuntime: v26.12.1 arm64 android\ncube: {\"triangles\":12,\"dimensions\":[1,2,3],\"volume\":6,\"closed\":true,\"unit\":\"mm (fixture convention; STL is unitless)\"}\nboolean: {\"triangles\":28,\"dimensions\":[8,6,4],\"volume\":168,\"closed\":true,\"unit\":\"mm (fixture convention; STL is unitless)\"}\nextrude: {\"triangles\":12,\"dimensions\":[4,4,4],\"volume\":37.33333333333333,\"closed\":true,\"unit\":\"mm (fixture convention; STL is unitless)\"}\nOpenSCAD functional checks passed\n"
+      }
+    ],
+    "platform": "aarch64",
+    "androidApi": "36",
+    "targetSdk": "28"
+  },
+  "independentCliCallers": 2,
+  "managerReload": true,
+  "failedUpdateRetainedActive": true,
+  "invalidScadRejected": true,
+  "privatePathsInPackage": false,
+  "cppEmscriptenRebuild": "not performed",
+  "installedAppGuiAndTwoChatUi": "not tested"
+}

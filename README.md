@@ -15,6 +15,7 @@ Downloaded executables require the experimental DevKit targetSdk 28 build. The a
 | Gradle | 9.5.0-r1 | 140362158 | jdk |
 | Android SDK + APK builder | 35-36.0.0-r1 | 43449668 | jdk |
 | Clang / LLVM | 21-r1 | 65999525 | Android system libraries |
+| [OpenSCAD CLI](sources/openscad) | 2026.10.29-wasm-node-r3 | 4824609 | APK Node/Python; Android system shell |
 
 Exact URLs, SHA-256 values, expanded file hashes, ABI, minimum Android API, commands and functional probes are recorded in [tools.json](tools.json) and [components.json](components.json). Published versioned assets are immutable. The stable `releases/latest/download/tools.json` endpoint is the app’s update catalog.
 
@@ -51,6 +52,8 @@ The APK core also includes the Git HTTP/HTTPS remote helper and its Android libc
 
 ## Validation
 
-Archive hashes, complete entry manifests, ZIP integrity, ARM64 ELF headers and safe extraction are checked separately from functional execution. Unit tests cover corrupted downloads, traversal, protected command replacement, failed activation and registry persistence. Mocked registry tests are not evidence that downloaded native binaries execute on Android. Per-component functional activation must pass on the targetSdk 28 app before a component is marked ready.
+Archive hashes, complete entry manifests, ZIP integrity, ARM64 ELF headers and safe extraction are checked separately from functional execution. Unit tests cover corrupted downloads, traversal, protected command replacement, failed activation and registry persistence. Mocked registry tests are not evidence that downloaded native binaries execute on Android.
+
+OpenSCAD r3 was actually packaged twice with identical bytes and activated by the real manager on Android ARM64/API 36, target SDK 28. Three STL geometry fixtures, independent CLI callers, manager reload, ZIP/file integrity and failed-update rollback passed. The engine is official WASM running on native Node; it is included unmodified in our complete component ZIP. Catalog installation downloads only our immutable GitHub archive; running the tool requires no engine download from the official site. See [adaptation and test instructions](sources/openscad), [source/license access](sources/openscad/SOURCE-OFFER.md) and [local validation](VALIDATION-OpenSCAD-local.json). Cold-cache installation from the published release URL remains pending until publication; installed app UI, two actual chat windows and full app restart are separate phone checks. Per-component functional activation must pass on the targetSdk 28 app before a component is marked ready.
 
 AI development assistance: OpenAI Codex
