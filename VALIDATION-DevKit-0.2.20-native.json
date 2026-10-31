@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "apkSha256": "f967ffa4e81815f57e76bcdcd5dca09c3a57b11548895d3cc469d33839dadb40",
+  "apkPackage": "devkitjobs.com",
+  "apkVersion": "0.2.20-preview",
+  "apkVersionCode": 33,
+  "uid": 10634,
+  "platform": "Android ARM64/API36/target28; no Ubuntu/PRoot",
+  "requiredPipelineStages": {
+    "tests": "passed",
+    "static": "passed",
+    "build": "passed",
+    "apk": "passed"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 853,
+    "sources": 303
+  },
+  "coreOperations": [
+    {
+      "name": "node-js-crypto-shell-and-child",
+      "exit": 0
+    },
+    {
+      "name": "python-stdlib-ssl-shell-and-child",
+      "exit": 0
+    },
+    {
+      "name": "bash-shell-and-child",
+      "exit": 0
+    },
+    {
+      "name": "bash-login-profile",
+      "exit": 0
+    },
+    {
+      "name": "git-shell-alias",
+      "exit": 0
+    },
+    {
+      "name": "git-init",
+      "exit": 0
+    },
+    {
+      "name": "git-config-name",
+      "exit": 0
+    },
+    {
+      "name": "git-config-email",
+      "exit": 0
+    },
+    {
+      "name": "git-add",
+      "exit": 0
+    },
+    {
+      "name": "git-commit-and-hook",
+      "exit": 0
+    },
+    {
+      "name": "git-bare",
+      "exit": 0
+    },
+    {
+      "name": "git-push-child-transport",
+      "exit": 0
+    },
+    {
+      "name": "git-clone-child-transport",
+      "exit": 0
+    },
+    {
+      "name": "git-credential-shell-fake",
+      "exit": 0
+    },
+    {
+      "name": "git-http-server-info",
+      "exit": 0
+    },
+    {
+      "name": "git-http-authenticated-helper",
+      "exit": 0
+    },
+    {
+      "name": "git-public-https-attempt-1",
+      "exit": 0
+    },
+    {
+      "name": "rg-search",
+      "exit": 0
+    },
+    {
+      "name": "ssh-keygen-fake",
+      "exit": 0
+    },
+    {
+      "name": "ssh-default-config-fake-home",
+      "exit": 0
+    },
+    {
+      "name": "ssh-isolated-config",
+      "exit": 0
+    }
+  ],
+  "components": [
+    {
+      "id": "gh",
+      "version": "2.103.3-r1",
+      "archiveSha256": "625a393e5bfecc9536935dd523029613e7f8d95f2a713b5d0d2ff61bc39adce3",
+      "receipt": {
+        "id": "gh",
+        "version": "2.103.3-r1",
+        "status": "ready"
+      },
+      "cleanLocalArchiveInstall": "passed",
+      "recheck": "passed"
+    },
+    {
+      "id": "jdk",
+      "version": "25.0.5-r1",
+      "archiveSha256": "5c03cce7e0dfb12f212e40f0d57001a8ebe409c25eccd94720a7aa591bf3178d",
+      "receipt": {
+        "id": "jdk",
+        "version": "25.0.5-r1",
+        "status": "ready"
+      },
+      "cleanLocalArchiveInstall": "passed",
+      "recheck": "passed"
+    },
+    {
+      "id": "gradle",
+      "version": "9.5.0-r1",
+      "archiveSha256": "9c87612a69302c07347113db048a4468f9bc883699f5a1bc8ce98197b3f86f9c",
+      "receipt": {
+        "id": "gradle",
+        "version": "9.5.0-r1",
+        "status": "ready"
+      },
+      "cleanLocalArchiveInstall": "passed",
+      "recheck": "passed"
+    },
+    {
+      "id": "android-sdk",
+      "version": "35-36.0.0-r1",
+      "archiveSha256": "73959433a5d64ef1377bbc00924937c9cdddcdf2c27f340c226e8b84802921b4",
+      "receipt": {
+        "id": "android-sdk",
+        "version": "35-36.0.0-r1",
+        "status": "ready"
+      },
+      "cleanLocalArchiveInstall": "passed",
+      "recheck": "passed"
+    },
+    {
+      "id": "clang",
+      "version": "21-r2",
+      "archiveSha256": "368bfc822fb6be9e622e3b9b9213ca313804c7c3f5c98502ef2c484b741f38cd",
+      "receipt": {
+        "id": "clang",
+        "version": "21-r2",
+        "status": "ready"
+      },
+      "cleanLocalArchiveInstall": "passed",
+      "recheck": "passed"
+    },
+    {
+      "id": "openscad",
+      "version": "2026.10.29-wasm-node-r3",
+      "archiveSha256": "678e48e2b3f47091cad8f9542a0c8adb233fb0de508daab93fbb9cdd61968f13",
+      "receipt": {
+        "id": "openscad",
+        "version": "2026.10.29-wasm-node-r3",
+        "status": "ready"
+      },
+      "cleanLocalArchiveInstall": "passed",
+      "recheck": "passed"
+    }
+  ],
+  "componentOperations": [
+    {
+      "name": "java-compile",
+      "exit": 0
+    },
+    {
+      "name": "java-processes-default-trust",
+      "exit": 0
+    },
+    {
+      "name": "gradle-offline-exec",
+      "exit": 0
+    },
+    {
+      "name": "sdk-real-apk-build",
+      "exit": 0
+    },
+    {
+      "name": "sdk-signature-verify",
+      "exit": 0
+    },
+    {
+      "name": "clang-resource-dir",
+      "exit": 0
+    },
+    {
+      "name": "clang-compile-link",
+      "exit": 0
+    },
+    {
+      "name": "clang-run",
+      "exit": 0
+    },
+    {
+      "name": "manager-reload",
+      "exit": 0
+    }
+  ],
+  "clangR1ToR2Upgrade": "passed",
+  "allSixComponentsInTwoRealChats": "passed",
+  "freshConcurrentCodexBootstrap": {
+    "attempts": 2,
+    "status": "passed",
+    "fix": "serialize initialize handshake to avoid shared SQLite bootstrap race; ready chats independent"
+  },
+  "coldNetworkInstalls": {
+    "clang": {
+      "status": "passed",
+      "coldNetworkInstall": true,
+      "uid": 10634,
+      "archiveSha256": "368bfc822fb6be9e622e3b9b9213ca313804c7c3f5c98502ef2c484b741f38cd",
+      "version": "21-r2",
+      "url": "https://github.com/HezeAI/devkitjobs-components/releases/download/native-2026-10-31-r2/clang-21-r2-android-arm64.zip",
+      "managerReceipt": {
+        "id": "clang",
+        "version": "21-r2",
+        "status": "ready"
+      },
+      "stdioCompileLinkRun": true
+    },
+    "openscad": {
+      "status": "passed",
+      "version": "2026.10.29-wasm-node-r3",
+      "archiveSha256": "678e48e2b3f47091cad8f9542a0c8adb233fb0de508daab93fbb9cdd61968f13",
+      "archiveBytes": 4824609,
+      "platform": "Android ARM64 native Node + official WASM",
+      "reproduciblePackage": true,
+      "archiveAndFileIntegrity": true,
+      "coldNetworkInstall": true,
+      "archiveIncludesEngine": true,
+      "runtimeNetworkRequired": false,
+      "geometryWithUnreachableProxies": true,
+      "managerActivation": {
+        "id": "openscad",
+        "version": "2026.10.29-wasm-node-r3",
+        "status": "ready"
+      },
+      "functionalProbe": {
+        "status": "ready",
+        "checkedAt": 1793418207,
+        "checks": [
+          {
+            "command": "openscad",
+            "exit": 0,
+            "probe": [
+              "--devkit-self-test"
+            ],
+            "output": "OpenSCAD version 2026.10.29\nUpstream version-query exit: 7\nRuntime: v26.12.1 arm64 android\ncube: {\"triangles\":12,\"dimensions\":[1,2,3],\"volume\":6,\"closed\":true,\"unit\":\"mm (fixture convention; STL is unitless)\"}\nboolean: {\"triangles\":28,\"dimensions\":[8,6,4],\"volume\":168,\"closed\":true,\"unit\":\"mm (fixture convention; STL is unitless)\"}\nextrude: {\"triangles\":12,\"dimensions\":[4,4,4],\"volume\":37.33333333333333,\"closed\":true,\"unit\":\"mm (fixture convention; STL is unitless)\"}\nOpenSCAD functional checks passed\n"
+          }
+        ],
+        "platform": "aarch64",
+        "androidApi": "36",
+        "targetSdk": "28"
+      },
+      "independentCliCallers": 2,
+      "managerReload": true,
+      "failedUpdateRetainedActive": true,
+      "invalidScadRejected": true,
+      "privatePathsInPackage": false,
+      "cppEmscriptenRebuild": "not performed",
+      "installedAppGuiAndTwoChatUi": "not tested"
+    }
+  },
+  "testProfile": "disposable app-private directories under the real DevKit UID; Android Context simulated, native processes real; local synthetic provider, fake account data",
+  "pending": [
+    "installed APK phone keyboard/gestures/permissions",
+    "actual Activity background and multiwindow presentation",
+    "full installed-app restart",
+    "real browser account login",
+    "experimental code_mode_host protocol"
+  ],
+  "networkLimit": "Direct HTTPS command environment used; inherited session proxy returned timeout/502 and its server route is not certified"
+}

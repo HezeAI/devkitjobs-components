@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "coldNetworkInstall": true,
+  "uid": 10634,
+  "archiveSha256": "368bfc822fb6be9e622e3b9b9213ca313804c7c3f5c98502ef2c484b741f38cd",
+  "version": "21-r2",
+  "url": "https://github.com/HezeAI/devkitjobs-components/releases/download/native-2026-10-31-r2/clang-21-r2-android-arm64.zip",
+  "managerReceipt": {
+    "id": "clang",
+    "version": "21-r2",
+    "status": "ready"
+  },
+  "stdioCompileLinkRun": true
+}
