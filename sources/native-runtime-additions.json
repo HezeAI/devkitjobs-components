@@ -120,6 +120,19 @@
       ],
       "patches": 1,
       "adaptation": "Android system shell; fixed-length patch; build-support/adapt_core_shells.py"
+    },
+    "libtool_bash.so": {
+      "sha256": "c15988d0dce3970d791b2824799e14b8a9dedb8ee2acbb0981f823bc534a7431",
+      "bytes": 880416,
+      "sourceSha256": "15ec4a6dbcff615e881f0ce6b3431a2f846638e2221694a9220e14c683ea2af6",
+      "needed": [
+        "libandroid-support.so",
+        "libreadline_8.so",
+        "libiconv.so",
+        "libdl.so",
+        "libc.so"
+      ],
+      "adaptation": "Ignore inaccessible foreign system profiles; HOME user profiles remain supported"
     }
   },
   "tools": {

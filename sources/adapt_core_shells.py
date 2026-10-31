@@ -38,6 +38,12 @@ def main():
   data=data.replace(OLD+b'\0',NEW+b'\0'*(len(OLD)-len(NEW)+1));helper.write_bytes(data)
  elif current!=info.get('sha256')or info.get('shellPatchInputSha256')!=baseline:raise ValueError('Unknown Git HTTP adaptation input')
  info.update(sha256=hashlib.sha256(data).hexdigest(),shellPatchInputSha256=baseline,adaptation='System shell for Git HTTP credential subprocesses')
+ bash_source=O/'app/src/main/jniLibs/arm64-v8a/libtool_bash.so';bash=bash_source.read_bytes()
+ for old in [b'/data/data/com.termux/files/usr/etc/profile',b'/data/data/com.termux/files/usr/etc/bash.bashrc']:
+  if bash.count(old+b'\0')!=1:raise ValueError('Bash system configuration source changed')
+  bash=bash.replace(old+b'\0',b'/dev/null'+b'\0'*(len(old)-len(b'/dev/null')+1))
+ target=R/'native-tools/arm64-v8a/libtool_bash.so';target.write_bytes(bash);target.chmod(0o755)
+ value['libraries'][target.name]={**original['libraries'][target.name],'sourceSha256':hashlib.sha256(bash_source.read_bytes()).hexdigest(),'sha256':hashlib.sha256(bash).hexdigest(),'bytes':len(bash),'adaptation':'Ignore inaccessible foreign system profiles; HOME user profiles remain supported'}
  manifest.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'git':git,'node':node},indent=2))
 if __name__=='__main__':main()
